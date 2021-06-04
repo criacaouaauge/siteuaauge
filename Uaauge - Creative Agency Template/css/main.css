@@ -609,7 +609,7 @@ img {
 	font-size: 54px;
 	font-weight: 800;
 	line-height: 45px;
-	color: #e5e5e5;
+	color: #ff9700;
 }
 .title .main-title {
 	font-weight: 800;
@@ -712,7 +712,7 @@ dd{
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	border-radius: 50%;
-	background-color: #e5e5e5;
+	background-color: #ff9700 ;
 	position: relative;
 	display: inline-block;
 	margin-left: 2px;
@@ -790,7 +790,7 @@ dd{
 	transform: translateY(-40%);
 }
 .contact-round:hover{
-	background-color: #ff4a81;
+	background-color: #56167f;
 }
 @media screen and (max-width: 1200px) {
 	.grid-contact {
@@ -990,7 +990,6 @@ dd{
 }
 .large-team .border-img:before{
 	content: '';
-	background-image: url(../img/splash-5.png);
 	background-size: 100%;
 	position: absolute;
 	bottom: -4%;
@@ -1561,7 +1560,7 @@ audio::-webkit-media-controls-enclosure, video::-webkit-media-controls-enclosure
 	padding: 100px 0 100px 0;
 }
 .background-color {
-	background-color: rgba(0,231,180,0.8);
+	background-color: rgba(88,22,127,0.8);
 	top: 0;
 	left: 0;
 	bottom: 0;
@@ -2603,7 +2602,7 @@ textarea.error {
 }
 .tabs-btn.active{
 	background-color: #f3f2f2;
-	color: #ff4a81;
+	color: #ff9700 ;
 }
 .tabs .container-tabs:not(.active){
 	display: none;
@@ -3477,7 +3476,7 @@ hr.divider-big{
 	transition:all 0.3s;
 }
 .portfolio-hover .portfolio-social .contact-round:hover{
-	background-color: #ff4a81;
+	background-color: #56167f;
 }
 .portfolio-hover .portfolio-social .contact-round i{
 	color: #00e7b4;
