@@ -24,8 +24,8 @@
 @font-face {
   font-family: 'DIN Pro Cond';
   src: local('DIN Pro Condensed Black Italic'), local('DINPro-CondensedBlackItalic'),
-      url('DINPro-CondensedBlackItalic.woff2') format('woff2'),
-      url('DINPro-CondensedBlackItalic.woff') format('woff');
+      url('../fonts/DINPro-CondensedBlackItalic.woff2') format('woff2'),
+      url('../fonts/DINPro-CondensedBlackItalic.woff') format('woff');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
