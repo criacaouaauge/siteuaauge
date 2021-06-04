@@ -34,8 +34,8 @@
 @font-face {
   font-family: 'DIN Pro Cond';
   src: local('DIN Pro Condensed Bold'), local('DINPro-CondensedBold'),
-      url('DINPro-CondensedBold.woff2') format('woff2'),
-      url('DINPro-CondensedBold.woff') format('woff');
+      url('../fonts/DINPro-CondensedBold.woff2') format('woff2'),
+      url('../fonts/DINPro-CondensedBold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -44,8 +44,8 @@
 @font-face {
   font-family: 'DIN Pro Cond';
   src: local('DIN Pro Condensed Medium'), local('DINPro-CondensedMedium'),
-      url('DINPro-CondensedMedium.woff2') format('woff2'),
-      url('DINPro-CondensedMedium.woff') format('woff');
+      url('../fonts/DINPro-CondensedMedium.woff2') format('woff2'),
+      url('../fonts/DINPro-CondensedMedium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -54,8 +54,8 @@
 @font-face {
   font-family: 'DIN Pro Cond';
   src: local('DIN Pro Condensed Light Italic'), local('DINPro-CondensedLightItalic'),
-      url('DINPro-CondensedLightItalic.woff2') format('woff2'),
-      url('DINPro-CondensedLightItalic.woff') format('woff');
+      url('../fonts/DINPro-CondensedLightItalic.woff2') format('woff2'),
+      url('../fonts/DINPro-CondensedLightItalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -64,8 +64,8 @@
 @font-face {
   font-family: 'DIN Pro Cond';
   src: local('DIN Pro Condensed Medium Italic'), local('DINPro-CondensedMediumItalic'),
-      url('DINPro-CondensedMediumItalic.woff2') format('woff2'),
-      url('DINPro-CondensedMediumItalic.woff') format('woff');
+      url('../fonts/DINPro-CondensedMediumItalic.woff2') format('woff2'),
+      url('../fonts/DINPro-CondensedMediumItalic.woff') format('woff');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -74,8 +74,8 @@
 @font-face {
   font-family: 'DIN Pro Cond';
   src: local('DIN Pro Condensed Light'), local('DINPro-CondensedLight'),
-      url('DINPro-CondensedLight.woff2') format('woff2'),
-      url('DINPro-CondensedLight.woff') format('woff');
+      url('../fonts/DINPro-CondensedLight.woff2') format('woff2'),
+      url('../fonts/DINPro-CondensedLight.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -84,8 +84,8 @@
 @font-face {
   font-family: 'DIN Pro Cond';
   src: local('DIN Pro Condensed Italic'), local('DINPro-CondensedItalic'),
-      url('DINPro-CondensedItalic.woff2') format('woff2'),
-      url('DINPro-CondensedItalic.woff') format('woff');
+      url('../fonts/DINPro-CondensedItalic.woff2') format('woff2'),
+      url('../fonts/DINPro-CondensedItalic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -94,8 +94,8 @@
 @font-face {
   font-family: 'DIN Pro';
   src: local('DIN Pro Italic'), local('DINPro-Italic'),
-      url('DINPro-Italic.woff2') format('woff2'),
-      url('DINPro-Italic.woff') format('woff');
+      url('../fonts/DINPro-Italic.woff2') format('woff2'),
+      url('../fonts/DINPro-Italic.woff') format('woff');
   font-weight: normal;
   font-style: italic;
   font-display: swap;
@@ -104,8 +104,8 @@
 @font-face {
   font-family: 'DIN Pro';
   src: local('DIN Pro Light Italic'), local('DINPro-LightItalic'),
-      url('DINPro-LightItalic.woff2') format('woff2'),
-      url('DINPro-LightItalic.woff') format('woff');
+      url('../fonts/DINPro-LightItalic.woff2') format('woff2'),
+      url('../fonts/DINPro-LightItalic.woff') format('woff');
   font-weight: 300;
   font-style: italic;
   font-display: swap;
@@ -114,8 +114,8 @@
 @font-face {
   font-family: 'DIN Pro';
   src: local('DIN Pro Medium Italic'), local('DINPro-MediumItalic'),
-      url('DINPro-MediumItalic.woff2') format('woff2'),
-      url('DINPro-MediumItalic.woff') format('woff');
+      url('../fonts/DINPro-MediumItalic.woff2') format('woff2'),
+      url('../fonts/DINPro-MediumItalic.woff') format('woff');
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -124,8 +124,8 @@
 @font-face {
   font-family: 'DIN Pro';
   src: local('DIN Pro Light'), local('DINPro-Light'),
-      url('DINPro-Light.woff2') format('woff2'),
-      url('DINPro-Light.woff') format('woff');
+      url('../fonts/DINPro-Light.woff2') format('woff2'),
+      url('../fonts/DINPro-Light.woff') format('woff');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -134,8 +134,8 @@
 @font-face {
   font-family: 'DIN Pro';
   src: local('DIN Pro Medium'), local('DINPro-Medium'),
-      url('DINPro-Medium.woff2') format('woff2'),
-      url('DINPro-Medium.woff') format('woff');
+      url('../fonts/DINPro-Medium.woff2') format('woff2'),
+      url('../fonts/DINPro-Medium.woff') format('woff');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -144,8 +144,8 @@
 @font-face {
   font-family: 'DIN Pro Cond';
   src: local('DIN Pro Condensed Black'), local('DINPro-CondensedBlack'),
-      url('DINPro-CondensedBlack.woff2') format('woff2'),
-      url('DINPro-CondensedBlack.woff') format('woff');
+      url('../fonts/DINPro-CondensedBlack.woff2') format('woff2'),
+      url('../fonts/DINPro-CondensedBlack.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -154,8 +154,8 @@
 @font-face {
   font-family: 'DIN Pro';
   src: local('DIN Pro Bold Italic'), local('DINPro-BoldItalic'),
-      url('DINPro-BoldItalic.woff2') format('woff2'),
-      url('DINPro-BoldItalic.woff') format('woff');
+      url('../fonts/DINPro-BoldItalic.woff2') format('woff2'),
+      url('../fonts/DINPro-BoldItalic.woff') format('woff');
   font-weight: bold;
   font-style: italic;
   font-display: swap;
@@ -164,8 +164,8 @@
 @font-face {
   font-family: 'DIN Pro';
   src: local('DIN Pro'), local('DINPro'),
-      url('DINPro.woff2') format('woff2'),
-      url('DINPro.woff') format('woff');
+      url('../fonts/DINPro.woff2') format('woff2'),
+      url('../fonts/DINPro.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -174,8 +174,8 @@
 @font-face {
   font-family: 'DIN Pro Cond';
   src: local('DIN Pro Condensed Regular'), local('DINPro-CondensedRegular'),
-      url('DINPro-CondensedRegular.woff2') format('woff2'),
-      url('DINPro-CondensedRegular.woff') format('woff');
+      url('../fonts/DINPro-CondensedRegular.woff2') format('woff2'),
+      url('../fonts/DINPro-CondensedRegular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -184,8 +184,8 @@
 @font-face {
   font-family: 'DIN Pro';
   src: local('DIN Pro Black Italic'), local('DINPro-BlackItalic'),
-      url('DINPro-BlackItalic.woff2') format('woff2'),
-      url('DINPro-BlackItalic.woff') format('woff');
+      url('../fonts/DINPro-BlackItalic.woff2') format('woff2'),
+      url('../fonts/DINPro-BlackItalic.woff') format('woff');
   font-weight: 900;
   font-style: italic;
   font-display: swap;
@@ -194,8 +194,8 @@
 @font-face {
   font-family: 'DIN Pro';
   src: local('DIN Pro Black'), local('DINPro-Black'),
-      url('DINPro-Black.woff2') format('woff2'),
-      url('DINPro-Black.woff') format('woff');
+      url('../fonts/DINPro-Black.woff2') format('woff2'),
+      url('../fonts/DINPro-Black.woff') format('woff');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -204,8 +204,8 @@
 @font-face {
   font-family: 'DIN Pro';
   src: local('DIN Pro Bold'), local('DINPro-Bold'),
-      url('DINPro-Bold.woff2') format('woff2'),
-      url('DINPro-Bold.woff') format('woff');
+      url('../fonts/DINPro-Bold.woff2') format('woff2'),
+      url('../fonts/DINPro-Bold.woff') format('woff');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
