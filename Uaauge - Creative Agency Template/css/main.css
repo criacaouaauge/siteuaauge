@@ -224,7 +224,7 @@ img {
 	transition:all 0.5s;
 }
 .button:hover{
-	color: #ff4a81;
+	color: #ff9700;
 }
 .rectangle-button {
 	padding: 0px 40px;
@@ -1055,7 +1055,7 @@ dd{
 	transition:all 0.3s;
 }
 .team-item .overflow-block {
-	background-color: rgba(0, 231, 180, 0.9);
+	background-color: rgba(255, 151, 0, 0.9);
 }
 .large-team .team-item .overflow-block:after,
 .large-team .team-item .overflow-block:before {
@@ -3244,7 +3244,7 @@ hr.divider-big{
 	margin-top: 10px;
 }
 .large-team .circle i {
-	color: #00e7b4;
+	color: #ff9700;
 }
 .circle {
 	position: relative;
