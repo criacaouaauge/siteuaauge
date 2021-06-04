@@ -259,7 +259,7 @@ img {
 	margin-left: 8px;
 }
 .rectangle-button:hover{
-	background-color: #00e7b4;
+	background-color: #56167f;
 }
 .rectangle-button.green{
 	background-color: #00e7b4;
@@ -404,10 +404,10 @@ img {
 	color: #000000;
 }
 .nav a:hover{
-	color: #00e7b4;
+	color: #56167f;
 }
 .nav .active {
-	color: #00e7b4;
+	color: #56167f;
 }
 .nav>ul>li{
 	position: relative;
@@ -432,7 +432,7 @@ img {
 	text-transform: uppercase;
 	position: relative;
 	line-height: 40px;
-	background-color: #00e7b4;
+	background-color: #56167f;
 	text-align: center;
 }
 .sticky .nav .switcher i {
@@ -468,7 +468,7 @@ img {
 .pc .sticky .nav ul ul a:hover,
 .pc .sticky .nav ul ul li:hover>a{
 	color: white !important;
-	background-color: #00e7b4;
+	background-color: #56167f;
 }
 .pc .sticky .nav ul ul li:last-child{
 	border-bottom: 0;
@@ -1360,7 +1360,7 @@ dd{
 }
 .years:hover{
 	font-size: 180px;
-	color: #00e7b4;
+	color: #56167f;
 }
 .blog-content {
 	margin-top: 50px;
