@@ -135,7 +135,6 @@ i{
 body {
 	font-family: 'Din Pro';
 	color: #6d6d6d;
-	font-weight: 300;
 }
 body, html {
 	overflow-x: hidden;
@@ -150,7 +149,7 @@ a {
 }
 dt, dd, p, li {
 	font-size: 15px;
-	font-weight: 300;
+	font-weight: 900;
 	line-height: 27px;
 }
 p {
@@ -421,7 +420,7 @@ img {
 }
 .nav>ul>li>a:after{
 	content: "/";
-	color: #00e7b4;
+	color: #56167f;
 	margin-left: 15px;
 }
 .nav>ul>.last>a:after{
@@ -475,7 +474,7 @@ img {
 	border-bottom: 0;
 }
 .pc .sticky .nav>ul>li:hover>a{
-	color: #00e7b4;
+	color: #56167f;
 }
 .pc .sticky .nav>ul li:hover>ul,
 .pc .sticky .nav>ul li a:hover>ul{
@@ -588,7 +587,7 @@ img {
 	transform: rotate(90deg);
 }
 .nav .active-link {
-	color: #00e7b4;
+	color: #ff9700;
 }
 @media screen and (max-width: 980px) {
 	.nav ul>li>a:after{
@@ -618,7 +617,7 @@ img {
 }
 .title .slash-icon{
 	font-weight: 500;
-	color: #00e7b4;
+	color: #56167f;
 }
 .title .slash-icon i{
 	position: relative;
@@ -957,6 +956,7 @@ dd{
 	margin-right: 10px;
 	margin-top: 10px;
 	text-align: center;
+  font-weight: 900;
 }
 /*.team .large-team .grid-col:nth-child(4n+5) {
 	clear: left;
@@ -969,8 +969,9 @@ dd{
 	width: 40px;
 }
 .team-item>p{
+  font-weight: 900;
 	font-size: 14px;
-	color: #00e7b4;
+	color: #56167f;
 	font-weight: 400;
 	line-height: 17px;
 }
@@ -3137,7 +3138,8 @@ blockquote.blog-quote .quote-author {
 }
 .page-title{
   font-family: 'DIN PRO';
-  font-weight: 900;
+  font-weight: 100;
+  font-style: normal;
 	position: relative;
 	z-index: 2;
 	display: none;
@@ -5831,7 +5833,7 @@ td.ui-datepicker-current-day {}
 	width: 38px;
 	text-align: center;
 	line-height: 38px;
-	color: #ff4a81;
+	color: #56167f;
 	display: inline-block;
 	font-family: FontAwesome;
 	font-style: normal;
@@ -6065,7 +6067,7 @@ td.ui-datepicker-current-day {}
 	font-family: FontAwesome;
 	font-weight: 300;
 	font-size: 20px;
-	color: #ff4a81;
+	color: #56167f;
 	margin-left: 2px;
 	vertical-align: middle;
 	width: 20px;
@@ -6084,7 +6086,7 @@ td.ui-datepicker-current-day {}
 	border-bottom: 1px dashed #00e7b4;
 }
 .woocommerce  .shipping-calculator-form>:first-child:hover:before{
-	color: #ff4a81;
+	color: #56167f;
 }
 .woocommerce  .shipping-calculator-form .rectangle-button{
 	width: 100%;
