@@ -228,7 +228,7 @@ img {
 .rectangle-button {
 	padding: 0px 40px;
 	line-height: 60px;
-	background-color: #ff4a81;
+	background-color: #56167f;
 	color: white;
 	font-weight: 700;
 	font-size: 18px;
@@ -265,7 +265,7 @@ img {
 	background-color: #00e7b4;
 }
 .rectangle-button.green:hover{
-	background-color: #ff4a81;
+	background-color: #56167f;
 }
 .rectangle-button.medium{
 	padding: 0px 30px;
@@ -355,7 +355,7 @@ img {
 	background-color: #00e7b4;
 }
 .round-button.green:hover{
-	background-color: #ff4a81;
+	background-color: #56167f;
 }
 
 
@@ -969,10 +969,9 @@ dd{
 	width: 40px;
 }
 .team-item>p{
-  font-weight: 900;
 	font-size: 14px;
 	color: #56167f;
-	font-weight: 400;
+	font-weight: 100;
 	line-height: 17px;
 }
 /**/
@@ -1252,8 +1251,12 @@ dd{
 	background-color: white;
 }
 .circle:hover{
-	background-color: #ff4a81;
+	background-color: #56167f;
 }
+.names-team {
+  font-weight: 900;
+}
+
 @media screen and (max-width: 980px) {
 	.big-window-tab .inform-item {
 		width: 90%;
@@ -1821,10 +1824,10 @@ audio::-webkit-media-controls-enclosure, video::-webkit-media-controls-enclosure
 .sl-content .social .social-icon i{
 	font-size: 14px;
 	line-height: 42px;
-	color: #ff4a81;
+	color: #ff9700;
 }
 .sl-content .social .social-icon:hover{
-	background-color: #00e7b4;
+	background-color: #ff9700;
 }
 .scroll-down-button {
 	position: absolute;
@@ -2124,10 +2127,11 @@ audio::-webkit-media-controls-enclosure, video::-webkit-media-controls-enclosure
 	text-align: center;
 }
 .team-item h2 {
+  font-family: 'DIN PRO';
 	font-size: 15px;
 	margin-top: 5px;
 	margin-bottom: 0;
-	font-weight: 400;
+	font-weight: 900;
 }
 .large-team .team-item h2{
 	margin-top: 10px;
@@ -4546,7 +4550,7 @@ td.ui-datepicker-current-day {}
 }
 .widget_pages ul li a:hover{
 	color: white;
-	background-color: #ff4a81;
+	background-color: #56167f;
 }
 .widget_pages ul ul>li.color:before{
 	color: white;
@@ -4838,7 +4842,7 @@ td.ui-datepicker-current-day {}
 	background: #00e7b4;
 }
 .link-cont a:hover{
-	background: #ff4a81;
+	background: #56167f;
 }
 .picture:hover .link-cont{
 	opacity: 1;
@@ -5221,11 +5225,11 @@ td.ui-datepicker-current-day {}
 	font-weight: 700;
 }
 .pagination a i {
-	color: #ff4a81;
+	color: #56167f;
 	font-weight: 700;
 }
 .pagination .active {
-	background: #ff4a81;
+	background: #56167f;
 	color: #fff;
 }
 .pagination .active:hover {
@@ -5537,7 +5541,7 @@ td.ui-datepicker-current-day {}
 	-webkit-transition: background 0.3s, color 0.3s;
 }
 .woocommerce #review_form #submit:hover{
-	background: #ff4a81;
+	background: #56167f;
 }
 .woocommerce #review_form .form-submit{
 	text-align: right;
@@ -5743,7 +5747,7 @@ td.ui-datepicker-current-day {}
 }
 .woocommerce .products-carousel .carousel-nav .prev i:hover,
 .woocommerce .products-carousel .carousel-nav .next i:hover{
-	color: #ff4a81;
+	color: #56167f;
 }
 .woocommerce .products-carousel .carousel-nav span{
 	display: inline-block;
