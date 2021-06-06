@@ -3234,7 +3234,7 @@ hr.divider-big{
 	margin-top: 15px;
 	width: 40px;
 	height: 1px;
-	background-color: #00e7b4;
+	background-color: #ff9700;
 	-webkit-transition:all 0.3s;
 	-moz-transition:all 0.3s;
 	-ms-transition:all 0.3s;
@@ -3242,7 +3242,7 @@ hr.divider-big{
 }
 .item-example:hover .circle,
 .item-example:hover .line{
-	background-color: #ff4a81;
+	background-color: #56167f;
 }
 
 .item-example p {
@@ -3280,14 +3280,14 @@ hr.divider-big{
 .rectangle i {
 	font-size: 44px;
 	line-height: 80px;
-	color: #00e7b4;
+	color: #ff9700;
 	-webkit-transition:all 0.3s;
 	-moz-transition:all 0.3s;
 	-ms-transition:all 0.3s;
 	transition:all 0.3s;
 }
 .item-example:hover i {
-	color: #ff4a81;
+	color: #56167f ;
 }
 .circle>*{
 	width: 48px;
