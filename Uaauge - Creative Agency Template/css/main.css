@@ -662,7 +662,7 @@ dt {
 dt:before{
 	margin-right: 6px;
 	content: "/";
-	color: #00e7b4;
+	color: purple;
 }
 dd{
 	margin-left: 12px;
