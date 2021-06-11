@@ -6430,6 +6430,7 @@ td.ui-datepicker-current-day {}
   width: 50px;
   padding: 15px;
   border-radius: 10px;
+  box-shadow: 8px 8px 21px 8px rgb(0 79 143 / 35%) !important;
 }
 .planos a:hover{
   text-decoration: none;
@@ -6461,4 +6462,9 @@ td.ui-datepicker-current-day {}
 
 .rodape:hover{
   color: #ff9700;
+}
+
+
+btn-orcamento a:hover{
+  color: #56167f;
 }
