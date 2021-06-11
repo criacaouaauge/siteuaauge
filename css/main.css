@@ -6338,8 +6338,8 @@ td.ui-datepicker-current-day {}
 }
 
 .banner__content {
-  padding: 16px;
-  max-width: 500px;
+  padding: 30px;
+  max-width: 700px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -6348,7 +6348,6 @@ td.ui-datepicker-current-day {}
 .banner__text {
   flex-grow: 1;
   line-height: 1.4;
-  font-family: "Quicksand", sans-serif;
 }
 
 .banner__close {
