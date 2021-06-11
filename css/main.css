@@ -69,9 +69,6 @@
 
 
 */
-@import url(http://fonts.googleapis.com/css?family=Roboto:900,500,400italic,400italic,300italic,300,700,400);
-@import url(http://fonts.googleapis.com/css?family=Dancing+Script);
-@import url(http://fonts.googleapis.com/css?family=Pacifico);
 /**/
 /* reset */
 /**/
@@ -91,7 +88,7 @@ table, thead, tbody, tfoot, tr, th, td {
 	outline: none;
 	background: none;
 	font-size: 100%;
-	font: inherit;
+	font-family: 'DIN Pro';
 	vertical-align: baseline;
 }
 html, body, iframe, header, footer, main, aside, nav, section, article, div,
@@ -400,11 +397,12 @@ img {
 	float: right;
 }
 .nav a{
-	font-weight: 400;
+	font-weight: 600;
 	color: #000000;
 }
 .nav a:hover{
-	color: #56167f;
+	color: #ff9700;
+  text-decoration: none;
 }
 .nav .active {
 	color: #56167f;
@@ -420,7 +418,7 @@ img {
 }
 .nav>ul>li>a:after{
 	content: "/";
-	color: #56167f;
+	color: #ff9700;
 	margin-left: 15px;
 }
 .nav>ul>.last>a:after{
@@ -432,7 +430,7 @@ img {
 	text-transform: uppercase;
 	position: relative;
 	line-height: 40px;
-	background-color: #56167f;
+	background-color: #ff9700;
 	text-align: center;
 }
 .sticky .nav .switcher i {
@@ -443,7 +441,7 @@ img {
 	right: 0;
 	padding: 0 15px;
 	line-height: 40px;
-	background-color: #ff4a81;
+	background-color: #ff9700;
 	color: black;
 }
 .sticky .nav .switcher.color i{
@@ -468,13 +466,13 @@ img {
 .pc .sticky .nav ul ul a:hover,
 .pc .sticky .nav ul ul li:hover>a{
 	color: white !important;
-	background-color: #56167f;
+	background-color: #ff9700;
 }
 .pc .sticky .nav ul ul li:last-child{
 	border-bottom: 0;
 }
 .pc .sticky .nav>ul>li:hover>a{
-	color: #56167f;
+	color: #ff9700;
 }
 .pc .sticky .nav>ul li:hover>ul,
 .pc .sticky .nav>ul li a:hover>ul{
@@ -587,7 +585,7 @@ img {
 	transform: rotate(90deg);
 }
 .nav .active-link {
-	color: #ff9700;
+	color: #56167f;
 }
 @media screen and (max-width: 980px) {
 	.nav ul>li>a:after{
@@ -6332,11 +6330,11 @@ td.ui-datepicker-current-day {}
 	  background-image: -webkit-radial-gradient(50% 50%, rgba(1, 231, 180, 0) 10px, rgba(103, 60, 169, 0) 70%), -webkit-radial-gradient(50% 50%, rgba(2, 90, 162, 0.56) 8px, rgba(181, 36, 144, 0) 40%);
 }
 
-.banner {
+.banner2 {
   background: #bfbfbf;
 }
 
-.banner__content {
+.banner__content2 {
   padding: 16px;
   max-width: 500px;
   margin: 0 auto;
@@ -6344,19 +6342,49 @@ td.ui-datepicker-current-day {}
   align-items: center;
 }
 
-.banner__text {
+.banner__text2 {
   flex-grow: 1;
   line-height: 1.4;
   font-family: "Quicksand", sans-serif;
 }
 
-.banner__close {
+.banner__close2 {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.banner__text,
+.banner__text2,
+.banner__close2 > span {
+  color: #ffffff;
+  text-align: center;
+}
+
+.banner {
+  background: #bfbfbf;
+}
+
+.banner__content2 {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.banner__text2 {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: "Quicksand", sans-serif;
+}
+
+.banner__close2 {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.banner__text2,
 .banner__close > span {
   color: #ffffff;
   text-align: center;
@@ -6376,4 +6404,25 @@ td.ui-datepicker-current-day {}
   padding: 0px;
   bottom:0px;
   width: 1270px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.imagem-coluna {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.conection1{
+  box-shadow: 8px 8px 21px 8px rgb(0 79 143 / 35%) !important;
 }
