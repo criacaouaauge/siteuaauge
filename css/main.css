@@ -6331,7 +6331,7 @@ td.ui-datepicker-current-day {}
 }
 
 .banner2 {
-  background: #bfbfbf;
+  background: #000;
 }
 
 .banner__content2 {
@@ -6360,11 +6360,11 @@ td.ui-datepicker-current-day {}
   text-align: center;
 }
 
-.banner {
+.banner{
   background: #bfbfbf;
 }
 
-.banner__content2 {
+.banner__content {
   padding: 16px;
   max-width: 500px;
   margin: 0 auto;
@@ -6372,19 +6372,19 @@ td.ui-datepicker-current-day {}
   align-items: center;
 }
 
-.banner__text2 {
+.banner__text {
   flex-grow: 1;
   line-height: 1.4;
   font-family: "Quicksand", sans-serif;
 }
 
-.banner__close2 {
+.banner__close {
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.banner__text2,
+.banner__text,
 .banner__close > span {
   color: #ffffff;
   text-align: center;
