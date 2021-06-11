@@ -1219,6 +1219,10 @@
 .fa-instagram:before {
   content: "\f16d";
 }
+.fa-tiktok:before {
+  content: "\e07b";
+}
+
 .fa-flickr:before {
   content: "\f16e";
 }

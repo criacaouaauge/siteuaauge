@@ -611,7 +611,7 @@ img {
 }
 .title .main-title {
 	font-weight: 800;
-	color: #000000;
+	color: #ff9700;
 }
 .title .slash-icon{
 	font-weight: 500;
@@ -3371,6 +3371,9 @@ hr.divider-big{
 /**/
 /* isotop */
 /**/
+.portfolio a{
+  color: #bfbfbf;
+}
 
 .portfolio .portfolio-filter .all-iso-item {
 	float: right;
@@ -3380,11 +3383,11 @@ hr.divider-big{
 	color: #e5e5e5;
 }
 .portfolio .portfolio-filter .active {
-	color: #00e7b4;
+	color: #56167f;
 }
 .portfolio .portfolio-filter .title{
-	display: inline-block;
-	margin-bottom: 40px;
+	display: flexbox;
+	margin-bottom: 20px;
 }
 .portfolio .portfolio-filter .title a{
 	margin-right: 20px;
@@ -3392,7 +3395,7 @@ hr.divider-big{
 	display: inline-block;
 }
 .portfolio .portfolio-filter a:hover{
-	color: #00e7b4;
+	color: #ff9700;
 }
 .portfolio .portfolio-filter .title a:after{
 	position: absolute;
@@ -3877,7 +3880,7 @@ footer .social {
 }
 .footer #copyright span{
 	font-weight: 800;
-	color: #00e7b4;
+	color: #56167f;
 }
 .footer #copyright span:before{
 	content:" \00a9 ";
@@ -6447,4 +6450,16 @@ td.ui-datepicker-current-day {}
   padding: 25px;
   display: flexbox;
   justify-content: center;
+}
+
+.rodape{
+  color: #56167f;
+}
+
+.rodape a{
+  color: #ff9700;
+}
+
+.rodape:hover{
+  color: #ff9700;
 }
