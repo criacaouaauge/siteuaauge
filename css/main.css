@@ -6330,36 +6330,6 @@ td.ui-datepicker-current-day {}
 	  background-image: -webkit-radial-gradient(50% 50%, rgba(1, 231, 180, 0) 10px, rgba(103, 60, 169, 0) 70%), -webkit-radial-gradient(50% 50%, rgba(2, 90, 162, 0.56) 8px, rgba(181, 36, 144, 0) 40%);
 }
 
-.banner2 {
-  background: #000;
-}
-
-.banner__content2 {
-  padding: 16px;
-  max-width: 500px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-}
-
-.banner__text2 {
-  flex-grow: 1;
-  line-height: 1.4;
-  font-family: "Quicksand", sans-serif;
-}
-
-.banner__close2 {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.banner__text2,
-.banner__close2 > span {
-  color: #ffffff;
-  text-align: center;
-}
-
 .banner{
   background: #bfbfbf;
 }
@@ -6390,13 +6360,38 @@ td.ui-datepicker-current-day {}
   text-align: center;
 }
 
-.btn-contato{
-  padding: 7px 20px;
-  background-color: fuchsia;
-  border: 2px;
-  border-color: #22eabe;
-
+.banner2 {
+  background: #000;
 }
+
+.banner__content2 {
+  padding: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.banner__text2 {
+  flex-grow: 1;
+  line-height: 1.4;
+  font-family: "Quicksand", sans-serif;
+}
+
+.banner__close2 {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.banner__text2,
+.banner__close2 > span {
+  color: #ffffff;
+  text-align: center;
+}
+---/end banner inferior/----- !important
+
+
 
 #banner-inferior {
   position: relative;
