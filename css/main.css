@@ -6365,7 +6365,7 @@ td.ui-datepicker-current-day {}
 }
 
 .banner__content2 {
-  padding: 16px;
+  padding: 50px;
   max-width: 500px;
   margin: 0 auto;
   display: flex;
@@ -6420,4 +6420,19 @@ td.ui-datepicker-current-day {}
 
 .conection1{
   box-shadow: 8px 8px 21px 8px rgb(0 79 143 / 35%) !important;
+}
+
+.planos a{
+  background-color: lightblue;
+  width: 50px;
+  padding: 15px;
+  border-radius: 10px;
+}
+.planos a:hover{
+  text-decoration: none;
+  color: white;
+  background-color: purple;
+  width: 50px;
+  padding: 15px;
+  border-radius: 10px;
 }
