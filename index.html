@@ -19,7 +19,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/fontawesome.css"
+  <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/>
 	<!--styles -->
 </head>
 <body class="main-page pc">
@@ -45,17 +47,10 @@
 		</div>
 	</header>
 
-  <div class="banner">
-    <div class="banner__content">
-      <div class="banner__text" style="font-family: 'DIN PRO'; font-weight: 500; font-size: 25px;">
-        Agência parceira oficial Telesíntese e PontoISP
-      </div>
-      <button class="banner__close" type="button">
-        <span class="material-icons">
-          arrow_forward_ios
-          </span>
-      </button>
-    </div>
+  <div class="your-class">
+    <div><p>Minha frase 1</p></div>
+    <div><p>Minha frase 1</p></div>
+    <div><p>Minha frase 1</p></div>
   </div>
 
 	<div class="tp-banner-container">
@@ -271,7 +266,6 @@
 		<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
 		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 		<script type="text/javascript" src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox_packed.js"></script>
-		<script src="js/main.js"></script>
 		<script src="js/jquery.easing.1.3.js"></script>
 		<script src="js/wow.min.js"></script>
 		<script src="js/jquery.isotope.min.js"></script>
@@ -279,6 +273,15 @@
 		<script src="js/jquery.fancybox.pack.js"></script>
 		<script src="js/jquery.fancybox-media.js"></script>
 		<script src="js/retina.min.js"></script>
+		<script src="js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('.your-class').slick();
+    });
+    </script>
 		<!--/ scripts -->
 	</body>
 </html>
