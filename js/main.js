@@ -1365,7 +1365,3 @@ function move_gradient() {
   	$('.picture').removeClass('active');
   })
 }
-
-document.querySelector(".banner__close").addEventListener("click", function () {
-  this.next(".banner").style.display = "none";
-});
