@@ -3807,7 +3807,7 @@ section.text-section.parallaxed:after {
 	border-left: 9px solid transparent;
 	border-right: 9px solid transparent;
 	position: absolute;
-	top: -9px;\
+	top: -9px;
 	left: -webkit-calc(50% - 9px);
 	left: -moz-calc(50% - 9px);
 	left: calc(50% - 9px);
@@ -6464,7 +6464,29 @@ td.ui-datepicker-current-day {}
   color: #ff9700;
 }
 
+.btn-orcamento span{
+  background-color: #ff9700;
+  border: 3px solid #ff9700;
+  border-radius: 5px;
+  padding: 5px;
+  color: white;
+  transition: 1s all ease;
+}
 
-btn-orcamento a:hover{
-  color: #56167f;
+
+.btn-orcamento span:hover{
+  background-color: #56167f;
+  border: 3px solid #56167f;
+  transition: 1s all ease;
+}
+
+
+.banner-frases {
+  margin: 0 50px;
+}
+.banner-frases p {
+  text-align: center;
+}
+.slick-prev:before, .slick-next:before {
+  color: black !important;
 }
