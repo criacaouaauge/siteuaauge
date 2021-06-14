@@ -3856,7 +3856,6 @@ section.text-section.parallaxed:after {
 footer {
 	position: relative;
 	padding: 8px 0 5px 0;
-	border-top: 1px solid #e5e5e5;
 }
 .footer {
 	width: 100%;
@@ -6528,7 +6527,7 @@ td.ui-datepicker-current-day {}
 }
 
 .main-text-about{
-  padding-left: 55px;
+  padding-left: 150px;
   padding-bottom: 25px;
   color: #ff9700;
   font-weight: 900;
@@ -6537,14 +6536,22 @@ td.ui-datepicker-current-day {}
 }
 
 .sub-text-about{
-  padding-left: 55px;
+  padding-left: 150px;
   font-weight: 700;
   line-height: 32px;
   color: #404040;
   font-size: 23px;
 }
 
+.texts-about{
+  display: inline;
+}
+
 .foto-camila{
-  height: 100px;
-  width: 85px;
+  width: 300px;
+  height: 400px;
+  float: right;
+  margin-right: 145px;
+  margin-bottom: 85px;
+  border-radius: 25px;
 }
