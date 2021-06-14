@@ -150,10 +150,10 @@ dt, dd, p, li {
 	line-height: 27px;
 }
 p {
-	color: #6d6d6d;
+	color: #a3a3a3;
 }
 strong {
-	color: black;
+	color: #8c8c8c;
 }
 aside {
 	margin-bottom: 30px;
@@ -374,7 +374,7 @@ img {
 	z-index: 1000;
 	border-bottom: 1px solid #e5e5e5;
 	box-sizing: border-box;
-	background-color: #55aa99;
+	background-color: #ffffff;
 	z-index: 499;
 }
 .sticky .grid-row{
@@ -401,9 +401,13 @@ img {
 	color: #000000;
 }
 .nav a:hover{
-	color: #ff9700;
   text-decoration: none;
 }
+
+.sub-menu a:hover{
+  background-color: #56167f;
+}
+
 .nav .active {
 	color: #56167f;
 }
@@ -466,7 +470,7 @@ img {
 .pc .sticky .nav ul ul a:hover,
 .pc .sticky .nav ul ul li:hover>a{
 	color: white !important;
-	background-color: #ff9700;
+	background-color: #56167f;
 }
 .pc .sticky .nav ul ul li:last-child{
 	border-bottom: 0;
@@ -6422,6 +6426,8 @@ td.ui-datepicker-current-day {}
 
 .conection1{
   box-shadow: 8px 8px 21px 8px rgb(0 79 143 / 35%) !important;
+  border-radius: 50px;
+
 }
 
 .planos a{
@@ -6442,16 +6448,25 @@ td.ui-datepicker-current-day {}
 }
 
 .planos-text{
-  background-image: linear-gradient(to right, #00c3ff, #ffff1c);
+  background-image: radial-gradient( #00c3ff, #ffff1c);
   font-family: 'DIN PRO';
   font-weight: 900;
   width: auto;
-  height: 250px;
+  height: 200px;
   padding: 25px;
   display: flexbox;
   justify-content: center;
 }
-
+.planos-text-2{
+  background-image: linear-gradient( to right,#7f167c, #56167f);
+  font-family: 'DIN PRO';
+  font-weight: 900;
+  width: auto;
+  height: 200px;
+  padding: 5px;
+  display: flexbox;
+  justify-content: center;
+}
 .rodape{
   color: #56167f;
 }
@@ -6470,7 +6485,7 @@ td.ui-datepicker-current-day {}
   border-radius: 5px;
   padding: 5px;
   color: white;
-  transition: 1s all ease;
+  transition: 0,5s all ease;
 }
 
 
@@ -6482,11 +6497,54 @@ td.ui-datepicker-current-day {}
 
 
 .banner-frases {
-  margin: 0 50px;
+  margin: 0px 50px;
 }
 .banner-frases p {
   text-align: center;
+  margin-top: 16px;
+  color: black;
 }
 .slick-prev:before, .slick-next:before {
-  color: black !important;
+  color: #ff9700 !important;
+}
+
+#estrela{
+ margin-right: 5px;
+}
+
+.sub-menu{
+  border-radius: 25px;
+}
+.sub-menu a{
+  border-radius: 25px;
+}
+
+.intro-text{
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 55px;
+}
+
+.main-text-about{
+  padding-left: 55px;
+  padding-bottom: 25px;
+  color: #ff9700;
+  font-weight: 900;
+  text-transform: none;
+  line-height: 32px;
+}
+
+.sub-text-about{
+  padding-left: 55px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #404040;
+  font-size: 23px;
+}
+
+.foto-camila{
+  height: 100px;
+  width: 85px;
 }
