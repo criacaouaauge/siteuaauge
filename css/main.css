@@ -6447,11 +6447,11 @@ td.ui-datepicker-current-day {}
 }
 
 .planos-text{
-  background-image: radial-gradient( #00c3ff, #ffff1c);
+  background-image: linear-gradient(to right ,#00c3ff, #ffff1c);
   font-family: 'DIN PRO';
   font-weight: 900;
   width: auto;
-  height: 200px;
+  height: 250px;
   padding: 25px;
   display: flexbox;
   justify-content: center;
