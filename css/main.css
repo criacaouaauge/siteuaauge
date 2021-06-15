@@ -6398,13 +6398,6 @@ td.ui-datepicker-current-day {}
 
 
 
-#banner-inferior {
-  position: relative;
-  left: 0px;
-  padding: 0px;
-  bottom:0px;
-  width: 1270px;
-}
 
 * {
   box-sizing: border-box;
@@ -6547,11 +6540,31 @@ td.ui-datepicker-current-day {}
   line-height: 32px;
 }
 
+.main-text-about2{
+  padding-top: 85px;
+  padding-left: 150px;
+  padding-bottom: 25px;
+  color: #ff9700;
+  font-weight: 900;
+  text-transform: none;
+  line-height: 32px;
+  font-size: 45px;
+}
+
 .sub-text-about{
   padding-left: 150px;
   font-weight: 700;
   line-height: 32px;
   color: #404040;
+  font-size: 23px;
+}
+
+.sub-text-about2{
+  padding-bottom: 55px;
+  padding-left: 150px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #404F54;
   font-size: 23px;
 }
 
@@ -6561,8 +6574,9 @@ td.ui-datepicker-current-day {}
 
 .foto-camila{
   width: 300px;
+  height: auto;
   float: right;
-  margin-top: 80px;
+  margin-top: 50px;
   margin-right: 192px;
   margin-bottom: 85px;
   border-radius: 25px;
@@ -6571,6 +6585,22 @@ td.ui-datepicker-current-day {}
 .fala-camila{
   padding-left: 150px;
   line-height: 32px;
+  padding-bottom: 50px;
+}
+
+.uaauges-definition{
+  padding-left: 150px;
+  line-height: 32px;
+  padding-bottom: 50px;
+  font-size: 17px;
+  font-weight: 300;
+  color: #404F54;
+
+}
+
+.negrito{
+  font-weight: 900;
+  color: #404F54;
 }
 
 .box-missao{
@@ -6592,8 +6622,8 @@ td.ui-datepicker-current-day {}
 
 .titulo-missao{
   padding-top: 25px;
-  font-family: 'HeatherScript';
-  font-size: 55px;
+  font-family: 'almeira';
+  font-size: 35px;
   color: #ff9700;
 }
 
@@ -6603,4 +6633,46 @@ td.ui-datepicker-current-day {}
 
 .valores{
   margin-bottom: 65px;
+}
+
+
+.lista-lema{
+  color: rgb(163, 163, 163)
+}
+
+.title-uaauges{
+  font-weight: 900;
+  color: #ff9700;
+}
+
+.uaauge{
+  width: 1170px;
+  padding-left: 150px;
+  padding-bottom: 20px;
+}
+
+.btn-uaauge {
+  background-color: #ff9700;
+  border: 3px solid #ff9700;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  transition: 0,5s all ease;
+  text-decoration: none;
+  font-weight: 600;
+
+}
+
+.btn-uaauge:hover{
+  background-color: #56167f;
+  border: 3px solid #56167f;
+  color: white;
+  transition: 0,5s all ease;
+}
+
+.btn-orcamento span:hover{
+
 }
