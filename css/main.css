@@ -470,7 +470,7 @@ img {
 .pc .sticky .nav ul ul a:hover,
 .pc .sticky .nav ul ul li:hover>a{
 	color: white !important;
-	background-color: #56167f;
+	background-color: #ff9700;
 }
 .pc .sticky .nav ul ul li:last-child{
 	border-bottom: 0;
@@ -6466,6 +6466,18 @@ td.ui-datepicker-current-day {}
   display: flexbox;
   justify-content: center;
 }
+
+.planos-text-3{
+  background-image: linear-gradient( to right,#ffa829, #ff9700);
+  font-family: 'DIN PRO';
+  font-weight: 900;
+  width: auto;
+  height: 170px;
+  padding: 5px;
+  display: flexbox;
+  justify-content: center;
+}
+
 .rodape{
   color: #56167f;
 }
@@ -6548,7 +6560,7 @@ td.ui-datepicker-current-day {}
 }
 
 .foto-camila{
-  width: 400px;
+  width: 300px;
   float: right;
   margin-top: 80px;
   margin-right: 192px;
@@ -6559,4 +6571,36 @@ td.ui-datepicker-current-day {}
 .fala-camila{
   padding-left: 150px;
   line-height: 32px;
+}
+
+.box-missao{
+  width: 300px;
+  height: 420px;
+  border-radius: 25px;
+  box-shadow: 1px 9px 20px 1px rgb(0 79 143 / 30%) !important;
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.text-lema{
+  padding-top: 45px;
+  font-size: 45px;
+  font-weight: 900;
+  color: white;
+  text-transform: none;
+}
+
+.titulo-missao{
+  padding-top: 25px;
+  font-family: 'HeatherScript';
+  font-size: 55px;
+  color: #ff9700;
+}
+
+.texto-missao{
+  margin: 25px;
+}
+
+.valores{
+  margin-bottom: 65px;
 }
