@@ -6551,7 +6551,12 @@ td.ui-datepicker-current-day {}
   width: 300px;
   height: 400px;
   float: right;
-  margin-right: 145px;
+  margin-right: 192px;
   margin-bottom: 85px;
   border-radius: 25px;
+}
+
+.fala-camila{
+  padding-left: 150px;
+  line-height: 32px;
 }
