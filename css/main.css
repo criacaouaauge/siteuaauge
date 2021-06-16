@@ -544,7 +544,7 @@ img {
 }
 
 .mobile .sticky .splash {
-  display: none;
+  display: sticky;
 }
 
 .nav {
