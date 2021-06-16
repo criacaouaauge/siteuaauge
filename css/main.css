@@ -7772,7 +7772,7 @@ td.ui-datepicker-current-day {}
 }
 
 .uaauges-definition {
-  padding-left: 150px;
+  margin-left: 250px;
   line-height: 32px;
   padding-bottom: 50px;
   font-size: 17px;
@@ -7830,8 +7830,8 @@ td.ui-datepicker-current-day {}
 
 .uaauge {
   width: 1170px;
-  padding-left: 150px;
-  padding-bottom: 20px;
+  margin-left: 250px;
+  margin-bottom: 20px;
 }
 
 .btn-uaauge {
