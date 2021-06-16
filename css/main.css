@@ -7743,13 +7743,11 @@ td.ui-datepicker-current-day {}
 }
 
 .foto-camila {
-  width: 300px;
+  width: auto;
   height: auto;
   float: right;
-  margin-top: 50px;
-  margin-right: 250px;
-  margin-bottom: 85px;
-  border-radius: 25px;
+  border-radius: 30px;
+  box-shadow: 1px 9px 8px 1px rgb(0 79 143 / 30%) !important;
 }
 
 .foto-camiseta {
