@@ -625,9 +625,6 @@ img {
   box-shadow: 0px 14px 19px 0px rgba(0, 0, 0, 0.09);
 }
 
-.pc .sticky .nav ul ul li {
-  border-bottom: 1px solid #ebebeb;
-}
 
 .pc .sticky .nav ul ul a {
   display: block;
@@ -746,7 +743,7 @@ img {
 }
 
 .mobile .nav ul>li>a:after {
-  display: absolute;
+  display: none;
 }
 
 .mobile .nav .has_child>i {
@@ -7738,7 +7735,7 @@ td.ui-datepicker-current-day {}
 }
 
 .sub-text-about2 {
-  margin-bottom: 55px;
+  margin-bottom: 25px;
   margin-left: 250px;
   font-weight: 700;
   line-height: 32px;
@@ -7761,6 +7758,16 @@ td.ui-datepicker-current-day {}
   border-radius: 25px;
 }
 
+.foto-camiseta {
+  width: auto;
+  height: auto;
+  float: right;
+  margin-top: 50px;
+  margin-right: 250px;
+  margin-bottom: 85px;
+  border-radius: 25px;
+}
+
 .fala-camila {
   margin-left: 250px;
   line-height: 32px;
@@ -7774,7 +7781,6 @@ td.ui-datepicker-current-day {}
   font-size: 17px;
   font-weight: 300;
   color: #404F54;
-
 }
 
 .negrito {
@@ -7833,7 +7839,7 @@ td.ui-datepicker-current-day {}
 .btn-uaauge {
   background-color: #ff9700;
   border: 3px solid #ff9700;
-  border-radius: 5px;
+  border-radius: 15px;
   padding-left: 30px;
   padding-right: 30px;
   padding-top: 5px;
@@ -7842,7 +7848,7 @@ td.ui-datepicker-current-day {}
   transition: 0, 5s all ease;
   text-decoration: none;
   font-weight: 600;
-
+  margin-left: 13px;
 }
 
 .btn-uaauge:hover {
