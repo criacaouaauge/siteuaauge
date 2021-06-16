@@ -7707,8 +7707,6 @@ td.ui-datepicker-current-day {}
 }
 
 .main-text-about {
-  margin-left: 250px;
-  margin-top: 25px;
   color: #ff9700;
   font-weight: 900;
   text-transform: none;
@@ -7716,9 +7714,6 @@ td.ui-datepicker-current-day {}
 }
 
 .main-text-about2 {
-  margin-top: 85px;
-  margin-left: 250px;
-  margin-bottom: 25px;
   color: #ff9700;
   font-weight: 900;
   text-transform: none;
@@ -7727,7 +7722,6 @@ td.ui-datepicker-current-day {}
 }
 
 .sub-text-about {
-  margin-left: 250px;
   font-weight: 700;
   line-height: 32px;
   color: #404040;
@@ -7762,10 +7756,8 @@ td.ui-datepicker-current-day {}
   width: auto;
   height: auto;
   float: right;
-  margin-top: 50px;
-  margin-right: 250px;
-  margin-bottom: 85px;
-  border-radius: 25px;
+  border-radius: 30px;
+  box-shadow: 1px 9px 8px 1px rgb(0 79 143 / 30%) !important;
 }
 
 .fala-camila {
@@ -7775,9 +7767,7 @@ td.ui-datepicker-current-day {}
 }
 
 .uaauges-definition {
-  margin-left: 250px;
   line-height: 32px;
-  padding-bottom: 50px;
   font-size: 17px;
   font-weight: 300;
   color: #404F54;
@@ -7832,8 +7822,6 @@ td.ui-datepicker-current-day {}
 
 .uaauge {
   width: 1170px;
-  margin-left: 250px;
-  margin-bottom: 20px;
 }
 
 .btn-uaauge {
@@ -7848,7 +7836,6 @@ td.ui-datepicker-current-day {}
   transition: 0, 5s all ease;
   text-decoration: none;
   font-weight: 600;
-  margin-left: 13px;
 }
 
 .btn-uaauge:hover {

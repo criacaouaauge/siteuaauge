@@ -560,7 +560,7 @@ function mobileMainMenu() {
   if (is_mobile_device() || (window.innerWidth < 768)) {
     if (is_set1) {
       $('.stick-wrapper').removeAttr('style');
-
+      $('body').addClass('mobile').removeClass('pc');
       // $('.mobile .sticky').css('position','static');
       // $('.mobile .stick-wrapper').css('position','static');
       $('.sticky .nav .switcher').css('display', 'block');
