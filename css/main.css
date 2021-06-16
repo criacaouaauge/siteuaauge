@@ -7642,6 +7642,13 @@ td.ui-datepicker-current-day {}
   justify-content: center;
 }
 
+
+.banner-top {
+  margin-bottom: 25px;
+  height: 250px;
+  width: auto;
+}
+
 .rodape {
   color: #56167f;
 }
@@ -7681,6 +7688,26 @@ td.ui-datepicker-current-day {}
   color: black;
 }
 
+.timelinein {
+  margin: 0px 50px;
+}
+
+.timelinein p{
+  text-align: center;
+  margin-top: 16px;
+  color: black;
+}
+
+.timelineout{
+  margin: 0px 50px;
+}
+
+.timelineout p{
+  text-align: center;
+  margin-top: 16px;
+  color: black;
+}
+
 .slick-prev:before,
 .slick-next:before {
   color: #ff9700 !important;
@@ -7699,18 +7726,22 @@ td.ui-datepicker-current-day {}
 }
 
 .intro-text {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 500;
   text-align: center;
-  padding-top: 25px;
+  padding-top: 55px;
   padding-bottom: 55px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+
 
 .main-text-about {
   color: #ff9700;
   font-weight: 900;
   text-transform: none;
   line-height: 32px;
+  margin-bottom: 25px;
 }
 
 .main-text-about2 {
@@ -7726,6 +7757,7 @@ td.ui-datepicker-current-day {}
   line-height: 32px;
   color: #404040;
   font-size: 23px;
+  margin-bottom: 25px;
 }
 
 .sub-text-about2 {
@@ -7740,11 +7772,11 @@ td.ui-datepicker-current-day {}
 .texts-about {
   display: inline;
   box-sizing: border-box;
+
 }
 
 .foto-camila {
-  width: auto;
-  height: auto;
+  width: 350px;
   float: right;
   border-radius: 30px;
   box-shadow: 1px 9px 8px 1px rgb(0 79 143 / 30%) !important;
@@ -7769,6 +7801,7 @@ td.ui-datepicker-current-day {}
   font-size: 17px;
   font-weight: 300;
   color: #404F54;
+  margin-bottom: 25px;
 }
 
 .negrito {
@@ -7804,13 +7837,19 @@ td.ui-datepicker-current-day {}
   margin: 25px;
 }
 
+.texto-visao {
+  margin: 25px;
+  padding-top: 17px;
+}
+
 .valores {
   margin-bottom: 65px;
 }
 
 
 .lista-lema {
-  color: rgb(163, 163, 163)
+  color: rgb(163, 163, 163);
+  padding-top: 45px;
 }
 
 .title-uaauges {
@@ -7842,5 +7881,3 @@ td.ui-datepicker-current-day {}
   color: white;
   transition: 0, 5s all ease;
 }
-
-.btn-orcamento span:hover {}
