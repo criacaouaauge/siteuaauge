@@ -203,14 +203,7 @@ body {
   width: 100%;
 }
 
-dl,
-dt,
-dd,
-ul,
-ol,
-li {
-  list-style: none;
-}
+
 
 table {
   width: 100%;
@@ -253,7 +246,6 @@ dt,
 dd,
 p,
 li {
-  font-size: 15px;
   font-weight: 900;
   line-height: 27px;
 }
@@ -774,7 +766,7 @@ img {
 }
 
 .nav .active-link {
-  color: #56167f;
+  color: #ff9700;
 }
 
 @media screen and (max-width: 980px) {
@@ -3356,7 +3348,7 @@ blockquote.blog-quote .quote-author {
   background: #8d8d8d;
   font-size: 40px;
   text-align: center;
-  color: #00e7b4;
+  color: #ff9700;
   transition: background 0.3s, color 0.3s;
   -ms-transition: background 0.3s, color 0.3s;
   -moz-transition: background 0.3s, color 0.3s;
@@ -7644,7 +7636,6 @@ td.ui-datepicker-current-day {}
 
 
 .banner-top {
-  margin-bottom: 25px;
   height: 250px;
   width: auto;
 }
@@ -7692,17 +7683,17 @@ td.ui-datepicker-current-day {}
   margin: 0px 50px;
 }
 
-.timelinein p{
+.timelinein p {
   text-align: center;
   margin-top: 16px;
   color: black;
 }
 
-.timelineout{
+.timelineout {
   margin: 0px 50px;
 }
 
-.timelineout p{
+.timelineout p {
   text-align: center;
   margin-top: 16px;
   color: black;
@@ -7729,11 +7720,17 @@ td.ui-datepicker-current-day {}
   font-size: 25px;
   font-weight: 500;
   text-align: center;
-  padding-top: 55px;
-  padding-bottom: 55px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  vertical-align: middle;
+  padding-top: 40px;
+  margin-bottom: 16px;
 }
 
+.intro-box{
+  width: auto;
+  height: 150px;
+  background-color: white;
+  box-shadow: 8px 8px 21px 8px rgba(0, 0, 0, 0.09);
+}
 
 
 .main-text-about {
@@ -7880,4 +7877,173 @@ td.ui-datepicker-current-day {}
   border: 3px solid #56167f;
   color: white;
   transition: 0, 5s all ease;
+}
+
+.rectangle-servicos {
+  height: 550px;
+  width: auto;
+  box-shadow: 8px 8px 21px 8px rgba(0, 0, 0, 0.09);
+  border-bottom: 20px solid #a71989;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  margin-right: 30px;
+  margin-top: 25px;
+}
+
+.rectangle-servicos2 {
+  height: 550px;
+  width: auto;
+  box-shadow: 8px 8px 21px 8px rgba(0, 0, 0, 0.09);
+  border-bottom: 20px solid #ff9700;
+  border-radius: 25px;
+  margin-right: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.icones-servicos {
+  width: 75px;
+  border-radius: 15px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.icones-servicos {
+  width: 75px;
+  border-radius: 15px;
+  margin-left: 25px;
+  margin-top: 25px;
+}
+
+.servicos-title{
+  font-weight: 900;
+  margin-left: 25px;
+  margin-top: 15px;
+  color: #a71989;
+  line-height: 30px;
+  font-family: 'balooregular';
+}
+
+.servicos-telecom{
+  font-weight: 900;
+  margin-top: 40px;
+  color: #a71989;
+  line-height: 45px;
+  font-family: 'balooregular';
+  font-size: 45px;
+}
+
+.servicos-telecom2{
+  font-weight: 900;
+  margin-top: 40px;
+  color: #ff9700;
+  line-height: 45px;
+  font-family: 'balooregular';
+  font-size: 45px;
+  transition: 0.5s ease;
+}
+
+.servicos-title2{
+  font-weight: 900;
+  margin-left: 25px;
+  margin-top: 15px;
+  color: #ff9700;
+  line-height: 30px;
+  font-family: 'balooregular';
+  transition: 0.5s ease;
+}
+
+.telecom-bg{
+  background-color: #ececec;
+  height: 1080px;
+  width: auto;
+}
+
+.rectangle-telecom{
+  background-color: white;
+  height: 280px;
+  width: auto;
+  box-shadow: 8px 8px 21px 8px rgba(0, 0, 0, 0.09);
+  border-top: 15px solid #a71989;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 25px;
+  transition: 0.5s ease;
+}
+
+.rectangle-telecom2{
+  background-color: white;
+  height: 280px;
+  width: auto;
+  box-shadow: 8px 8px 21px 8px rgba(0, 0, 0, 0.09);
+  border-top: 15px solid #ff9700;
+  border-radius: 25px;
+  margin-bottom: 25px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-top: 25px;
+  transition: 0.5s ease;
+}
+
+.box-telecom{
+  background-color: #ececec;
+  padding-top: 100px;
+  padding-bottom: 185px;
+}
+
+.icones-telecom {
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75px;
+  margin-top: 35px;
+
+}
+
+.icones-telecom:hover{
+  transition: 0.5s ease;
+}
+
+.rectangle-telecom:hover{
+  border-top: 15px solid #ff9700;
+  transition: 0.5s ease;
+}
+
+.rectangle-telecom2:hover{
+  border-top: 15px solid #a71989;
+  transition: 0.5s ease;
+  color: #a71989;
+}
+.servicos-telecom2:hover{
+  color: #a71989;
+  transition: 0.5s ease;
+}
+
+.servicos-telecom:hover{
+  color: #ff9700;
+  transition: 0.5s ease;
+}
+
+.box-contato{
+  width: 500px;
+  margin-bottom: 180px;
+  margin-left: 80px;
+}
+
+.title-contato{
+  color: #ff9700;
+  font-weight: 900;
+  font-size: 45px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.sub-title-contato{
+  color: #404F54;
+  text-transform: none;
+  font-size: 25px;
+  margin-bottom: 40px;
 }
