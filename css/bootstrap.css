@@ -4774,6 +4774,15 @@ textarea.form-control-lg {
   color: #cdcdcd;
 }
 
+.list-group-numbered2 {
+  list-style-type: inside;
+}
+.list-group-numbered2 > li::before {
+  content: ". ";
+  color: #ff9700;
+}
+
+
 .list-group-item-action {
   width: 100%;
   color: #495057;
