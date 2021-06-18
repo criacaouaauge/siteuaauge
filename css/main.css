@@ -7608,7 +7608,7 @@ td.ui-datepicker-current-day {}
   font-weight: 900;
   width: auto;
   height: 250px;
-  padding: 25px;
+  padding: 45px;
   display: flexbox;
   justify-content: center;
 }
@@ -7678,6 +7678,24 @@ td.ui-datepicker-current-day {}
 
 .banner-frases {
   margin: 0px 50px;
+}
+
+.box-parceiros-slide{
+  background-color: #404F54;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.box-parceiros-slide h2{
+  margin-bottom: 40px;
+  font-weight: 900;
+  color: white;
+  text-transform: none;
+}
+
+.parceiros-slide img{
+  width: 200px;
+  border-radius: 25px;
 }
 
 .banner-frases p {
@@ -8084,4 +8102,53 @@ td.ui-datepicker-current-day {}
 
 .mapa-contato{
   margin: 140px 0px 0px 85px;
+}
+
+.logos-parceiros{
+  width: 250px;
+  border-radius: 25px;
+  margin-bottom: 10px;
+}
+
+.box-parceiros{
+  margin-top: 85px;
+}
+.coluna-parceiros{
+  margin-bottom: 54px;
+}
+
+.title-parceiro{
+  font-weight: 900;
+  margin-bottom: 0px !important;
+  margin-top: 5px;
+  font-family: 'balooregular';
+  color: #ff9700;
+}
+
+.frase-parceiros{
+  box-shadow: 8px 8px 21px 8px rgba(0, 0, 0, 0.09);
+  padding-bottom: 25px;
+}
+.frase-parceiros p{
+  margin: -3px;
+}
+
+.frase-parceiros cite{
+  color: #404F54;;
+}
+
+.fotos-eventos-parceiros{
+
+}
+
+.fotos-eventos-parceiros img{
+  width: auto;
+  height: 250px;
+}
+.frase-parceiros-inferior{
+  padding-bottom: 25px;
+}
+
+.frase-parceiros-inferior p{
+  color: #404F54;
 }

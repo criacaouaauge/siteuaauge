@@ -4803,9 +4803,9 @@ textarea.form-control-lg {
   position: relative;
   display: block;
   padding-left: 10px;
-  color: #404f54;
-  font-weight: 700 !important;
-  font-size: 17px;
+  color: #a3a3a3;
+  font-weight: 900 !important;
+  font-size: 16px;
 }
 
 .list-group-item:first-child {
