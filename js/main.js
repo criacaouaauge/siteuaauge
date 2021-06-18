@@ -519,11 +519,6 @@ $(document).ready(function () {
 /**/
 /* sticky menu */
 /**/
-$('.stick-wrapper').css({
-  'height': $('.sticky').innerHeight(),
-  'top': -$('.sticky').innerHeight()
-})
-
 function sticky() {
 
   var orgElementPos = $('.stick-wrapper').offset();
@@ -536,28 +531,28 @@ function sticky() {
   var widthOrgElement = orgElement.css('width');
 
 
-  if (!is_mobile_device() && (window.innerWidth > 768)) {
+  if ( !is_mobile_device() && (window.innerWidth > 768)) {
     if ($(window).scrollTop() >= (orgElementTop)) {
       // scrolled past the original position;sticky element.
-      if ($(window).scrollTop() >= (orgElementTop + $('.sticky').innerHeight())) {
-        $('.sticky').css('position', 'fixed').css('background-color', 'rgba(255, 255, 255, 0.99)');
-      } else {
-        $('.sticky').css('position', 'fixed').css('background-color', 'rgba(255, 255, 255, 1)');
+      if ( $(window).scrollTop() >= ( orgElementTop + $('.sticky').innerHeight() ) ) {
+        $('.sticky').css('position','fixed').css('background-color','rgba(255, 255, 255, 0.99)');
+      }
+      else {
+        $('.sticky').css('position','fixed').css('background-color','rgba(255, 255, 255, 1)');
       }
       //element should always have same top position and width.
-      $('.sticky').css('position', 'fixed').css('top', '0');
+      $('.sticky').css('position','fixed').css('top','0');
     } else {
-      if (!$('body.pc').length) {
+      if ( !$('body.pc').length ) {
         $('body').addClass('pc');
       }
-      $('.sticky').css('position', 'relative').css('background-color', 'rgba(255, 255, 255, 1)');
-    }
+      // not scrolled past the menu; only show the original position.
+      $('.sticky').css('position','relative').css('background-color','rgba(255, 255, 255, 1)');
+    }}
   }
-}
 window.is_set1 = true;
-
-function mobileMainMenu() {
-  if (is_mobile_device() || (window.innerWidth < 768)) {
+function mobileMainMenu(){
+  if( is_mobile_device() || (window.innerWidth < 768) ) {
     if (is_set1) {
       $('.stick-wrapper').removeAttr('style');
       $('body').addClass('mobile').removeClass('pc');
@@ -566,17 +561,17 @@ function mobileMainMenu() {
       $('.sticky .nav .switcher').css('display', 'block');
       $('.mobile .nav').css({
         'position': 'absolute',
-        'top': '10px',
-        'z-index': '100',
-        'right': '10px'
+        'top':'10px',
+        'z-index':'100',
+        'right':'10px'
       });
       $('nav>ul>li>ul').parent().addClass('has_child');
       $('.nav>ul').hide();
-      $(".mobile .nav .has_child").append("<i></i>");
-      $('.nav .has_child i').on("click", function () {
+      $( ".mobile .nav .has_child" ).append("<i></i>");
+      $('.nav .has_child i').on( "click", function() {
         /*if( $(this).parent().children('ul').length ) {*/
-        $(this).toggleClass('active');
-        $(this).parent().children('ul').slideToggle('fast');
+          $(this).toggleClass('active');
+          $(this).parent().children('ul').slideToggle('fast');
         /*}*/
       });
       is_set1 = false;
@@ -584,25 +579,23 @@ function mobileMainMenu() {
   } else {
     $('body').removeClass('mobile').addClass('pc');
     $('.nav .has_child i').remove();
-    $('.stick-wrapper').css('position', 'relative');
+    $('.stick-wrapper').css('position','relative');
     $('.has_child>ul').removeAttr('style');
     $('.stick-wrapper').css({
-      'height': $('.sticky').innerHeight(),
-      'top': -$('.sticky').innerHeight()
-    });
+  'height' : $('.sticky').innerHeight(),
+  'top' : - $('.sticky').innerHeight()
+  });
     $('.nav').removeAttr('style');
-    $(".nav li .has_child").remove();
-    $('.sticky .nav .switcher').css('display', 'none');
-    $('.nav>ul').css({
-      "display": "block"
-    });
+    $( ".nav li .has_child").remove();
+    $('.sticky .nav .switcher').css('display', 'block');
+    $('.nav>ul').css({"display":"block"});
     return is_set1 = true;
   }
 }
-$('.nav .switcher').on("click", function () {
-  if ($(this).next('ul').length) {
+$('.nav .switcher').on( "click", function() {
+  if( $(this).next('ul').length ) {
     $(this).toggleClass('color');
-    $(this).next('ul').slideToggle('fast').css("display", "block");
+    $(this).next('ul').slideToggle('fast').css("display","block");
     return false;
   }
 });

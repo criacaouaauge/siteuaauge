@@ -1,59 +1,42 @@
 <?php
-if(!session_id()) {
-	session_start();
+if (isset($_POST['BTEnvia'])) {
+
+ //Variaveis de POST, Alterar somente se necessário
+ //====================================================
+ $nome = $_POST['nome'];
+ $email = $_POST['email'];
+ $telefone = $_POST['telefone'];
+ $mensagem = $_POST['mensagem'];
+ //====================================================
+
+ //REMETENTE --> ESTE EMAIL TEM QUE SER VALIDO DO DOMINIO
+ //====================================================
+ $email_remetente = "gusperandio2@gmail.com"; // deve ser uma conta de email do seu dominio
+ //====================================================
+
+ //Configurações do email, ajustar conforme necessidade
+ //====================================================
+ $email_destinatario = "gusperandio2@gmail.com"; // pode ser qualquer email que receberá as mensagens
+ $email_reply = "$email";
+ $email_assunto = "Contato formmail"; //
+ $email_conteudo = "Nome = $nome \n";
+ $email_conteudo .= "Email = $email \n";
+ $email_conteudo .= "Telefone = $telefone \n";
+ $email_conteudo .= "Mensagem = $mensagem \n";
+ //====================================================
+
+ //Seta os Headers (Alterar somente caso necessario)
+ //====================================================
+ $email_headers = implode ( "\n",array ( "From: $email_remetente", "Reply-To: $email_reply", "Return-Path: $email_remetente","MIME-Version: 1.0","X-Priority: 3","Content-Type: text/html; charset=UTF-8" ) );
+ //====================================================
+
+ //Enviando o email
+ //====================================================
+ if (mail ($email_destinatario, $email_assunto, nl2br($email_conteudo), $email_headers)){
+ echo "</b>E-Mail enviado com sucesso!</b>";
+ }
+ else{
+ echo "</b>Falha no envio do E-Mail!</b>"; }
+ //====================================================
 }
-error_reporting(0);
-
-if (isset($_REQUEST['action'])) {
-    if ($_REQUEST['action'] == "email_server_responce") {
-        $ourMail = ""; //Insert your email address here
-        $pre_messagebody_info = "";
-        $errors = array();
-        $data = array();
-        parse_str($_REQUEST['values'], $data);
-
-        $result = array(
-            "is_errors" => 0,
-            "info" => ""
-        );
-		
-		if (!empty($errors)) {
-            $result['is_errors'] = 1;
-            $result['info'] = $errors;
-            echo json_encode($result);
-            exit;
-        }
-
-        $headers = 'MIME-Version: 1.0' . "\r\n";
-        $headers.= 'Content-type: text/html; charset=UTF-8' . "\r\n";
-        $headers.= "From: ".$data['email']."\r\n";
-		$pre_messagebody_info.="<strong>Name</strong>" . ": " . $data['name'] . "<br />";
-        if (! empty($data['email']) ) {
-            $pre_messagebody_info.="<strong>E-mail</strong>" . ": " . $data['email'] . "<br />";
-        }
-        if (! empty($data['phone']) ) {
-            $pre_messagebody_info.="<strong>Phone</strong>" . ": " . $data['phone'] . "<br />";
-        }
-        if (! empty($data['website']) ) {
-            $pre_messagebody_info.="<strong>website</strong>" . ": " . $data['website'] . "<br />";
-        }
-        if (! empty($data['url']) ) {
-			$pre_messagebody_info.="<strong>URL</strong>" . ": " . $data['url'] . "<br />";
-		}
-        if (empty($data['subject']) ) {
-			$subject = "Website Contact Form";
-		} else {
-			$subject = $data['subject'];
-		}
-        $after_message = "\r\n<br />--------------------------------------------------------------------------------------------------\r\n<br /> This mail was sent via contact form";
-
-        if (mail($ourMail, $subject, $pre_messagebody_info .= $category . "<strong>Message</strong>" . ": " . $data['message'] .$after_message, $headers)) {
-            $result["info"] = "success";
-        } else {
-            $result["info"] = "server_fail";
-        }
-        echo json_encode($result);
-        exit;
-    }
-} ?>
-
+?>

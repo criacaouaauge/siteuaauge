@@ -4599,6 +4599,7 @@ section.text-section.parallaxed:after {
 footer {
   position: relative;
   padding: 8px 0 5px 0;
+  margin-top: auto;
 }
 
 .footer {
@@ -7667,7 +7668,13 @@ td.ui-datepicker-current-day {}
   border: 3px solid #56167f;
   transition: 1s all ease;
 }
-
+.banner-index{
+  background-color: #a3a3a3;
+  margin: 0px 50px;
+}
+.banner-index img{
+  width: 100%;
+}
 
 .banner-frases {
   margin: 0px 50px;
@@ -7676,6 +7683,7 @@ td.ui-datepicker-current-day {}
 .banner-frases p {
   text-align: center;
   margin-top: 16px;
+  margin-bottom: 16px;
   color: black;
 }
 
@@ -8031,13 +8039,13 @@ td.ui-datepicker-current-day {}
   width: 500px;
   margin-bottom: 180px;
   margin-left: 80px;
+  margin-top: 35px;
 }
 
 .title-contato{
   color: #ff9700;
   font-weight: 900;
   font-size: 45px;
-  height: 50px;
   margin-bottom: 20px;
 }
 
@@ -8046,4 +8054,34 @@ td.ui-datepicker-current-day {}
   text-transform: none;
   font-size: 25px;
   margin-bottom: 40px;
+}
+
+.icon-contatos{
+  color: #ff9700;
+}
+
+.contatos{
+  font-weight: 900;
+  margin-left: 15px;
+  color: #a3a3a3;
+}
+
+.box-form{
+  margin-top: 45px;
+}
+
+.form-contato{
+  margin-right: 25px;
+}
+
+.btn-contato{
+  padding-left: 217px !important;
+  padding-right: 217px !important;
+  margin-top: 25px;
+  background-color: #ff9700 !important;
+  transition: 0.5s ease;
+}
+
+.mapa-contato{
+  margin: 140px 0px 0px 85px;
 }
