@@ -155,6 +155,36 @@
     </div>
   </section>
 
+  <div class="fotos-eventos-parceiros img-fluid">
+    <div>
+      <img src="/images/fotos-marcantes.jpg">
+    </div>
+    <div>
+      <img src="/images/fotos-marcantes2.jpg">
+    </div>
+    <div>
+      <img src="/images/fotos-marcantes.jpg">
+    </div>
+    <div>
+      <img src="/images/fotos-marcantes2.jpg">
+    </div>
+    <div>
+      <img src="/images/fotos-marcantes.jpg">
+    </div>
+    <div>
+      <img src="/images/fotos-marcantes2.jpg">
+    </div>
+    <div>
+      <img src="/images/fotos-marcantes.jpg">
+    </div>
+    <div>
+      <img src="/images/fotos-marcantes2.jpg">
+    </div>
+    <div>
+      <img src="/images/fotos-marcantes.jpg">
+    </div>
+  </div>
+
 
 
 
@@ -222,9 +252,13 @@
   <script src="js/retina.min.js"></script>
 
   <script>
-    $(document).ready(function(){
-
-    }
+    $(document).ready(function () {
+      $('.fotos-eventos-parceiros').slick({
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+      });
+    });
   </script>
 
   <!--/ scripts -->
