@@ -7582,6 +7582,8 @@ td.ui-datepicker-current-day {}
   box-shadow: 8px 8px 21px 8px rgb(0 79 143 / 35%) !important;
   border-radius: 50px;
   margin-top: 20px;
+  width: 450px;
+  height: auto;
 }
 
 .planos a {
