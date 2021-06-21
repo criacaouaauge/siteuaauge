@@ -3677,7 +3677,7 @@ body {
 
 .js .cd-h-timeline {
   opacity: 0;
-  transition: opacity 0.2s
+  transition: opacity 0.2s;
 }
 
 .js .cd-h-timeline--loaded {
@@ -3832,6 +3832,7 @@ body {
 }
 .foto-timeline{
   border-radius: 25px;
+  box-shadow: 8px 8px 21px 8px rgba(0, 0, 0, .3);
 }
 .js .cd-h-timeline__navigation::after {
   content: '';
