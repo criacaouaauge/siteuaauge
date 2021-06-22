@@ -2938,6 +2938,7 @@ textarea.form-control-lg {
   color: #fff;
   background-color: #ff9700;
   border-color: #ff9700 !important;
+  transition: ease 1s;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.25rem rgba(255, 151, 0, 0.9);
@@ -3177,11 +3178,13 @@ textarea.form-control-lg {
 }
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
   box-shadow: 0 0 0 0.25rem rgba(255, 151, 0, 0.5);
+  transition: ease 1s;
 }
 .btn-check:checked + .btn-outline-primary, .btn-check:active + .btn-outline-primary, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.dropdown-toggle.show {
   color: #fff;
   background-color: #ff9700;
   border-color: #ff9700;
+  transition: ease 1s;
 }
 .btn-check:checked + .btn-outline-primary:focus, .btn-check:active + .btn-outline-primary:focus, .btn-outline-primary:active:focus, .btn-outline-primary.active:focus, .btn-outline-primary.dropdown-toggle.show:focus {
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.5);
@@ -3189,6 +3192,7 @@ textarea.form-control-lg {
 .btn-outline-primary:disabled, .btn-outline-primary.disabled {
   color: #0d6efd;
   background-color: transparent;
+  transition: ease 1s;
 }
 
 .btn-outline-secondary {
@@ -3217,16 +3221,18 @@ textarea.form-control-lg {
 }
 
 .btn-outline-success {
-  color: #198754;
-  border-color: #198754;
+  color: #ff9700;
+  border-color: #ff9700;
+  transition: ease 0.5s;
 }
 .btn-outline-success:hover {
   color: #fff;
-  background-color: #198754;
-  border-color: #198754;
+  background-color: #ff9700;
+  border-color: #ff9700;
+  transition: ease 0.5s;
 }
 .btn-check:focus + .btn-outline-success, .btn-outline-success:focus {
-  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.5);
 }
 .btn-check:checked + .btn-outline-success, .btn-check:active + .btn-outline-success, .btn-outline-success:active, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show {
   color: #fff;
@@ -3426,6 +3432,7 @@ textarea.form-control-lg {
 
 .dropdown-toggle {
   white-space: nowrap;
+  transition: ease 1s;
 }
 .dropdown-toggle::after {
   display: inline-block;
@@ -3436,6 +3443,7 @@ textarea.form-control-lg {
   border-right: 0.3em solid transparent;
   border-bottom: 0;
   border-left: 0.3em solid transparent;
+  transition: ease 1s;
 }
 .dropdown-toggle:empty::after {
   margin-left: 0;
@@ -3446,7 +3454,6 @@ textarea.form-control-lg {
   z-index: 1000;
   display: none;
   min-width: 10rem;
-  padding: 0.5rem 0;
   margin: 0;
   font-size: 1rem;
   color: #212529;
@@ -3651,29 +3658,34 @@ textarea.form-control-lg {
   display: block;
   width: 100%;
   clear: both;
-  font-weight: 400;
+  font-weight: 600;
   color: #212529;
   text-align: inherit;
   text-decoration: none;
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+  padding: 10px;
   border-radius: 15px;
+  transition: ease 0.5s;
 }
 
 .dropdown-item.active, .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #0d6efd;
+  background-color: #ff9700;
+  transition: ease 0.1s;
 }
 .dropdown-item.disabled, .dropdown-item:disabled {
   color: #adb5bd;
   pointer-events: none;
   background-color: transparent;
+  transition: ease 0.1s;
 }
 
 .dropdown-menu.show {
   display: block;
+  transition: ease 1s;
 }
 
 .dropdown-header {
@@ -3683,12 +3695,14 @@ textarea.form-control-lg {
   font-size: 0.875rem;
   color: #6c757d;
   white-space: nowrap;
+  transition: ease 1s;
 }
 
 .dropdown-item-text {
   display: block;
   padding: 0.25rem 1rem;
   color: #212529;
+  transition: ease 1s;
 }
 
 .dropdown-menu-dark {
@@ -3825,9 +3839,10 @@ textarea.form-control-lg {
 }
 
 .nav-link {
+  margin: 5px;
   display: block;
   padding: 0.5rem 1rem;
-  color: #ff9700;
+  color: black;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
@@ -3837,7 +3852,8 @@ textarea.form-control-lg {
   }
 }
 .nav-link:hover, .nav-link:focus {
-  color: #0a58ca;
+  color: #ff9700;
+  transition: ease 0.5s;
 }
 .nav-link.disabled {
   color: #6c757d;
@@ -3892,7 +3908,6 @@ textarea.form-control-lg {
   flex: 1 1 auto;
   text-align: center;
 }
-
 .nav-justified > .nav-link,
 .nav-justified .nav-item {
   flex-basis: 0;
@@ -3954,6 +3969,7 @@ textarea.form-control-lg {
 }
 .navbar-nav .dropdown-menu {
   position: static;
+  padding: 5px;
 }
 
 .navbar-text {
@@ -4167,10 +4183,10 @@ textarea.form-control-lg {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0, 0.55);
+  font-weight: 600;
 }
 .navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
-  color: rgba(0, 0, 0, 0.7);
+
 }
 .navbar-light .navbar-nav .nav-link.disabled {
   color: rgba(0, 0, 0, 0.3);

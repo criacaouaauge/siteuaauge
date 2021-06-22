@@ -553,7 +553,8 @@ img {
 }
 
 .sub-menu a:hover {
-  background-color: #56167f;
+  background-color: #ff9700;
+  color: white;
 }
 
 .nav .active {
@@ -7744,7 +7745,7 @@ td.ui-datepicker-current-day {}
   border-radius: 25px;
 }
 
-.sub-menu a {
+.sub-menu{
   border-radius: 25px;
 }
 

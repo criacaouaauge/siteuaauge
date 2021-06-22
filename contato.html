@@ -23,40 +23,50 @@
 
 <body class="main-page pc">
   <header id="home">
-    <div class="stick-wrapper">
-      <div class="sticky clear">
-        <div class="grid-row">
-          <div class="logo">
-            <a href="index.html"><img src="images/logo.png" alt=""></a>
-          </div>
-          <nav class="nav" style="font-family: 'DIN Pro';">
-            <ul class="clear">
-              <li class="nav-item dropdown">
-                <a href="index.html">Bem-Vindo</a>
-                <ul class="sub-menu">
-                  <li class="dropdown-item"><a href="uaauge.html"><span>Prazer, Somos a Uaauge</span></a></li>
-                  <li class="dropdown-item"><a href="lema.html"><span>Nosso Lema</span></a></li>
-                  <li class="dropdown-item"><a href="uaauges.html"><span>Os Uaauges</span></a></li>
-                  <li><a href="espaco.html"><span>Espaço Uaauge</span></a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a href="#">Soluções</a>
-                <ul class="sub-menu">
-                  <li><a href="serviços.html"><span>Serviços</span></a></li>
-                  <li><a href="telecom.html"><span>Para Telecom</span></a></li>
-                </ul>
-              </li>
-              <li><a href="uau.html">Uau</a></li>
-              <li><a href="inspire.html">Inspire</a></li>
-              <li><a href="contato.html">Contato</a></li>
-              <li class="last"><a class="btn-orcamento" href="orcamento.html"><span>Quero fazer um orçamento</span></a>
-              </li>
-            </ul>
-          </nav>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <a class="navbar-brand mx-5" href="index.html"><img src="images/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Bem-vindo
+              </a>
+              <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="uaauge.html">Prazer, somos a Uaauge</a></li>
+                <li><a class="dropdown-item" href="lema.html">Nosso Lema</a></li>
+                <li><a class="dropdown-item" href="uaauges.html">Os Uaauges</a></li>
+                <li><a class="dropdown-item" href="espaco.html">Espaço Uaauge</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Soluções
+              </a>
+              <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="serviços.html">Serviços</a></li>
+                <li><a class="dropdown-item" href="telecom.html">Para Telecom</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="uau.html">Uau</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inspire.html">Inspire</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="inspire.html">Contato</a>
+            </li>
+            <form action="contato.html" class="d-flex">
+              <button class="btn btn-outline-success">Quero fazer um Orçamento</button>
+            </form>
+          </ul>
         </div>
       </div>
-    </div>
+    </nav>
   </header>
   <main>
     <div class="img-fluid">
@@ -84,15 +94,15 @@
           <form>
             <div class="row justify-content-evenly box-form">
               <div class="col form-contato">
-                <input type="text" class="form-control" placeholder="Qual seu nome?*">
+                <input type="text" class="form-control" placeholder="Qual seu nome?">
               </div>
               <div class="col form-contato">
-                <input type="text" class="form-control" placeholder="Seu email?*">
+                <input type="text" class="form-control" placeholder="Seu email?">
               </div>
             </div>
             <div class="row box-form">
               <div class="col form-contato">
-                <input type="text" class="form-control" placeholder="Qual seu Telefone?">
+                <input type="text" class="form-control" required placeholder="Qual seu Telefone?">
               </div>
               <div class="col form-contato">
                 <input type="text" class="form-control" placeholder="Qual o departamento?">
@@ -100,7 +110,7 @@
             </div>
             <div class="row box-form">
               <div class="col form-contato">
-                <textarea class="form-control" placeholder="Como a Uaauge pode te ajudar?*" rows="3"></textarea>
+                <textarea class="form-control" placeholder="Como a Uaauge pode te ajudar?" rows="3"></textarea>
               </div>
             </div>
             <div class="row">
@@ -174,6 +184,7 @@
   </footer>
 
   <!-- script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
   <script type="text/javascript"
     src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox_packed.js"></script>
