@@ -3454,15 +3454,13 @@ textarea.form-control-lg {
   z-index: 1000;
   display: none;
   min-width: 10rem;
-  margin: 0;
   font-size: 1rem;
   color: #212529;
   text-align: left;
   list-style: inside;
   background-color: #fff;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 0.25rem;
+  border-radius: 15px;
 }
 .dropdown-menu[data-bs-popper] {
   top: 100%;
@@ -3969,7 +3967,6 @@ textarea.form-control-lg {
 }
 .navbar-nav .dropdown-menu {
   position: static;
-  padding: 5px;
 }
 
 .navbar-text {
