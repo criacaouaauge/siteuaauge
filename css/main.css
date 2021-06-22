@@ -7608,14 +7608,10 @@ td.ui-datepicker-current-day {}
 }
 
 .planos-text {
-  background-image: linear-gradient(to right, #00c3ff, #ffff1c);
   font-family: 'DIN PRO';
   font-weight: 900;
-  width: auto;
-  height: 250px;
-  padding: 45px;
-  display: flexbox;
-  justify-content: center;
+  color: white;
+  margin-bottom: 25px;
 }
 
 .planos-text-2 {
@@ -8708,4 +8704,8 @@ input[data-description="2000"]:checked~#timeline-descriptions-wrapper p[data-des
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+.planos-col{
+  background-color: #fa9100;
+  padding: 50px;
 }
