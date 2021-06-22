@@ -201,7 +201,7 @@ sup {
 }
 
 a {
-  color: #0d6efd;
+
   text-decoration: none;
 }
 a:hover {
@@ -3658,6 +3658,7 @@ textarea.form-control-lg {
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+  border-radius: 15px;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -3826,7 +3827,7 @@ textarea.form-control-lg {
 .nav-link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #0d6efd;
+  color: #ff9700;
   text-decoration: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
 }
