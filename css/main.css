@@ -504,7 +504,7 @@ img {
 /* sticky menu */
 /**/
 .stick-wrapper {
-  position: relative;
+  position: sticky;
   background-color: #ffffff;
 }
 
@@ -536,7 +536,7 @@ img {
 }
 
 .mobile .sticky .splash {
-  display: none;
+  display: sticky;
 }
 
 .nav {
@@ -616,9 +616,6 @@ img {
   -moz-box-shadow: 0px 14px 19px 0px rgba(0, 0, 0, 0.09);
   box-shadow: 0px 14px 19px 0px rgba(0, 0, 0, 0.09);
 }
-.pc .sticky .nav ul ul li{
-  border-bottom: 1px solid #ebebeb;
-}
 
 
 .pc .sticky .nav ul ul a {
@@ -653,7 +650,6 @@ img {
 
 .pc .sticky .nav .left ul li:hover>ul {
   left: -100%;
-  top: 0;
 }
 
 .pc .sticky .nav>ul>.left:hover>ul {
@@ -665,9 +661,10 @@ img {
 /*mobile menu*/
 /**/
 .mobile .sticky .logo {
-  left: 50%;
-	float: none;
-	display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 100;
 }
 
 .mobile .sticky .nav>ul ul {
@@ -678,10 +675,9 @@ img {
 }
 
 .mobile .sticky .nav {
-  float: none;
-	font-size: 18px;
-	width: 60%;
-	margin: auto;
+  font-size: 18px;
+  width: 60%;
+  margin: auto;
 }
 
 .mobile .sticky .nav>ul {
@@ -694,11 +690,10 @@ img {
 }
 
 .mobile .sticky .nav ul {
-  display: none;
-	position: relative;
-	top: 42px;
-	background-color: white;
-	overflow: hidden;
+  display: absolute;
+  position: relative;
+  top: 42px;
+  background-color: white;
 }
 
 .mobile .sticky .nav ul li {
@@ -730,7 +725,7 @@ img {
 }
 
 .mobile .sticky .nav ul li:hover {
-  background-color: #ff9700;
+  background-color: #00e7b4;
 }
 
 .mobile .sticky .nav:hover>a {
@@ -753,9 +748,10 @@ img {
 }
 
 .mobile .nav .has_child>i:after {
+  content: '\f105';
   font-family: FontAwesome;
   display: inline-block;
-  color: #56167f;
+  color: #ff4a81;
   margin-right: 20px;
   float: right;
   -webkit-transition: all 0.3s;
