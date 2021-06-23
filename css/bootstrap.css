@@ -2155,15 +2155,17 @@ progress {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  border-radius: 0.25rem;
+  border-radius: 5px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 .form-control2{
   margin-top: 25px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
   display: block;
   width: 100%;
-  padding: 9px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 15px;
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5;
@@ -2176,6 +2178,14 @@ progress {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
+.form-control3{
+  margin-top: 25px;
+  margin-bottom: 15px;
+  padding-top: 25px;
+  padding-left: 150px;
+}
+
 @media (prefers-reduced-motion: reduce) {
   .form-control {
     transition: none;
@@ -3021,6 +3031,20 @@ textarea.form-control-lg {
   box-shadow: 8px 8px 21px 8px rgba(0, 0, 0, 0.2);
 }
 
+.btn-third3{
+  color: white;
+  background-color: #fa9100;
+  border-radius: 25px;
+  transition: ease 0.5s;
+  padding: 9px 25px 9px 25px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn-third3:hover{
+  background-color: #8336D6;
+  transition: ease 0.5s;
+  box-shadow: 8px 8px 21px 8px rgba(0, 0, 0, 0.2);
+}
 .btn-success {
   color: #fff;
   background-color: #198754;

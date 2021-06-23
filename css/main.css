@@ -8259,11 +8259,9 @@ select {
 }
 
 input {
-  width: 25px;
-  height: 25px;
-  background-color: #2C3E50;
+  background-color: #ff9700;
   position: relative;
-  border-radius: 50%;
+  border-radius: 35px;
   display: block;
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -8704,8 +8702,8 @@ input[data-description="2000"]:checked~#timeline-descriptions-wrapper p[data-des
   }
 }
 .planos-col{
-  background-color: #fa9100;
   padding: 50px;
+  width: 50px;
 }
 
 .scale-up-center {
@@ -8745,11 +8743,9 @@ input[data-description="2000"]:checked~#timeline-descriptions-wrapper p[data-des
             transform: scale(1);
   }
 }
-
 .curriculo{
-  width: 250px;
+  width: 600px;
 }
-
 
 .curriculo h2{
   color: #fa9100;
@@ -8761,8 +8757,23 @@ input[data-description="2000"]:checked~#timeline-descriptions-wrapper p[data-des
   font-weight: 900;
   font-family: 'quosmbold';
 }
-
+.box-curriculo{
+  width: 650px;
+  margin-top: 20px;
+}
 
 .form-contato{
   margin: 25px;
+}
+
+.icon-sorriso{
+  width: 50px ;
+  display: inline;
+  margin-left: 15px;
+}
+.form-cv{
+  margin-left: 10px;
+}
+.container-cv{
+  margin-bottom: 65px;
 }
