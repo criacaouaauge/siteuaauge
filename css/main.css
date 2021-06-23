@@ -135,7 +135,7 @@ td {
   outline: none;
   background: none;
   font-size: 100%;
-  font-family: 'DIN Pro';
+  font-family: 'quosmregular';
   vertical-align: baseline;
 }
 
@@ -224,7 +224,7 @@ i {
 /* defaults */
 /**/
 body {
-  font-family: 'Din Pro';
+  font-family: 'quosmregular';
   color: #6d6d6d;
 }
 
@@ -790,6 +790,7 @@ img {
 }
 
 .title {
+  font-family: 'quosmbold';
   margin-bottom: 40px;
   font-size: 54px;
   font-weight: 800;
@@ -2553,7 +2554,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 .team-item h2 {
-  font-family: 'DIN PRO';
+  font-family: 'quosmregular';
   font-size: 15px;
   margin-top: 5px;
   margin-bottom: 0;
@@ -3785,7 +3786,7 @@ blockquote.blog-quote .quote-author {
 }
 
 .page-title {
-  font-family: 'DIN PRO';
+  font-family: 'quosmregular';
   font-weight: 100;
   font-style: normal;
   position: relative;
@@ -7608,15 +7609,15 @@ td.ui-datepicker-current-day {}
 }
 
 .planos-text {
-  font-family: 'DIN PRO';
-  font-weight: 900;
+  font-family: 'quosmbold';
+  font-weight: bolder;
   color: white;
   margin-bottom: 25px;
 }
 
 .planos-text-2 {
   background-image: linear-gradient(to right, #7f167c, #56167f);
-  font-family: 'DIN PRO';
+  font-family: 'quosmregular';
   font-weight: 900;
   width: auto;
   height: 200px;
@@ -7627,7 +7628,7 @@ td.ui-datepicker-current-day {}
 
 .planos-text-3 {
   background-image: linear-gradient(to right, #ffa829, #ff9700);
-  font-family: 'DIN PRO';
+  font-family: 'quosmbold';
   font-weight: 900;
   width: auto;
   height: 170px;
@@ -7856,7 +7857,7 @@ td.ui-datepicker-current-day {}
 
 .titulo-missao {
   padding-top: 25px;
-  font-family: 'almeira';
+  font-family: 'notera_2_personal_use_onlyMd';
   font-size: 35px;
   color: #ff9700;
 }
@@ -7881,7 +7882,8 @@ td.ui-datepicker-current-day {}
 }
 
 .title-uaauges {
-  font-weight: 900;
+  font-family: 'quosmbold';
+  font-weight: bolder;
   color: #ff9700;
 }
 
@@ -7952,7 +7954,7 @@ td.ui-datepicker-current-day {}
   margin-top: 15px;
   color: #a71989;
   line-height: 30px;
-  font-family: 'balooregular';
+  font-family: 'quosmbold';
 }
 
 .servicos-telecom {
@@ -7969,7 +7971,7 @@ td.ui-datepicker-current-day {}
   margin-top: 40px;
   color: #ff9700;
   line-height: 45px;
-  font-family: 'balooregular';
+  font-family: 'quosmbold';
   font-size: 45px;
   transition: 0.5s ease;
 }
@@ -7980,7 +7982,7 @@ td.ui-datepicker-current-day {}
   margin-top: 15px;
   color: #ff9700;
   line-height: 30px;
-  font-family: 'balooregular';
+  font-family: 'quosmbold';
   transition: 0.5s ease;
 }
 
@@ -8094,13 +8096,9 @@ td.ui-datepicker-current-day {}
   margin-top: 45px;
 }
 
-.form-contato {
-  margin-right: 25px;
-}
-
 .btn-contato {
-  padding-left: 217px !important;
-  padding-right: 217px !important;
+  padding-left: 225px !important;
+  padding-right: 225px !important;
   margin-top: 25px;
   background-color: #ff9700 !important;
   transition: 0.5s ease;
@@ -8450,7 +8448,7 @@ input[data-description="2000"]:checked~#timeline-descriptions-wrapper p[data-des
   }
 
   input {
-    background-color: transparent !important;
+    background-color: transparent ;
     z-index: 1;
   }
 
@@ -8746,4 +8744,25 @@ input[data-description="2000"]:checked~#timeline-descriptions-wrapper p[data-des
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+.curriculo{
+  width: 250px;
+}
+
+
+.curriculo h2{
+  color: #fa9100;
+  text-transform: none;
+  font-weight: 900;
+}
+.curriculo h3{
+  color: #454545;
+  font-weight: 900;
+  font-family: 'quosmbold';
+}
+
+
+.form-contato{
+  margin: 25px;
 }

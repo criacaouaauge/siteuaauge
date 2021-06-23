@@ -18,13 +18,13 @@
   <link rel="stylesheet" href="css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
-  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script type="text/javascript">
 (function() {
 emailjs.init("user_m3wYZclcOHG66Q8hzbzZ6");
 })();
 </script>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 </head>
 
 <body class="main-page pc">
@@ -32,15 +32,13 @@ emailjs.init("user_m3wYZclcOHG66Q8hzbzZ6");
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand mx-5" href="index.html"><img src="images/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Bem-vindo
               </a>
               <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -51,8 +49,7 @@ emailjs.init("user_m3wYZclcOHG66Q8hzbzZ6");
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Soluções
               </a>
               <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -79,95 +76,31 @@ emailjs.init("user_m3wYZclcOHG66Q8hzbzZ6");
   </header>
   <main>
     <div class="img-fluid">
-      <img class="img-fluid" src="/images/Contato.png">
+      <img class="img-fluid scale-up-center" src="/images/sejaum.png">
     </div>
-    <div class="container-lg">
+    <div class="justify-content-center">
+      <p style="line-height: 35px;" class="intro-text">
+        Somos os fiéis escudeiros de empresas que são movidas por<br> <strong>criatividade</strong> e <strong>resultados acima da média!</strong>
+      </p>
+    </div>
+
+    <div class="container container-curriculo">
       <div class="row">
-        <div class="col box-contato">
-          <h5 class="title-contato">Contato</h5>
-          <h5 class="sub-title-contato">Fale agora mesmo com um especialista que vai te ajudar a alavancar o marketing da sua empresa!</h5>
-          <div class="col">
-            <i style="color: #ff9700;" class="fas fa-phone"></i>
-            <a href="tel:(+55) 31 3081-8059">
-              <span class="contatos">(+55) 31 3081-8059</span>
-            </a>
-          </div>
-          <div style="margin-top: 25px;" class="col">
-            <i style="color: #ff9700; margin-top: 10px;" class="fas fa-envelope"></i>
-            <a href="mailto:atendimento@uhaau.com.br">
-              <span class="contatos">atendimento@uhaau.com.br</span>
-            </a>
-          </div>
-          <div style="margin-top: 25px;" class="col">
-            <i style="color: #ff9700; margin-top: 10px;" class="fas fa-map-marker-alt"></i>
-            <a
-              href="https://www.google.com/maps?ll=-19.921581,-43.958873&z=13&t=m&hl=pt-BR&gl=US&mapclient=embed&q=Rua+Jaceguai,+208+-+Prado+Belo+Horizonte+-+MG+30411-040">
-              <span class="contatos">Rua Jaceguai, 208 - Sala 1015 Prado - Belo Horizonte/MG</span>
-            </a>
-          </div>
-          <form action="https://api.staticforms.xyz/submit" method="post">
-            <input type="hidden" name="accessKey" value="3326a9e8-f232-41cc-aeef-5f948d4d9171">
-            <input type="hidden" name="redirectTo" value="https://uaauge.com">
-            <input type="text" name="honeypot" style="display: none;">
-            <div class="row">
-              <div class="col">
-                <input class="form-control" required placeholder="Qual o seu nome?" type="text" name="name">
-              </div>
-              <div class="col">
-                <input style="margin-left: 20px;" required placeholder="Qual seu email?" class="form-control" type="email" name="email" id="email">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <input placeholder="Seu telefone?" class="form-control" type="text" name="phone" id="telephone">
-              </div>
-              <div class="col">
-                <select name="$departamento" style="margin-left: 20px;" class="form-select form-control2" aria-label="Default select example">
-                  <option selected>Qual o departamento?</option>
-                  <option value="Marketing">Marketing</option>
-                  <option value="Atendimento">Atendimento</option>
-                  <option value="Criação">Criação</option>
-                </select>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <textarea style="padding-right: 25px;" name="message" class="form-control" placeholder="Como a uaauge pode te ajudar?" rows="3"></textarea>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <button class="btn btn-primary btn-contato" type="submit">Solicite seu Atendimento </button>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="col mapa-contato">
-          <div class="mapouter">
-            <div class="gmap_canvas"><iframe width="446" height="480" id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Rua%20Jaceguai%20208&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                href="https://putlocker-is.org"></a><br>
-              <style>
-                .mapouter {
-                  position: relative;
-                  text-align: right;
-                  height: 480px;
-                  width: 446px;
-                }
-              </style>
-              <style>
-                .gmap_canvas {
-                  overflow: hidden;
-                  background: none !important;
-                  height: 558px;
-                  width: 446px;
-                }
-              </style>
-            </div>
-          </div>
+        <div class="col curriculo">
+          <h2>
+            Se você é um profissional dinâmico e que ama desafios, envie agora mesmo o seu currículo!
+          </h2>
+          <h3>
+            Você pode ser o próximo uaauge!
+          </h3>
         </div>
       </div>
+      <div class="row">
+        <form id="form">
+
+        </form>
+      </div>
+    </div>
   </main>
 
 
@@ -195,8 +128,8 @@ emailjs.init("user_m3wYZclcOHG66Q8hzbzZ6");
             <div class="contact-round"><i class="fab fa-whatsapp"></i></div>
           </a>
           <a target="_blank" href="https://www.tiktok.com/@camilanogueira_uaauge?">
-            <div class="contact-round"><i class="fab fa-tiktok"></i></div>
-          </a>
+              <div class="contact-round"><i class="fab fa-tiktok"></i></div>
+            </a>
           </a>
         </div>
       </div>
@@ -204,9 +137,7 @@ emailjs.init("user_m3wYZclcOHG66Q8hzbzZ6");
   </footer>
 
   <!-- script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
   <script type="text/javascript"
     src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox_packed.js"></script>
@@ -222,11 +153,11 @@ emailjs.init("user_m3wYZclcOHG66Q8hzbzZ6");
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.form.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_m3wYZclcOHG66Q8hzbzZ6");
-    })();
-  </script>
+<script type="text/javascript">
+(function() {
+emailjs.init("user_m3wYZclcOHG66Q8hzbzZ6");
+})();
+</script>
   <!--/ script -->
 </body>
 
