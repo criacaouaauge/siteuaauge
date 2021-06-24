@@ -7757,6 +7757,15 @@ td.ui-datepicker-current-day {}
   box-shadow: 8px 8px 21px 8px rgba(0, 0, 0, 0.09)
 }
 
+.intro-text2{
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 40px;
+  margin-bottom: 16px;
+}
+
 .intro-box {
   width: auto;
   height: 150px;
@@ -7839,11 +7848,11 @@ td.ui-datepicker-current-day {}
 }
 
 .box-missao {
-  width: 300px;
-  height: 420px;
+  width: 350px;
+  height: 500px;
   border-radius: 25px;
   box-shadow: 1px 9px 20px 1px rgb(0 79 143 / 30%) !important;
-  margin-left: 60px;
+  margin-left: 8px;
   margin-top: 30px;
 }
 
@@ -7854,16 +7863,22 @@ td.ui-datepicker-current-day {}
   color: white;
   text-transform: none;
 }
+.texto-missao li{
+  font-size: 20px;
+  line-height: 35px;
+}
 
 .titulo-missao {
   padding-top: 25px;
   font-family: 'notera_2_personal_use_onlyMd';
-  font-size: 35px;
+  font-size: 65px;
   color: #ff9700;
 }
 
 .texto-missao {
   margin: 25px;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 .texto-visao {
@@ -8021,9 +8036,8 @@ td.ui-datepicker-current-day {}
 }
 
 .box-telecom {
-  background-color: #ececec;
-  padding-top: 100px;
-  padding-bottom: 185px;
+  margin-top: 100px;
+  margin-bottom: 185px;
 }
 
 .icones-telecom {
@@ -8042,23 +8056,13 @@ td.ui-datepicker-current-day {}
 
 .rectangle-telecom:hover {
   border-top: 15px solid #ff9700;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
 }
 
 .rectangle-telecom2:hover {
   border-top: 15px solid #a71989;
-  transition: 0.5s ease;
+  transition: 0.3s ease;
   color: #a71989;
-}
-
-.servicos-telecom2:hover {
-  color: #a71989;
-  transition: 0.5s ease;
-}
-
-.servicos-telecom:hover {
-  color: #ff9700;
-  transition: 0.5s ease;
 }
 
 .box-contato {
