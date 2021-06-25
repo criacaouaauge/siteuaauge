@@ -3040,6 +3040,27 @@ textarea.form-control-lg {
   transition: ease 0.5s;
   box-shadow: 8px 8px 21px 8px rgba(0, 0, 0, 0.2);
 }
+
+.btn-third4{
+  color: white;
+  background-color: #fa9100;
+  padding: 25px !important;
+  transition: ease 0.5s;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-third4:hover{
+  background-color: #56167f;
+  transition: ease 0.5s;
+}
+
+.btn-third4:active{
+  background-color: #e3e3e3e3;
+  transition: ease 0.5s;
+  color: #fa9100;
+}
+
 .btn-success {
   color: #fff;
   background-color: #198754;
