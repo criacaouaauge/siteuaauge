@@ -8080,10 +8080,9 @@ td.ui-datepicker-current-day {}
 }
 
 .box-contato {
-  width: 500px;
   margin-bottom: 180px;
-  margin-left: 80px;
   margin-top: 35px;
+  width: 100px;
 }
 
 .title-contato {
@@ -8098,6 +8097,7 @@ td.ui-datepicker-current-day {}
   text-transform: none;
   font-size: 25px;
   margin-bottom: 40px;
+  font-family: 'quosmbold' !important;
 }
 
 .icon-contatos {
@@ -8115,10 +8115,7 @@ td.ui-datepicker-current-day {}
 }
 
 .btn-contato {
-  padding-left: 225px !important;
-  padding-right: 225px !important;
   margin-top: 25px;
-  background-color: #ff9700 !important;
   transition: 0.5s ease;
 }
 
