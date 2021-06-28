@@ -75,7 +75,7 @@
 html,
 body {
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
@@ -7866,6 +7866,7 @@ td.ui-datepicker-current-day {}
   box-shadow: 1px 9px 20px 1px rgb(0 79 143 / 30%) !important;
   margin-left: 8px;
   margin-top: 30px;
+  background-color: white;
 }
 
 .text-lema {
