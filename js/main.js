@@ -1379,3 +1379,13 @@ btn.on('click', function(e) {
   e.preventDefault();
   $('html, body').animate({scrollTop:0}, '300');
 });
+
+window.onload = function()
+{
+    "use strict";
+    //$("#nav").load("nav.html");
+    $.get("navbar.html",function(data)
+          {
+        document.getElementById("nav").innerHTML=data;
+
+    });

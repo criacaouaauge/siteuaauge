@@ -19,11 +19,68 @@
   <link rel="stylesheet" href="css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <!--styles -->
 </head>
 
 <body class="main-page pc">
-  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH. "headernav.html" ?>
+
+  <header class="bg-white" id="home">
+    <div class="stick-wrapper">
+      <div class="sticky clear">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid">
+            <a class="navbar-brand mx-5" href="index.html"><img src="images/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Bem-vindo
+                  </a>
+                  <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="uaauge.html">Prazer, somos a Uaauge</a></li>
+                    <li><a class="dropdown-item" href="lema.html">Nosso Lema</a></li>
+                    <li><a class="dropdown-item" href="uaauges.html">Os Uaauges</a></li>
+                    <li><a class="dropdown-item" href="espaco.html">Espaço Uaauge</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Soluções
+                  </a>
+                  <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="serviços.html">Serviços</a></li>
+                    <li><a class="dropdown-item" href="telecom.html">Para Telecom</a></li>
+                    <li><a class="dropdown-item" href="faq.html">Perguntas Frequentes</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="uau.html">Uau</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="inspire.html">Inspire</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+                <form action="contato.html" class="d-flex">
+                  <button class="btn btn-outline-success">Quero fazer um Orçamento</button>
+                </form>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+
   <div class="banner-frases">
     <div>
       <p>Agência parceira oficial Telesíntese e PontoISP</p>
@@ -57,7 +114,7 @@
         <a href="contato.html"><img src="images/slider/7680_02.png" class="d-block w-100" alt="..."></a>
       </div>
       <div class="carousel-item">
-        <a href="contato.html"><img src="images/slider/7680_03.png" class="d-block w-100" alt="..."></a>
+        <a href="contato.html"><img src="images/slider/7680_03.jpeg" class="d-block w-100" alt="..."></a>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -374,7 +431,41 @@
   </div>
 
 
-  <?php $IPATH = $_SERVER["DOCUMENT_ROOT"]."/assets/php/"; include($IPATH. "headernav.html" ?>
+  <footer class="bg-white" id="footer">
+    <div class="grid-row clear">
+      <div class="footer">
+        <div id="copyright">Todos os direitos reservados<span><a target="_blank" class="rodape"
+              style="text-decoration: none;" href="https://www.instagram.com/agenciauhaau/">Agência
+              Uaauge</a></span>
+          2021-Direitos Reservados</div>
+        <a target="_blank" href="index.html" class="footer-logo"><img src="images/sorriso-uaauge.png" alt=""></a>
+        <div class="social">
+          <a target="_blank" href="https://www.instagram.com/agenciauhaau/">
+            <div class="contact-round"><i class="fab fa-instagram"></i></div>
+          </a>
+          <a target="_blank" href="https://www.facebook.com/agenciauhaau">
+            <div class="contact-round"><i class="fab fa-facebook"></i></div>
+          </a>
+          <a target="_blank" href="https://www.linkedin.com/company/agência-uhaau-/">
+            <div class="contact-round"><i class="fab fa-linkedin"></i></div>
+          </a>
+          <a target="_blank" href="https://www.youtube.com/channel/UCWIL6qct8NPfEKOYAgdhF-A">
+            <div class="contact-round"><i class="fab fa-youtube"></i></div>
+          </a>
+          <a target="_blank" href="https://api.whatsapp.com/send?phone=5531984394001&text=Quero%20ser%20Uhaau">
+            <div class="contact-round"><i class="fab fa-whatsapp"></i></div>
+          </a>
+          <a target="_blank" href="#">
+            <div class="contact-round"><i class="fas fa-rss"></i></div>
+          </a>
+          <a target="_blank" href="faq.html">
+            <div class="contact-round"><i class="fas fa-question"></i></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <!-- page footer -->
 
   <!-- scripts -->
