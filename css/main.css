@@ -7682,6 +7682,7 @@ td.ui-datepicker-current-day {}
 
 .banner-frases {
   margin: 0px 50px;
+  z-index: -1000;
 }
 
 .box-parceiros-slide {

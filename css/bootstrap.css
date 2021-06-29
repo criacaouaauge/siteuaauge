@@ -4024,6 +4024,7 @@ textarea.form-control-lg {
   justify-content: space-between;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+  z-index: 1;
 }
 .navbar > .container,
 .navbar > .container-fluid,
@@ -4051,6 +4052,7 @@ textarea.form-control-lg {
   padding-left: 0;
   margin-bottom: 0;
   list-style: circle;
+  z-index: 1000;
 }
 .navbar-nav .nav-link {
   padding-right: 0;
@@ -5820,6 +5822,7 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  z-index: -1000;
 }
 
 .carousel.pointer-event {
@@ -5846,6 +5849,7 @@ textarea.form-control-lg {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: transform 1s ease;
+  z-index: -1;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -5857,6 +5861,7 @@ textarea.form-control-lg {
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
+  z-index: -1;
 }
 
 /* rtl:begin:ignore */
