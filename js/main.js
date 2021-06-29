@@ -1365,15 +1365,6 @@ function move_gradient() {
   	$('.picture').removeClass('active');
   })
 }
-var btn = $('#button-top');
-
-$(window).scroll(function() {
-  if ($(window).scrollTop() > 300) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
-});
 
 window.onload = function()
 {
