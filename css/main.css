@@ -8809,6 +8809,7 @@ input[data-description="2000"]:checked~#timeline-descriptions-wrapper p[data-des
 }
 .container-cv{
   margin-bottom: 65px;
+  max-width: 650px;
 }
 
 .btn-planos{
