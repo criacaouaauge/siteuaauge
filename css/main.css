@@ -7798,6 +7798,28 @@ td.ui-datepicker-current-day {}
   font-size: 45px;
   font-family: 'quosmbold' !important;
 }
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;}
 
 .sub-text-about {
   font-weight: 700;
