@@ -37,11 +37,11 @@
   <header class="bg-white" id="home">
     <div class="stick-wrapper">
       <div class="sticky clear">
-        <div id="include"></div>
+        <div id="nav"></div>
         <script>
           window.onload = function(){
               $.get("navbar.html", function(data){
-                  $("#include").html(data);
+                  $("#nav").html(data);
               })
           }
       </script>
@@ -75,7 +75,6 @@
       <p>Agência especializada em Telecom parceira<img class="icon-rd" src="images/rd-station-cor.svg"></p>
     </div>
   </div>
-
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -476,6 +475,7 @@
 <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript"
   src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox_packed.js"></script>
+<script src="js/cookies.js"></script>
 <script src="js/main.js"></script>
 <script src="js/jquery.easing.1.3.js"></script>
 <script src="js/wow.min.js"></script>
@@ -484,7 +484,6 @@
 <script src="js/jquery.fancybox.pack.js"></script>
 <script src="js/jquery.fancybox-media.js"></script>
 <script src="js/retina.min.js"></script>
-
 <script>
   $(document).ready(function () {
     $('.banner-frases').slick();
@@ -508,7 +507,6 @@
     $("#footer").load("footer.html");
   });
   </script>
-
 <script src="/slick/slick.min.js"></script>
   <!--/ scripts -->
 </body>
