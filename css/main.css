@@ -7786,9 +7786,9 @@ td.ui-datepicker-current-day {}
   color: #ff9700;
   font-weight: 900;
   text-transform: none;
-  line-height: 35px;
-  font-size: 35px;
+  line-height: 40px;
   font-family: 'quosmbold' !important;
+  width: auto ;
 }
 .main-text-about2 {
   color: #ff9700;
@@ -7862,7 +7862,7 @@ td.ui-datepicker-current-day {}
   width: 350px;
   height: 500px;
   border-radius: 25px;
-  box-shadow: 1px 9px 20px 1px rgb(0 79 143 / 30%) !important;
+  box-shadow: 1px 9px 20px 1px rgb(0 0 0 / 30%) !important;
   margin-left: 8px;
   margin-top: 30px;
   background-color: white;
@@ -8846,7 +8846,8 @@ input[data-description="2000"]:checked~#timeline-descriptions-wrapper p[data-des
 .img-portfolio{
   border-radius: 45px !important;
   transition: transform 5s;
-  box-shadow: 8px 8px 8px 8px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -1px -1px 31px 11px rgba(0,0,0,0.36);
+  box-shadow: -1px -1px 31px 5px rgba(0,0,0,0.36);
   margin-bottom: 35px;
 }
 
