@@ -537,8 +537,6 @@ img {
   display: sticky;
 }
 
-
-
 .nav {
   float: right;
 }
@@ -7682,6 +7680,7 @@ td.ui-datepicker-current-day {}
 
 .banner-frases {
   margin: 0px 50px;
+  z-index: -2;
 }
 
 .box-parceiros-slide {

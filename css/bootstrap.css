@@ -5847,6 +5847,7 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
+  z-index: -2;
 }
 
 .carousel.pointer-event {
