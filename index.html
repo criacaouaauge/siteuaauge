@@ -17,93 +17,91 @@
   <link rel="stylesheet" href="css/custom.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/fontawesome.css">
+  <link rel="stylesheet" href="css/cookiealert.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script>
+  $(function(){
+    $("#footer").load("footer.html");
+  });
+  </script>
   <!--styles -->
 </head>
 
 <body class="main-page pc">
-  <header id="home">
+  <header class="bg-white" id="home">
     <div class="stick-wrapper">
       <div class="sticky clear">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <a class="navbar-brand mx-5" href="index.html"><img src="images/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Bem-vindo
-                  </a>
-                  <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="uaauge.html">Prazer, somos a Uaauge</a></li>
-                    <li><a class="dropdown-item" href="lema.html">Nosso Lema</a></li>
-                    <li><a class="dropdown-item" href="uaauges.html">Os Uaauges</a></li>
-                    <li><a class="dropdown-item" href="espaco.html">Espaço Uaauge</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Soluções
-                  </a>
-                  <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="serviços.html">Serviços</a></li>
-                    <li><a class="dropdown-item" href="telecom.html">Para Telecom</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="uau.html">Uau</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="inspire.html">Inspire</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contato.html">Contato</a>
-                </li>
-                <form action="contato.html" class="d-flex">
-                  <button class="btn btn-outline-success">Quero fazer um Orçamento</button>
-                </form>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <div id="nav"></div>
+        <script>
+          window.onload = function(){
+              $.get("navbar.html", function(data){
+                  $("#nav").html(data);
+              })
+          }
+      </script>
       </div>
     </div>
   </header>
+
+
   <div class="banner-frases">
     <div>
-      <p>Agência parceira RD Station e Tele.Síntese</p>
+      <p>Agência parceira oficial Telesíntese e PontoISP</p>
     </div>
     <div>
-      <p>Agência parceira RD Station e Tele.Síntese</p>
+      <p>Receba novidades</p>
     </div>
     <div>
-      <p>Agência parceira RD Station e Tele.Síntese</p>
+      <a href="telecom.html">
+        <p>Marketing para Telecom</p>
+      </a>
+    </div>
+    <div>
+      <p>Nossos serviços</p>
+    </div>
+    <div>
+      <p>Siga a gente nas redes sociais</p>
+    </div>
+    <div>
+      <p>Solução completa ou serviços individuais</p>
+    </div>
+    <div>
+      <p>Agência especializada em Telecom parceira<img class="icon-rd" src="images/rd-station-cor.svg"></p>
     </div>
   </div>
-
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <a href="contato.html"><img src="images/7680_01-min.png" class="d-block w-100" alt="..."></a>
+        <a href="#"><img src="images/7680_01-min.png" class="d-block w-100" alt="..."></a>
       </div>
       <div class="carousel-item">
-        <a href="contato.html"><img src="images/slider/7680_02.png" class="d-block w-100" alt="..."></a>
+        <a href="#"><img src="images/slider/7680_02.png" class="d-block w-100" alt="..."></a>
       </div>
       <div class="carousel-item">
-        <a href="contato.html"><img src="images/slider/7680_03.png" class="d-block w-100" alt="..."></a>
+        <a href="#"><img src="images/slider/7680_03.jpeg" class="d-block w-100" alt="..."></a>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="visually-hidden">Anterior</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="visually-hidden">Próximo</span>
+    </button>
+  </div>
+  <div class="alert text-center cookiealert" role="alert">
+    <b>Você gosta de biscoitos?</b> &#x1F36A; Nós utilizamos cookies para melhorar sua experiência em nosso site. <a href="https://www.techtudo.com.br/noticias/2018/10/o-que-sao-cookies-entenda-os-dados-que-os-sites-guardam-sobre-voce.ghtml" style="color: white;" target="_blank">Saiba mais</a>
+
+    <button type="button" class="btn btn-third3 btn-sm acceptcookies">
+        Concordo
     </button>
   </div>
 
@@ -114,244 +112,513 @@
     </div>
   </div>
 
-<div class="container">
-  <div class="d-flex justify-content-center top-margin" style="margin-top: 150px; margin-bottom: 150px;">
+  <div class="container">
+    <div class="d-flex justify-content-center top-margin" style="margin-top: 150px; margin-bottom: 150px;">
+      <div class="row">
+        <img class="conection1 img-fluid" style=" margin-right: 50px;" src="images/1732X1820_1.png">
+        <img class="conection1 img-fluid" src="images/1732X1820_2.png">
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="container-fluid">
     <div class="row">
-      <img class="conection1 img-fluid" style=" margin-right: 50px;" src="images/1732X1820_1.png">
-      <img class="conection1 img-fluid" src="images/1732X1820_2.png">
+      <div class="col text-center">
+        <img class="img-fluid" src="/images/7680_1200_TEMOS_UM_PLANO.png">
+        <form action="contato.html">
+          <button class="btn-lg btn-planos">Converse com um especialista </button><img src="/images/click_icon.svg"
+            class="icon-sorriso-click">
+        </form>
+      </div>
     </div>
-  </div>
-</div>
 
-
-
-<div class="container-fluid">
-  <div class="row">
-    <div class="col text-center">
-      <img class="img-fluid" src="/images/7680_1200_TEMOS_UM_PLANO....png">
-      <form action="contato.html">
-        <button class="btn btn-secondary btn-lg">Converse com um especialista</button>
-      </form>
-    </div>
   </div>
 
-  </div>
-</div>
-
-
-
-
-  <section id="portfolio" class="portfolio padding-section">
-    <div class="grid-row">
-      <div class="portfolio-filter clear">
-        <div style="font-size: 30px;" class="portfolio">
-          <p class="title" style="text-align: center;">Portfólio</p>
-        </div>
+  <section class="text-center container">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="title">Portifólio <i class="fas fa-pencil-alt"></i></h1>
+        </divPortifólio>
       </div>
-    </div>
-    <div class="isotope">
-      <div class="item design photo video web">
-        <div class="portfolio-hover">
-          <div class="portfolio-info">
-            <a href="">
-              <div class="portfolio-title">Na Ponta da língua Ator</div>
-            </a>
-            <div class="portfolio-divider"></div>
-            <div class="portfolio-description">Vídeos padrões</div>
-          </div>
-        </div>
-        <img src="images/isotop/CAPA_01.png" alt>
-      </div>
-      <div class="item illust video">
-        <div class="portfolio-hover">
-          <div class="portfolio-info">
-            <a href="">
-              <div class="portfolio-title">Brandings</div>
-            </a>
-            <div class="portfolio-divider"></div>
-            <div class="portfolio-description">Criação de Logotipos</div>
-          </div>
-        </div>
-        <img src="images/isotop/CAPA_02.png" alt>
-      </div>
-      <div class="item design illust photo web">
-        <div class="portfolio-hover">
-          <div class="portfolio-info">
-            <a href="">
-              <div class="portfolio-title">Redes Sociais</div>
-            </a>
-            <div class="portfolio-divider"></div>
-            <div class="portfolio-description">Postagens para redes sociais</div>
-          </div>
-        </div>
-        <img src="images/isotop/CAPA_04.png" alt>
-      </div>
-      <div class="item illust photo">
-        <div class="portfolio-hover">
-          <div class="portfolio-info">
-            <a href="">
-              <div class="portfolio-title">Criativos</div>
-            </a>
-            <div class="portfolio-divider"></div>
-            <div class="portfolio-description">Processos Criativos</div>
-          </div>
-        </div>
-        <img src="images/isotop/CAPA_07.png" alt>
-      </div>
-      <div class="item design video web">
-        <div class="portfolio-hover">
-          <div class="portfolio-info">
-            <a href="">
-              <div class="portfolio-title">Sites</div>
-            </a>
-            <div class="portfolio-divider"></div>
-            <div class="portfolio-description">Criação de Sites</div>
-          </div>
-        </div>
-        <img src="images/isotop/CAPA_11.png" alt>
-      </div>
-      <div class="item illust photo video">
-        <div class="portfolio-hover">
-          <div class="portfolio-info">
-            <a href="">
-              <div class="portfolio-title">Ambientações</div>
-            </a>
-            <div class="portfolio-divider"></div>
-            <div class="portfolio-description">Ambientação de Lojas</div>
-          </div>
-        </div>
-        <img src="images/isotop/CAPA_09.png" alt>
-      </div>
-      <div class="item illust video web music">
-        <div class="portfolio-hover">
-          <div class="portfolio-info">
-            <a href="">
-              <div class="portfolio-title">Na ponta da língua Atriz</div>
-            </a>
-            <div class="portfolio-divider"></div>
-            <div class="portfolio-description">Vídeos Padrões</div>
-          </div>
-        </div>
-        <img src="images/isotop/CAPA_05.png" alt>
-      </div>
-      <div class="item design photo music">
-        <div class="portfolio-hover">
-          <div class="portfolio-info">
-            <a href="">
-              <div class="portfolio-title">Cobertura Campus Party</div>
-            </a>
-            <div class="portfolio-divider"></div>
-            <div class="portfolio-description">Cobertura de Eventos</div>
-          </div>
-        </div>
-        <img src="images/isotop/CAPA_10.png" alt>
-      </div>
-      <div class="item photo web music">
-        <div class="portfolio-hover">
-          <div class="portfolio-info">
-            <a href="">
-              <div class="portfolio-title">Campanhas</div>
-            </a>
-            <div class="portfolio-divider"></div>
-            <div class="portfolio-description">Criação de Campanhas publicitárias</div>
-          </div>
-        </div>
-        <img src="images/isotop/CAPA_03.png" alt>
-      </div>
-      <div class="item photo video web music">
-        <div class="portfolio-hover">
-          <div class="portfolio-info">
-            <a href="">
-              <div class="portfolio-title">Future timeline</div>
-            </a>
-            <div class="portfolio-divider"></div>
-            <div class="portfolio-description">Music, Photography</div>
-          </div>
-        </div>
-        <img src="images/isotop/iso7.jpg" alt>
-      </div>
-      <div class="item design video music">
-        <div class="portfolio-hover">
-          <div class="portfolio-info">
-            <a href="">
-              <div class="portfolio-title">Inbound Marketing</div>
-            </a>
-            <div class="portfolio-divider"></div>
-            <div class="portfolio-description">Estratégias de marketing</div>
-          </div>
-        </div>
-        <img src="images/isotop/iso11.jpg" alt>
-      </div>
-    </div>
   </section>
 
-  <!-- page footer -->
-  <footer id="footer">
-    <div class="grid-row clear">
-      <div class="footer">
-        <div id="copyright">Todos os direitos reservados<span><a target="_blank" class="rodape"
-              style="text-decoration: none;" href="https://www.instagram.com/agenciauhaau/">Agência Uaauge</a></span>
-          2021-Diretos Reservados</div>
-        <a target="_blank" href="index.html" class="footer-logo"><img src="images/sorriso-uaauge.png" alt=""></a>
-        <div class="social">
-          <a target="_blank" href="https://www.instagram.com/agenciauhaau/">
-            <div class="contact-round"><i class="fab fa-instagram"></i></div>
-          </a>
-          <a target="_blank" href="https://www.facebook.com/agenciauhaau">
-            <div class="contact-round"><i class="fab fa-facebook"></i></div>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/company/agência-uhaau-/">
-            <div class="contact-round"><i class="fab fa-linkedin"></i></div>
-          </a>
-          <a target="_blank" href="https://www.youtube.com/channel/UCWIL6qct8NPfEKOYAgdhF-A">
-            <div class="contact-round"><i class="fab fa-youtube"></i></div>
-          </a>
-          <a target="_blank" href="https://api.whatsapp.com/send?phone=5531984394001&text=Quero%20ser%20Uhaau">
-            <div class="contact-round"><i class="fab fa-whatsapp"></i></div>
-          </a>
-          <a target="_blank" href="https://www.tiktok.com/@camilanogueira_uaauge?">
-            <div class="contact-round"><i class="fab fa-tiktok"></i></div>
-          </a>
-          </a>
+
+  <div class="bg-light">
+    <div class="container bg-light portifolio-itens">
+      <div class="row bg-light">
+        <div class="col m-3">
+          <a href="#examplemodaltoggle8"><img data-bs-toggle="modal" href="#exampleModalToggle"
+              class="img-portfolio img-thumbnail" src="images/isotop/Capa 1.png"></a>
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <img class="img-fluid" src="images/isotop/Capa 2.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <img class="img-fluid" src="images/isotop/Capa 3.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Voltar</button>
+                  <button class="btn btn-outline-success" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m-3">
+          <a href="#exampleModalToggle3"><img data-bs-toggle="modal" href="#exampleModalToggle3"
+              class="img-portfolio img-thumbnail" src="images/isotop/Capa 2.png"></a>
+          <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 3.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver Mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 4.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Voltar</button>
+                  <button class="btn btn-outline-success" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m-3">
+          <a href="#exampleModalToggle5"><img data-bs-toggle="modal" href="#exampleModalToggle5"
+              class="img-portfolio img-thumbnail" src="images/isotop/Capa 3.png"></a>
+          <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 5.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver Mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 6.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Voltar</button>
+                  <button class="btn btn-outline-success" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m-3">
+          <a href="#exampleModalToggle5"><img data-bs-toggle="modal" href="#exampleModalToggle5"
+              class="img-portfolio img-thumbnail" src="images/isotop/Capa 4.png"></a>
+          <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 5.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver Mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 6.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Voltar</button>
+                  <button class="btn btn-outline-success" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row bg-light">
+        <div class="col m-3">
+          <a href="#examplemodaltoggle8"><img data-bs-toggle="modal" href="#exampleModalToggle8"
+              class="img-portfolio img-thumbnail" src="images/isotop/Capa 4.png"></a>
+          <div class="modal fade" id="exampleModalToggle8" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 8.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle9" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle9" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 9.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle8" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver mais</button>
+                  <button class="btn btn-secondary" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m-3">
+          <a href="#exampleModalToggle10"><img data-bs-toggle="modal" href="#exampleModalToggle10"
+              class="img-portfolio img-fluid img-thumbnail" src="images/isotop/Capa 5.png"></a>
+          <div class="modal fade" id="exampleModalToggle10" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 9.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle11" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle11" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 1.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle10" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver mais</button>
+                  <button class="btn btn-secondary" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m-3">
+          <a href="#examplemodaltoggle12"><img data-bs-toggle="modal" href="#exampleModalToggle12"
+              class="img-portfolio img-fluid img-thumbnail" src="images/isotop/Capa 6.png"></a>
+          <div class="modal fade" id="exampleModalToggle12" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 1.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle13" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle13" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 2.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle12" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver mais</button>
+                  <button class="btn btn-secondary" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m-3">
+          <a href="#exampleModalToggle5"><img data-bs-toggle="modal" href="#exampleModalToggle5"
+              class="img-portfolio img-thumbnail" src="images/isotop/Capa 3.png"></a>
+          <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 5.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver Mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 6.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Voltar</button>
+                  <button class="btn btn-outline-success" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row bg-light">
+        <div class="col m-3">
+          <a href="#exampleModalToggle5"><img data-bs-toggle="modal" href="#exampleModalToggle5"
+              class="img-portfolio img-thumbnail" src="images/isotop/Capa 5.png"></a>
+          <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 5.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver Mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 6.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Voltar</button>
+                  <button class="btn btn-outline-success" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m-3">
+          <a href="#examplemodaltoggle14"><img data-bs-toggle="modal" href="#exampleModalToggle14"
+              class="img-portfolio img-fluid img-thumbnail" src="images/isotop/Capa 7.png"></a>
+          <div class="modal fade" id="exampleModalToggle14" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 3.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle15" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle15" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 4.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle14" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver mais</button>
+                  <button class="btn btn-secondary" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m-3">
+          <a href="#examplemodaltoggle17"><img data-bs-toggle="modal" href="#exampleModalToggle17"
+              class="img-portfolio img-thumbnail" src="images/isotop/Capa 8.png"></a>
+          <div class="modal fade" id="exampleModalToggle17" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 4.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle18" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle18" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="images/isotop/Capa 5.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle17" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Ver mais</button>
+                  <button class="btn btn-secondary" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col m-3">
+          <a href="#examplemodaltoggle19"><img data-bs-toggle="modal" href="#exampleModalToggle19"
+              class="img-portfolio img-thumbnail" src="images/isotop/Capa 9.png"></a>
+          <div class="modal fade" id="exampleModalToggle19" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img class="img-fluid" src="/images/isotop/Capa 7.png">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle20" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Veja mais</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade" id="exampleModalToggle20" aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <img src="images/isotop/Capa 8.png" class="img-fluid">
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle19" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Voltar</button>
+                  <button class="btn btn-secondary" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </footer>
+  </div>
+
+
+  <div class="container" id="footer"></div>
   <!-- scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <script src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="./slick/slick.min.js"></script>
-  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
-  <script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
-  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
-  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
-  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
-  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
-  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
-  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
-  <script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-  <script type="text/javascript"
-    src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox_packed.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/jquery.owl.carousel.js"></script>
-  <script src="js/jquery.fancybox.pack.js"></script>
-  <script src="js/jquery.fancybox-media.js"></script>
-  <script src="js/retina.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.banner-frases').slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
-      });
+<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="./slick/slick.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.kenburn.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.migration.min.js"></script>
+<script type="text/javascript" src="rs-plugin/js/extensions/revolution.extension.parallax.min.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript"
+  src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox_packed.js"></script>
+<script src="js/cookies.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.isotope.min.js"></script>
+<script src="js/jquery.owl.carousel.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.fancybox-media.js"></script>
+<script src="js/retina.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $('.banner-frases').slick();
+  });
+</script>
+<script>
+  $(document).ready(function () {
+    $('.banner-frases').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
     });
+  });
+</script>
+<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script>
+  $(function(){
+    $("#footer").load("footer.html");
+  });
   </script>
+<script src="/slick/slick.min.js"></script>
   <!--/ scripts -->
 </body>
 

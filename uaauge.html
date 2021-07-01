@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="css/jquery.owl.carousel.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/custom.css">
@@ -20,58 +19,33 @@
   <link rel="stylesheet" href="css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
-  <!--styles -->
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+</script>
+<script>
+  $(function(){
+    $("#footer").load("footer.html");
+  });
+  </script>
+
 </head>
 
 <body class="page-about pc">
   <!-- page header -->
-  <header id="home">
+  <header class="bg-white" id="home">
     <div class="stick-wrapper">
       <div class="sticky clear">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <a class="navbar-brand mx-5" href="index.html"><img src="images/logo.png"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Bem-vindo
-                  </a>
-                  <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="uaauge.html">Prazer, somos a Uaauge</a></li>
-                    <li><a class="dropdown-item" href="lema.html">Nosso Lema</a></li>
-                    <li><a class="dropdown-item" href="uaauges.html">Os Uaauges</a></li>
-                    <li><a class="dropdown-item" href="espaco.html">Espaço Uaauge</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Soluções
-                  </a>
-                  <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="serviços.html">Serviços</a></li>
-                    <li><a class="dropdown-item" href="telecom.html">Para Telecom</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="uau.html">Uau</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="inspire.html">Inspire</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="contato.html">Contato</a>
-                </li>
-                <form action="contato.html" class="d-flex">
-                  <button class="btn btn-outline-success">Quero fazer um Orçamento</button>
-                </form>
-              </ul>
-            </div>
-          </div>
-        </nav>
+        <div id="include"></div>
+        <script>
+          window.onload = function(){
+              $.get("navbar.html", function(data){
+                  $("#include").html(data);
+              })
+          }
+      </script>
       </div>
     </div>
   </header>
@@ -86,62 +60,29 @@
       tem como características principais: <strong>autencidade</strong> e <strong>transparência</strong>
     </p>
   </div>
-
   <div class="px-4">
     <div class="row gx-5">
       <div class="container-xl">
-        <img class="img-fluid foto-camila col mt-4 mb-4 slide-left" src="/images/foto_camila_home.jpg.png">
-        <div style="width: 550px;" class="col p-3 mt-4 mb-4 slide-right">
-          <h2 class="main-text-about">Somos especialistas no segmento de Telecomunicações e iniciamos a operação em
-            2015.</h2>
+        <img class="img-fluid foto-camila foto-camiseta col mt-4 mb-4 scale-up-center" src="images/foto_camila_home.jpg.png">
+        <div class="col p-3 mt-4 mb-4 scale-up-center">
+          <h1 class="main-text-about3">
+            Somos especialistas no<br> segmento de Telecomunicações<br> e iniciamos a operação em 2015.
+          </h1>
           <h3 class="sub-text-about">
-            Mas nossa história começou bem antes disso... com a palavra, nossa diretora de marketing, Camila Nogueira!
+            Mas nossa história começou bem antes<br> disso... com a palavra, nossa diretora de<br> marketing, Camila Nogueira!
+
           </h3>
           <p>
-            "Iniciei minha trajetória no mercado de Telecom prestando consultoria para Provedores de Internet regionais.
-
-            Desde então observei uma lacuna na prestação dos serviços que eu terceirizava, sendo assim, nasceu a ideia
-            de oferecer aos meus clientes a melhor experiência relacionada à comunicação que eles poderiam ter.
-
-            Agreguei estratégia, acompanhamento, ideias criativas e diferenciadas, além, é óbvio, da pontualidade nos
-            prazos, da transparência e proximidade humana."
+            "Iniciei minha trajetória no mercado de Telecom prestando<br> consultoria para Provedores de Internet regionais. Desde então<br> observei uma lacuna na prestação dos serviços que eu<br> terceirizava, sendo assim, nasceu a ideia de oferecer aos meus<br> clientes a melhor experiência relacionada à comunicação que<br> eles poderiam ter. Agreguei estratégia, acompanhamento, ideias criativas<br> e diferenciadas, além, é óbvio, da pontualidade nos<br> prazos, da transparência e proximidade humana."
           </p>
         </div>
       </div>
     </div>
   </div>
+  </div>
 
-  <footer id="footer">
-    <div class="grid-row clear">
-      <div class="footer">
-        <div id="copyright">Todos os direitos reservados<span><a target="_blank" class="rodape"
-              style="text-decoration: none;" href="https://www.instagram.com/agenciauhaau/">Agência Uaauge</a></span>
-          2021-Diretos Reservados</div>
-        <a target="_blank" href="index.html" class="footer-logo"><img src="images/sorriso-uaauge.png" alt=""></a>
-        <div class="social">
-          <a target="_blank" href="https://www.instagram.com/agenciauhaau/">
-            <div class="contact-round"><i class="fab fa-instagram"></i></div>
-          </a>
-          <a target="_blank" href="https://www.facebook.com/agenciauhaau">
-            <div class="contact-round"><i class="fab fa-facebook"></i></div>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/company/agência-uhaau-/">
-            <div class="contact-round"><i class="fab fa-linkedin"></i></div>
-          </a>
-          <a target="_blank" href="https://www.youtube.com/channel/UCWIL6qct8NPfEKOYAgdhF-A">
-            <div class="contact-round"><i class="fab fa-youtube"></i></div>
-          </a>
-          <a target="_blank" href="https://api.whatsapp.com/send?phone=5531984394001&text=Quero%20ser%20Uhaau">
-            <div class="contact-round"><i class="fab fa-whatsapp"></i></div>
-          </a>
-          <a target="_blank" href="https://www.tiktok.com/@camilanogueira_uaauge?">
-            <div class="contact-round"><i class="fab fa-tiktok"></i></div>
-          </a>
-          </a>
-        </div>
-      </div>
-    </div>
-  </footer>
+
+  <div class="container" id="footer"></div>
   <a href="#" id="scroll-top" class="scroll-top"><i class="fa fa-angle-up"></i></a>
   <!-- scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>

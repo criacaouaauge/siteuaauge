@@ -5,6 +5,7 @@
   <title>Agência Uaauge</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <!--styles -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/font-awesome.css">
@@ -18,65 +19,37 @@
   <link rel="stylesheet" href="css/fontawesome.css">
   <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_m3wYZclcOHG66Q8hzbzZ6");
-})();
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
 </script>
-  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+<script>
+  $(function(){
+    $("#footer").load("footer.html");
+  });
+  </script>
 </head>
 
 <body class="main-page pc">
-  <header id="home">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-        <a class="navbar-brand mx-5" href="index.html"><img src="images/logo.png"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Bem-vindo
-              </a>
-              <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="uaauge.html">Prazer, somos a Uaauge</a></li>
-                <li><a class="dropdown-item" href="lema.html">Nosso Lema</a></li>
-                <li><a class="dropdown-item" href="uaauges.html">Os Uaauges</a></li>
-                <li><a class="dropdown-item" href="espaco.html">Espaço Uaauge</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Soluções
-              </a>
-              <ul class="dropdown-menu sub-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="serviços.html">Serviços</a></li>
-                <li><a class="dropdown-item" href="telecom.html">Para Telecom</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="uau.html">Uau</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="inspire.html">Inspire</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contato.html">Contato</a>
-            </li>
-            <form action="contato.html" class="d-flex">
-              <button class="btn btn-outline-success">Quero fazer um Orçamento</button>
-            </form>
-          </ul>
-        </div>
+  <header class="bg-white" id="home">
+    <div class="stick-wrapper">
+      <div class="sticky clear">
+        <div id="include"></div>
+        <script>
+          window.onload = function(){
+              $.get("navbar.html", function(data){
+                  $("#include").html(data);
+              })
+          }
+      </script>
       </div>
-    </nav>
+    </div>
   </header>
   <main>
     <div class="img-fluid">
-      <img class="img-fluid scale-up-center" src="/images/sejaum.png">
+      <img class="img-fluid banner-top" src="/images/sejaum.png">
     </div>
     <div class="justify-content-center">
       <p style="line-height: 35px;" class="intro-text">
@@ -96,51 +69,34 @@ emailjs.init("user_m3wYZclcOHG66Q8hzbzZ6");
             </h3>
           </div>
         </div>
-        <form class="row">
+        <div class="row">
+          <form action="https://getform.io/f/7bd3ad3a-558e-45f5-b119-c12e7fd4c823"
+        method="POST" enctype="multipart/form-data" class="row container-cv">
           <div class="col">
             <input class="form-control2" required placeholder="Qual o seu nome?" type="text" name="name">
           </div>
           <div class="col form-cv">
             <input type="text" class="form-control2" placeholder="Seu Email?" id="text" name="email">
-
+          </div>
+          <div class="col-12">
+            <select name="departamento" id="departamento"class="form-select form-control2">
+              <option selected>Selecione a área desejada</option>
+              <option value="Atendimento">Atendimento</option>
+              <option value="Criação">Criação</option>
+              <option value="social">Social Media</option>
+            </select>
           </div>
           <div class="col-12 text-center">
             <input type="text" class="form-control2" name="phone" id="inputAddress" placeholder="Seu telefone?">
-            <button type="submit" class="btn btn-third3">Quero ser um uaauge!</button>
+            <input class="form-control2" type="file" name="file">
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-third">Quero ser um uaauge!</button>
           </div>
       </form>
-  </main>
-  <footer id="footer">
-    <div class="grid-row clear">
-      <div class="footer">
-        <div id="copyright">Todos os direitos reservados<span><a target="_blank" class="rodape"
-              style="text-decoration: none;" href="https://www.instagram.com/agenciauhaau/">Agência Uaauge</a></span>
-          2021-Diretos Reservados</div>
-        <a target="_blank" href="index.html" class="footer-logo"><img src="images/sorriso-uaauge.png" alt=""></a>
-        <div class="social">
-          <a target="_blank" href="https://www.instagram.com/agenciauhaau/">
-            <div class="contact-round"><i class="fab fa-instagram"></i></div>
-          </a>
-          <a target="_blank" href="https://www.facebook.com/agenciauhaau">
-            <div class="contact-round"><i class="fab fa-facebook"></i></div>
-          </a>
-          <a target="_blank" href="https://www.linkedin.com/company/agência-uhaau-/">
-            <div class="contact-round"><i class="fab fa-linkedin"></i></div>
-          </a>
-          <a target="_blank" href="https://www.youtube.com/channel/UCWIL6qct8NPfEKOYAgdhF-A">
-            <div class="contact-round"><i class="fab fa-youtube"></i></div>
-          </a>
-          <a target="_blank" href="https://api.whatsapp.com/send?phone=5531984394001&text=Quero%20ser%20Uhaau">
-            <div class="contact-round"><i class="fab fa-whatsapp"></i></div>
-          </a>
-          <a target="_blank" href="https://www.tiktok.com/@camilanogueira_uaauge?">
-              <div class="contact-round"><i class="fab fa-tiktok"></i></div>
-            </a>
-          </a>
         </div>
-      </div>
-    </div>
-  </footer>
+  </main>
+  <div class="container" id="footer"></div>
 
   <!-- script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
