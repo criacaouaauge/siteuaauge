@@ -3664,8 +3664,8 @@ mark {
   --cd-color-3-h: 0;
   --cd-color-3-s: 0%;
   --cd-color-3-l: 97%;
-  --font-primary: 'DIN PRO';
-  --font-secondary: 'DIN PRO';
+  --font-primary: 'quosmbold';
+  --font-secondary: 'quosmbold';
 }
 
 body {
