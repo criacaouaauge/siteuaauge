@@ -506,6 +506,7 @@ img {
 .stick-wrapper {
   position: sticky;
   background-color: #ffffff;
+  z-index: 9999;
 }
 
 .sticky {
@@ -515,7 +516,7 @@ img {
   border-bottom: 1px solid #e5e5e5;
   box-sizing: border-box;
   background-color: #ffffff;
-  z-index: 1000;
+
 }
 
 .sticky .grid-row {
@@ -843,7 +844,6 @@ img {
 .content-img>#splash-2 {
   position: absolute;
   width: 100%;
-  z-index: -2;
   top: 60%;
   left: 20%;
 }
@@ -2513,7 +2513,6 @@ video::-webkit-media-controls-enclosure {
 
 .parallax-image img {
   width: auto;
-  z-index: -2;
 }
 
 .parallaxed>*:not(.them-mask):not(.parallax-image) {
@@ -4424,7 +4423,6 @@ section.text-section.parallaxed:after {
   position: fixed !important;
   top: 80px !important;
   left: 10px !important;
-  z-index: 1000;
 }
 
 #settingMenu {
@@ -4432,7 +4430,6 @@ section.text-section.parallaxed:after {
   position: fixed;
   top: 115px;
   left: 0;
-  z-index: 1000;
   -o-transition: all 0.7s;
   -ms-transition: all 0.7s;
   -moz-transition: all 0.7s;
@@ -7680,7 +7677,6 @@ td.ui-datepicker-current-day {}
 
 .banner-frases {
   margin: 0px 50px;
-  z-index: -2;
 }
 
 .box-parceiros-slide {
@@ -7739,10 +7735,7 @@ td.ui-datepicker-current-day {}
 
 .sub-menu {
   border-radius: 25px;
-}
-
-.sub-menu{
-  border-radius: 25px;
+  box-shadow: 3px 6px 6px 0px rgba(0,0,0,0.15);
 }
 
 .intro-text {

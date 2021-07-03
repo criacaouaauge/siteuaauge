@@ -3567,7 +3567,7 @@ textarea.form-control-lg {
 
 .dropdown-menu {
   position: absolute;
-  z-index: 1000;
+  z-index: auto;
   display: none;
   min-width: 10rem;
   font-size: 1rem;
@@ -3782,7 +3782,6 @@ textarea.form-control-lg {
   padding: 10px;
   border-radius: 15px;
   transition: ease 0.5s;
-  z-index: 1000;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -3801,7 +3800,6 @@ textarea.form-control-lg {
 .dropdown-menu.show {
   display: block;
   transition: ease 1s;
-  z-index: 1000;
 }
 
 .dropdown-header {
@@ -5847,7 +5845,6 @@ textarea.form-control-lg {
 
 .carousel {
   position: relative;
-  z-index: -2;
 }
 
 .carousel.pointer-event {
