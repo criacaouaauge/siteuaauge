@@ -73,15 +73,46 @@
     const cookie = document.getElementById('cookie');
     const footer = document.getElementById('footer');
 
-    loadContent('components/navbar.html', nav);
-    loadContent('components/banner_frases.html', bannerFrases);
-    loadContent('components/banner_inferior.html', bannerInferior);
-    loadContent('components/carrousel.html', carrousel);
-    loadContent('components/solucoes.html', solucoes);
-    loadContent('components/plano.html', plano);
-    loadContent('components/portfolio.html', portfolio);
-    loadContent('components/cookie.html', cookie);
-    loadContent('components/footer.html', footer);
+    const elements = [
+      {
+        path: 'components/navbar.html',
+        el: nav
+      },
+      {
+        path: 'components/banner_frases.html',
+        el: bannerFrases
+      },
+      {
+        path: 'components/banner_inferior.html',
+        el: bannerInferior
+      },
+      {
+        path: 'components/carrousel.html',
+        el: carrousel
+      },
+      {
+        path: 'components/solucoes.html',
+        el: solucoes
+      },
+      {
+        path: 'components/plano.html',
+        el: plano
+      },
+      {
+        path: 'components/portfolio.html',
+        el: portfolio
+      },
+      {
+        path: 'components/cookie.html',
+        el: cookie
+      },
+      {
+        path: 'components/footer.html',
+        el: footer
+      },
+    ];
+
+    elements.forEach(e => loadContent(e.path, e.el));
   </script>
 
 <script
