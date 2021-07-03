@@ -103,7 +103,8 @@ html {
 
 body {
   background-color: hsl(0, 0%, 100%);
-  background-color: var(--color-bg, white)
+  background-color: var(--color-bg, white);
+  padding-right: 0 !important;
 }
 
 article,
