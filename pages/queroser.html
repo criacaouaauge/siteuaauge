@@ -1,126 +1,84 @@
-<!DOCTYPE HTML>
-<html>
+<div class="img-fluid">
+  <img class="img-fluid banner-top" src="assets/images/sejaum.png" />
+</div>
+<div class="justify-content-center">
+  <p style="line-height: 35px" class="intro-text">
+    Somos os fiéis escudeiros de empresas que são movidas por<br />
+    <strong>criatividade</strong> e <strong>resultados acima da média!</strong>
+  </p>
+</div>
 
-<head>
-  <title>Agência Uaauge</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <!--styles -->
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.css">
-  <link rel="stylesheet" href="css/font-awesome.css">
-  <link rel="stylesheet" href="css/jquery.owl.carousel.css">
-  <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-  <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/custom.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/fontawesome.css">
-  <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.js"
-    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-    crossorigin="anonymous">
-</script>
-<script>
-  $(function(){
-    $("#footer").load("footer.html");
-  });
-  </script>
-</head>
-
-<body class="main-page pc">
-  <header class="bg-white" id="home">
-    <div class="stick-wrapper">
-      <div class="sticky clear">
-        <div id="include"></div>
-        <script>
-          window.onload = function(){
-              $.get("navbar.html", function(data){
-                  $("#include").html(data);
-              })
-          }
-      </script>
+<div class="container container-cv">
+  <div class="row d-flex">
+    <div class="col curriculo">
+      <div class="box-curriculo">
+        <h2>
+          Se você é um profissional dinâmico e que ama desafios, envie agora
+          mesmo o seu currículo!
+        </h2>
+        <h3>
+          Você pode ser o próximo uaauge!
+          <i
+            ><img
+              class="icon-sorriso"
+              src="assets/images/LOGO_UAAUGE_PISCANDO.svg"
+          /></i>
+        </h3>
       </div>
     </div>
-  </header>
-  <main>
-    <div class="img-fluid">
-      <img class="img-fluid banner-top" src="assets/images/sejaum.png">
-    </div>
-    <div class="justify-content-center">
-      <p style="line-height: 35px;" class="intro-text">
-        Somos os fiéis escudeiros de empresas que são movidas por<br> <strong>criatividade</strong> e <strong>resultados acima da média!</strong>
-      </p>
-    </div>
-
-    <div class="container container-cv">
-      <div class="row d-flex">
-        <div class="col curriculo">
-          <div class="box-curriculo">
-            <h2>
-              Se você é um profissional dinâmico e que ama desafios, envie agora mesmo o seu currículo!
-            </h2>
-            <h3>
-              Você pode ser o próximo uaauge! <i><img class="icon-sorriso" src="assets/images/LOGO_UAAUGE_PISCANDO.svg"></i>
-            </h3>
-          </div>
+    <div class="row">
+      <form
+        action="https://getform.io/f/7bd3ad3a-558e-45f5-b119-c12e7fd4c823"
+        method="POST"
+        enctype="multipart/form-data"
+        class="row container-cv"
+      >
+        <div class="col">
+          <input
+            class="form-control2"
+            required
+            placeholder="Qual o seu nome?"
+            type="text"
+            name="name"
+          />
         </div>
-        <div class="row">
-          <form action="https://getform.io/f/7bd3ad3a-558e-45f5-b119-c12e7fd4c823"
-        method="POST" enctype="multipart/form-data" class="row container-cv">
-          <div class="col">
-            <input class="form-control2" required placeholder="Qual o seu nome?" type="text" name="name">
-          </div>
-          <div class="col form-cv">
-            <input type="text" class="form-control2" placeholder="Seu Email?" id="text" name="email">
-          </div>
-          <div class="col-12">
-            <select name="departamento" id="departamento"class="form-select form-control2">
-              <option selected>Selecione a área desejada</option>
-              <option value="Atendimento">Atendimento</option>
-              <option value="Criação">Criação</option>
-              <option value="social">Social Media</option>
-            </select>
-          </div>
-          <div class="col-12 text-center">
-            <input type="text" class="form-control2" name="phone" id="inputAddress" placeholder="Seu telefone?">
-            <input class="form-control2" type="file" name="file">
-          </div>
-          <div class="col-12 text-center">
-            <button type="submit" class="btn btn-third">Quero ser um uaauge!</button>
-          </div>
+        <div class="col form-cv">
+          <input
+            type="text"
+            class="form-control2"
+            placeholder="Seu Email?"
+            id="text"
+            name="email"
+          />
+        </div>
+        <div class="col-12">
+          <select
+            name="departamento"
+            id="departamento"
+            class="form-select form-control2"
+          >
+            <option selected>Selecione a área desejada</option>
+            <option value="Atendimento">Atendimento</option>
+            <option value="Criação">Criação</option>
+            <option value="social">Social Media</option>
+          </select>
+        </div>
+        <div class="col-12 text-center">
+          <input
+            type="text"
+            class="form-control2"
+            name="phone"
+            id="inputAddress"
+            placeholder="Seu telefone?"
+          />
+          <input class="form-control2" type="file" name="file" />
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-third">
+            Quero ser um uaauge!
+          </button>
+        </div>
       </form>
-        </div>
-  </main>
-  <div class="container" id="footer"></div>
-
-  <!-- script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-  <script type="text/javascript"
-    src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox_packed.js"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-  <script src="js/jquery.fancybox.pack.js"></script>
-  <script src="js/jquery.fancybox-media.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/jquery.owl.carousel.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/retina.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.form.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-<script type="text/javascript">
-(function() {
-emailjs.init("user_m3wYZclcOHG66Q8hzbzZ6");
-})();
-</script>
-  <!--/ script -->
-</body>
-
-</html>
+    </div>
+  </div>
+</div>

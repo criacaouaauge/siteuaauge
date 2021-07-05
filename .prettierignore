@@ -1,8 +1,8 @@
 # Ignore artifacts:
-build
-coverage
 node_modules
 assets/fonts
 assets/css
+assets/js
 assets/images
 assets/webfonts
+Documentation
