@@ -9,9 +9,9 @@
 
 :root {
   // colors
-  @include defineColorHSL(--cd-color-1, 0, 0%, 22%);   // Mine Shaft
+  @include defineColorHSL(--cd-color-1, 0, 0%, 22%); // Mine Shaft
   @include defineColorHSL(--cd-color-2, 74, 93%, 32%); // Highland
-  @include defineColorHSL(--cd-color-3, 0, 0%, 97%);   // Alabaster
+  @include defineColorHSL(--cd-color-3, 0, 0%, 97%); // Alabaster
 
   // font
   --font-primary: 'Fira Sans', sans-serif;
@@ -23,14 +23,14 @@ body {
   background-color: var(--cd-color-3);
 }
 
-
 .js {
   .cd-h-timeline {
     opacity: 0;
     transition: opacity 0.2s;
   }
 
-  .cd-h-timeline--loaded { // show the timeline after dates position has been set (using JavaScript)
+  .cd-h-timeline--loaded {
+    // show the timeline after dates position has been set (using JavaScript)
     opacity: 1;
   }
 
@@ -46,7 +46,9 @@ body {
     margin: 0 40px;
     overflow: hidden;
 
-    &::after, &::before { // these are used to create a shadow effect at the sides of the timeline
+    &::after,
+    &::before {
+      // these are used to create a shadow effect at the sides of the timeline
       content: '';
       position: absolute;
       z-index: 2;
@@ -57,16 +59,25 @@ body {
 
     &::before {
       left: 0;
-      background: linear-gradient(to right, var(--cd-color-3), alpha(var(--cd-color-3), 0));
+      background: linear-gradient(
+        to right,
+        var(--cd-color-3),
+        alpha(var(--cd-color-3), 0)
+      );
     }
 
     &::after {
       right: 0;
-      background: linear-gradient(to left, var(--cd-color-3), alpha(var(--cd-color-3), 0));
+      background: linear-gradient(
+        to left,
+        var(--cd-color-3),
+        alpha(var(--cd-color-3), 0)
+      );
     }
   }
 
-  .cd-h-timeline__line { // grey line
+  .cd-h-timeline__line {
+    // grey line
     position: absolute;
     z-index: 1;
     left: 0;
@@ -76,7 +87,8 @@ body {
     transition: transform 0.4s;
   }
 
-  .cd-h-timeline__filling-line { // green filling line
+  .cd-h-timeline__filling-line {
+    // green filling line
     position: absolute;
     z-index: 1;
     left: 0;
@@ -100,7 +112,8 @@ body {
     user-select: none; // improve swipe
     text-decoration: none;
 
-    &::after { // this is used to create the event spot
+    &::after {
+      // this is used to create the event spot
       content: '';
       position: absolute;
       left: 50%;
@@ -113,7 +126,7 @@ body {
       border-style: solid;
       border-color: lightness(var(--cd-color-3), 0.9);
       background-color: var(--cd-color-3);
-      transition: background-color 0.3s, border-color .3s;
+      transition: background-color 0.3s, border-color 0.3s;
     }
 
     &:hover::after {
@@ -139,7 +152,8 @@ body {
     border-color: var(--cd-color-2);
   }
 
-  .cd-h-timeline__navigation { // arrows to navigate the timeline
+  .cd-h-timeline__navigation {
+    // arrows to navigate the timeline
     position: absolute;
     z-index: 1;
     top: 50%;
@@ -152,7 +166,8 @@ body {
     border-color: lightness(var(--cd-color-3), 0.9);
     transition: border-color 0.3s;
 
-    &::after { // arrow icon
+    &::after {
+      // arrow icon
       content: '';
       position: absolute;
       height: 16px;
@@ -189,14 +204,16 @@ body {
     }
   }
 
-  .cd-h-timeline__events { // container of events info
+  .cd-h-timeline__events {
+    // container of events info
     position: relative;
     width: 100%;
     overflow: hidden;
-    transition: height .4s;
+    transition: height 0.4s;
   }
 
-  .cd-h-timeline__event { // single event info
+  .cd-h-timeline__event {
+    // single event info
     position: absolute;
     z-index: 1;
     width: 100%;
@@ -209,7 +226,8 @@ body {
     animation-timing-function: ease-in-out;
   }
 
-  .cd-h-timeline__event--selected { // selected event info
+  .cd-h-timeline__event--selected {
+    // selected event info
     position: relative;
     z-index: 2;
     opacity: 1;
@@ -217,12 +235,14 @@ body {
   }
 
   .cd-h-timeline__event--enter-right,
-  .cd-h-timeline__event--leave-right { // animate event info
+  .cd-h-timeline__event--leave-right {
+    // animate event info
     animation-name: cd-enter-right;
   }
 
   .cd-h-timeline__event--enter-left,
-  .cd-h-timeline__event--leave-left { // animate event info
+  .cd-h-timeline__event--leave-left {
+    // animate event info
     animation-name: cd-enter-left;
   }
 
@@ -278,6 +298,7 @@ body {
 }
 
 html:not(.js) .cd-h-timeline__dates,
-html:not(.js) .cd-h-timeline__navigation { // hide timeline dates if js is disabled
+html:not(.js) .cd-h-timeline__navigation {
+  // hide timeline dates if js is disabled
   display: none;
 }

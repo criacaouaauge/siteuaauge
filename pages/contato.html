@@ -1,203 +1,154 @@
-<!DOCTYPE HTML>
-<html>
-
-  <head>
-    <title>Agência Uaauge</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <!--styles -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/jquery.owl.carousel.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
-    <link rel="icon" href="images/favicon-32x32.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/fontawesome.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
-    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous">
-  </script>
-  <script>
-    $(function(){
-      $("#footer").load("footer.html");
-    });
-    </script>
-  </head>
-
-<body class="main-page pc">
-  <header class="bg-white" id="home">
-    <div class="stick-wrapper">
-      <div class="sticky clear">
-        <div id="navegacao"></div>
-        <script>
-          window.onload = function(){
-              $.get("navbar.html", function(data){
-                  $("#navegacao").html(data);
-              })
-          }
-      </script>
+<div class="img-fluid">
+  <img class="img-fluid" src="assets/images/Contato.png" />
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col box-contato">
+      <h5 class="title-contato">Contato</h5>
+      <h5 class="sub-title-contato">
+        Fale agora mesmo com um especialista que vai te ajudar a alavancar o
+        marketing da sua empresa!
+      </h5>
+      <div class="col">
+        <i style="color: #ff9700" class="fas fa-phone"></i>
+        <a href="tel:(+55) 31 3081-8059">
+          <span class="contatos">(+55) 31 3081-8059</span>
+        </a>
+      </div>
+      <div style="margin-top: 25px" class="col">
+        <i style="color: #ff9700; margin-top: 10px" class="fas fa-envelope"></i>
+        <a href="mailto:atendimento@uhaau.com.br">
+          <span class="contatos">atendimento@uhaau.com.br</span>
+        </a>
+      </div>
+      <div style="margin-top: 25px" class="col">
+        <i
+          style="color: #ff9700; margin-top: 10px"
+          class="fas fa-map-marker-alt"
+        ></i>
+        <a
+          href="https://www.google.com/maps?ll=-19.921581,-43.958873&z=13&t=m&hl=pt-BR&gl=US&mapclient=embed&q=Rua+Jaceguai,+208+-+Prado+Belo+Horizonte+-+MG+30411-040"
+        >
+          <span class="contatos"
+            >Rua Jaceguai, 208 - Sala 1015 Prado - Belo Horizonte/MG</span
+          >
+        </a>
+      </div>
+      <form id="emailjs-form">
+        <div class="row">
+          <div class="col-md-6">
+            <label for="name" style="opacity: 0">Nome</label>
+            <input
+              class="form-control"
+              required
+              placeholder="Qual o seu nome?"
+              type="text"
+              name="name"
+              id="name"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="email" style="opacity: 0">Email</label>
+            <input
+              style="margin-left: 20px"
+              required
+              placeholder="Qual seu email?"
+              class="form-control"
+              type="email"
+              name="email"
+              id="email"
+            />
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <label for="telephone" style="opacity: 0">Telephone</label>
+            <input
+              placeholder="Seu telefone?"
+              class="form-control"
+              type="tel"
+              name="telephone"
+              id="telephone"
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="departamento" style="opacity: 0">Telephone</label>
+            <select
+              name="departamento"
+              id="departamento"
+              style="margin-left: 20px"
+              class="form-select form-control2"
+              aria-label="Default select example"
+            >
+              <option selected>Qual o departamento?</option>
+              <option value="Atendimento">Atendimento</option>
+              <option value="Briefing">Briefing</option>
+              <option value="Financeiro">Financeiro</option>
+              <option value="Suporte">Suporte</option>
+              <option value="Outros Assuntos">Outros Assuntos...</option>
+            </select>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-md">
+            <label for="message" style="opacity: 0">Mensagem</label>
+            <textarea
+              id="message"
+              style="padding-right: 25px"
+              name="message"
+              class="form-control"
+              placeholder="Como a uaauge pode te ajudar?"
+              rows="3"
+            ></textarea>
+          </div>
+        </div>
+        <div class="row g-3">
+          <div class="col-md d-grid gap-2">
+            <input
+              class="btn btn-outline-success btn-contato"
+              type="submit"
+              value="Enviar"
+              id="emailjs-btn"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="col mapa-contato">
+      <div class="mapouter">
+        <div class="gmap_canvas">
+          <iframe
+            width="546"
+            height="680"
+            id="gmap_canvas"
+            src="https://maps.google.com/maps?q=Rua%20jaceguai%20208&t=&z=15&ie=UTF8&iwloc=&output=embed"
+            frameborder="0"
+            scrolling="no"
+            marginheight="0"
+            marginwidth="0"
+          ></iframe
+          ><a href="https://2piratebay.org">pirate bay</a><br />
+          <style>
+            .mapouter {
+              position: relative;
+              text-align: right;
+              height: 680px;
+              width: 546px;
+            }</style
+          ><a href="https://www.embedgooglemap.net"
+            >how to add google maps to website</a
+          >
+          <style>
+            .gmap_canvas {
+              overflow: hidden;
+              background: none !important;
+              height: 680px;
+              width: 546px;
+              border-radius: 25px;
+            }
+          </style>
+        </div>
       </div>
     </div>
-  </header>
-  <main>
-    <div class="img-fluid">
-      <img class="img-fluid" src="/images/Contato.png">
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col box-contato">
-          <h5 class="title-contato">Contato</h5>
-          <h5 class="sub-title-contato">Fale agora mesmo com um especialista que vai te ajudar a alavancar o marketing
-            da sua empresa!</h5>
-          <div class="col">
-            <i style="color: #ff9700;" class="fas fa-phone"></i>
-            <a href="tel:(+55) 31 3081-8059">
-              <span class="contatos">(+55) 31 3081-8059</span>
-            </a>
-          </div>
-          <div style="margin-top: 25px;" class="col">
-            <i style="color: #ff9700; margin-top: 10px;" class="fas fa-envelope"></i>
-            <a href="mailto:atendimento@uhaau.com.br">
-              <span class="contatos">atendimento@uhaau.com.br</span>
-            </a>
-          </div>
-          <div style="margin-top: 25px;" class="col">
-            <i style="color: #ff9700; margin-top: 10px;" class="fas fa-map-marker-alt"></i>
-            <a
-              href="https://www.google.com/maps?ll=-19.921581,-43.958873&z=13&t=m&hl=pt-BR&gl=US&mapclient=embed&q=Rua+Jaceguai,+208+-+Prado+Belo+Horizonte+-+MG+30411-040">
-              <span class="contatos">Rua Jaceguai, 208 - Sala 1015 Prado - Belo Horizonte/MG</span>
-            </a>
-          </div>
-          <form id="emailjs-form">
-            <div class="row">
-              <div class="col-md-6">
-                <label for="name" style="opacity: 0;">Nome</label>
-                <input class="form-control" required placeholder="Qual o seu nome?" type="text" name="name" id="name">
-              </div>
-              <div class="col-md-6">
-                <label for="email" style="opacity: 0;">Email</label>
-                <input style="margin-left: 20px;" required placeholder="Qual seu email?" class="form-control"
-                  type="email" name="email" id="email">
-              </div>
-            </div>
-            <div class="row g-3">
-              <div class="col-md-6">
-                <label for="telephone" style="opacity: 0;">Telephone</label>
-                <input placeholder="Seu telefone?" class="form-control" type="tel" name="telephone" id="telephone"
-                  pattern="[0-9]{2}[0-9]{5}[0-9]{4}">
-              </div>
-              <div class="col-md-6">
-                <label for="departamento" style="opacity: 0;">Telephone</label>
-                <select name="departamento" id="departamento" style="margin-left: 20px;"
-                  class="form-select form-control2" aria-label="Default select example">
-                  <option selected>Qual o departamento?</option>
-                  <option value="Atendimento">Atendimento</option>
-                  <option value="Briefing">Briefing</option>
-                  <option value="Financeiro">Financeiro</option>
-                  <option value="Suporte">Suporte</option>
-                  <option value="Outros Assuntos">Outros Assuntos...</option>
-                </select>
-              </div>
-            </div>
-            <div class="row g-3">
-              <div class="col-md">
-                <label for="message" style="opacity: 0;">Mensagem</label>
-                <textarea id="message" style="padding-right: 25px;" name="message" class="form-control"
-                  placeholder="Como a uaauge pode te ajudar?" rows="3"></textarea>
-              </div>
-            </div>
-            <div class="row g-3">
-              <div class="col-md d-grid gap-2">
-                <input class="btn btn-outline-success btn-contato" type="submit" value="Enviar" id="emailjs-btn">
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="col mapa-contato">
-          <div class="mapouter">
-            <div class="gmap_canvas"><iframe width="546" height="680" id="gmap_canvas"
-                src="https://maps.google.com/maps?q=Rua%20jaceguai%20208&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
-                href="https://2piratebay.org">pirate bay</a><br>
-              <style>
-                .mapouter {
-                  position: relative;
-                  text-align: right;
-                  height: 680px;
-                  width: 546px;
-                }
-              </style><a href="https://www.embedgooglemap.net">how to add google maps to website</a>
-              <style>
-                .gmap_canvas {
-                  overflow: hidden;
-                  background: none !important;
-                  height: 680px;
-                  width: 546px;
-                  border-radius: 25px;
-                }
-              </style>
-            </div>
-          </div>
-  </main>
-
-
-<div id="footer"></div>
-
-  <!-- script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-  </script>
-  <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-  <script type="text/javascript"
-    src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox_packed.js"></script>
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-  <script src="js/jquery.fancybox.pack.js"></script>
-  <script src="js/jquery.fancybox-media.js"></script>
-  <script src="js/jquery.isotope.min.js"></script>
-  <script src="js/jquery.owl.carousel.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/retina.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.form.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function () {
-      emailjs.init("user_D22MEyG5L6u4TaPclLogo");
-
-      const btn = document.getElementById('emailjs-btn')
-
-      const contactForm = document.getElementById('emailjs-form');
-
-      contactForm.addEventListener('submit', function (event) {
-
-        event.preventDefault();
-
-        btn.value = 'Enviando mensagem'
-
-        const serviceID = 'default_service';
-        const templateID = 'template_evngqlp';
-
-        emailjs.sendForm(serviceID, templateID, this).then(() => {
-          btn.value = 'Enviar';
-          alert('Mensagem enviada');
-        }, (err) => {
-          btn.value = 'Enviar';
-          console.log(err)
-        })
-      })
-    })();
-  </script>
-  <!--/ script -->
-</body>
-
-</html>
+  </div>
+</div>

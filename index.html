@@ -1,142 +1,133 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
+  <head>
+    <title>Agência Uaauge</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <!--styles -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/jquery.owl.carousel.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/js/rs-plugin/css/settings.css"
+      media="screen"
+    />
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/custom.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="assets/css/cookiealert.css" />
+    <link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/js/slick/slick-theme.css"
+    />
+    <!--styles -->
+  </head>
 
-<head>
-  <title>Agência Uaauge</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <!--styles -->
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/jquery.fancybox.css">
-  <link rel="stylesheet" href="assets/css/font-awesome.css">
-  <link rel="stylesheet" href="assets/css/jquery.owl.carousel.css">
-  <link rel="stylesheet" href="assets/css/animate.css">
-  <link rel="stylesheet" type="text/css" href="assets/js/rs-plugin/css/settings.css" media="screen" />
-  <link rel="shortcut icon" href="assets/images/favicon-32x32.png" />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/custom.css">
-  <link rel="stylesheet" href="assets/css/bootstrap.css">
-  <link rel="stylesheet" href="assets/css/font-awesome.css">
-  <link rel="stylesheet" href="assets/css/cookiealert.css">
-  <link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css" />
-  <link rel="stylesheet" type="text/css" href="assets/js/slick/slick-theme.css" />
-  <!--styles -->
-</head>
+  <body class="main-page pc">
+    <div id="header"></div>
+    <div id="content"></div>
+    <div id="cookie"></div>
+    <div id="footer"></div>
+    <!-- scripts -->
 
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
+    <script
+      type="text/javascript"
+      src="http://maps.google.com/maps/api/js?sensor=false"
+    ></script>
+    <script
+      type="text/javascript"
+      src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox_packed.js"
+    ></script>
 
-<body class="main-page pc">
-  <header class="bg-white" id="home">
-    <div class="stick-wrapper">
-      <div class="sticky clear">
-        <div id="nav"></div>
-      </div>
-    </div>
-  </header>
+    <script>
+      globalThis.loadContent = async function loadContent(page, element) {
+        const response = await fetch(page);
+        const content = await response.text();
 
+        element.innerHTML = content;
+      };
 
-  <div id="banner-frases">
+      function pageSwitch(path) {
+        switch (path) {
+          case 'home':
+            globalThis.loadHome();
+            break;
 
-  </div>
+          case 'contato':
+            setTimeout(() => {
+              emailjs.init('user_D22MEyG5L6u4TaPclLogo');
 
-  <div id="carrousel"></div>
+              const btn = document.getElementById('emailjs-btn');
 
-  <div id="banner-inferior"></div>
+              const contactForm = document.getElementById('emailjs-form');
 
-  <div id="solucoes"></div>
+              contactForm.addEventListener('submit', function (event) {
+                event.preventDefault();
 
-  <div id="plano"></div>
+                btn.value = 'Enviando mensagem';
 
-  <div id="portfolio"></div>
+                const serviceID = 'default_service';
+                const templateID = 'template_evngqlp';
 
-  <div id="cookie"></div>
+                emailjs.sendForm(serviceID, templateID, this).then(
+                  () => {
+                    btn.value = 'Enviar';
+                    alert('Mensagem enviada');
+                  },
+                  (err) => {
+                    btn.value = 'Enviar';
+                    console.log(err);
+                  }
+                );
+              });
+            }, 50);
 
+            break;
 
-  <div class="container" id="footer"></div>
-  <!-- scripts -->
+          default:
+            break;
+        }
+      }
 
-  <script>
-    async function loadContent(page, element) {
-      const response = await fetch(page);
-      const content = await response.text();
+      globalThis.routeChange = (path) => {
+        const content = document.getElementById('content');
+        globalThis.loadContent(`pages/${path}.html`, content);
 
-      element.innerHTML = content;
-    }
-
-    const nav = document.getElementById('nav');
-    const bannerFrases = document.getElementById('banner-frases');
-    const carrousel = document.getElementById('carrousel');
-    const bannerInferior = document.getElementById('banner-inferior');
-    const solucoes = document.getElementById('solucoes');
-    const plano = document.getElementById('plano');
-    const portfolio = document.getElementById('portfolio');
-    const cookie = document.getElementById('cookie');
-    const footer = document.getElementById('footer');
-
-    const elements = [
-      {
-        path: 'components/navbar.html',
-        el: nav
-      },
-      {
-        path: 'components/banner_frases.html',
-        el: bannerFrases
-      },
-      {
-        path: 'components/banner_inferior.html',
-        el: bannerInferior
-      },
-      {
-        path: 'components/carrousel.html',
-        el: carrousel
-      },
-      {
-        path: 'components/solucoes.html',
-        el: solucoes
-      },
-      {
-        path: 'components/plano.html',
-        el: plano
-      },
-      {
-        path: 'components/portfolio.html',
-        el: portfolio
-      },
-      {
-        path: 'components/cookie.html',
-        el: cookie
-      },
-      {
-        path: 'components/footer.html',
-        el: footer
-      },
-    ];
-
-    elements.forEach(e => loadContent(e.path, e.el));
-  </script>
-
-<script
-  src="https://code.jquery.com/jquery-3.3.1.js"
-  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-  crossorigin="anonymous">
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js"></script>
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-<script type="text/javascript"
-  src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/infobox/src/infobox_packed.js"></script>
-<script>
-  $(document).ready(function () {
-    $('.banner-frases').slick({
-      autoplay: true,
-      autoplaySpeed: 5000,
-    });
-  });
-</script>
-
-<script src="assets/js/slick/slick.min.js"></script>
-  <!--/ scripts -->
-</body>
-
+        pageSwitch(path);
+      };
+    </script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+    <script src="assets/js/slick/slick.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!--/ scripts -->
+  </body>
 </html>
