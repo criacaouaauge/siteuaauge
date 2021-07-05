@@ -3,5 +3,6 @@ build
 coverage
 node_modules
 assets/fonts
+assets/css
 assets/images
 assets/webfonts
