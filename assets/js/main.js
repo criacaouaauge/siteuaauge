@@ -35,4 +35,5 @@ globalThis.pageSwitch(route);
 window.addEventListener('popstate', function () {
   const route = location.hash.replace('#', '');
   globalThis.loadContent(`pages/${route}.html`, content);
+  globalThis.pageSwitch(route);
 });

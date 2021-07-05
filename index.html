@@ -64,6 +64,12 @@
       const html = document.getElementsByTagName('html')[0];
       html.classList.add('js');
 
+      function addScript(src) {
+        const s = document.createElement('script');
+        s.setAttribute('src', src);
+        document.body.appendChild(s);
+      }
+
       globalThis.loadContent = async function loadContent(page, element) {
         const response = await fetch(page);
         const content = await response.text();
@@ -115,6 +121,10 @@
                 autoplay: true,
                 autoplaySpeed: 2000,
               });
+
+              addScript('assets/js/libs/util.js');
+              addScript('assets/js/libs/swipe-content.js');
+              addScript('assets/js/libs/timeline.js');
             }, 100);
 
             break;
@@ -138,7 +148,6 @@
     </script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script src="assets/js/libs/slick/slick.min.js"></script>
-    <script src="assets/js/libs/timeline.js"></script>
     <script src="assets/js/main.js"></script>
     <!--/ scripts -->
   </body>
