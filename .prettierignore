@@ -2,6 +2,10 @@
 node_modules
 assets/fonts
 assets/css
+assets/js/libs
 assets/images
 assets/webfonts
 Documentation
+package.json
+package-lock.json
+.prettierrc.json
