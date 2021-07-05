@@ -20,7 +20,6 @@
     <link rel="preload" as="style" href="assets/js/libs/rs-plugin/css/settings.css" onload="this.rel='stylesheet'" />
 
     <link rel="shortcut icon" href="assets/images/favicon-32x32.png" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
 
     <link rel="prefetch" as="script" href="https://code.jquery.com/jquery-3.3.1.js" />
     <link
@@ -64,10 +63,26 @@
       const html = document.getElementsByTagName('html')[0];
       html.classList.add('js');
 
-      function addScript(src) {
+      scripts = {
+        timeline: {
+          src: '/assets/js/libs/timeline.js',
+          loaded: false,
+        },
+        util: {
+          src: '/assets/js/libs/util.js',
+          loaded: false,
+        },
+        swipeContent: {
+          src: '/assets/js/libs/swipe-content.js',
+          loaded: false,
+        },
+      };
+
+      function addScript(script) {
         const s = document.createElement('script');
-        s.setAttribute('src', src);
+        s.setAttribute('src', script.src);
         document.body.appendChild(s);
+        script.loaded = true;
       }
 
       globalThis.loadContent = async function loadContent(page, element) {
@@ -122,11 +137,10 @@
                 autoplaySpeed: 2000,
               });
 
-              addScript('assets/js/libs/util.js');
-              addScript('assets/js/libs/swipe-content.js');
-              addScript('assets/js/libs/timeline.js');
+              addScript(scripts.util);
+              addScript(scripts.swipeContent);
+              addScript(scripts.timeline);
             }, 100);
-
             break;
         }
       };
