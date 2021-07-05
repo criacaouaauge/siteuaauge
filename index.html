@@ -100,10 +100,18 @@
                 );
               });
             }, 50);
-
             break;
 
-          default:
+          case 'espaco':
+            setTimeout(() => {
+              $('.fotos-eventos-parceiros').slick({
+                slidesToShow: 5,
+                slidesToScroll: 5,
+                autoplay: true,
+                autoplaySpeed: 2000,
+              });
+            }, 100);
+
             break;
         }
       }

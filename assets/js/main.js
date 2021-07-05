@@ -27,7 +27,7 @@ globalThis.loadHome = () => {
       autoplay: true,
       autoplaySpeed: 5000,
     });
-  }, 100);
+  }, 200);
 };
 
 if (route === 'home') {
