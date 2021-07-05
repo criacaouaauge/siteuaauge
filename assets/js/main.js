@@ -23,13 +23,11 @@ setTimeout(() => {
 
 globalThis.loadHome = () => {
   setTimeout(() => {
-    jQuery(function () {
-      $('.banner-frases').slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
-      });
+    $('.banner-frases').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
     });
-  }, 50);
+  }, 100);
 };
 
 if (route === 'home') {
