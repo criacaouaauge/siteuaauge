@@ -7,7 +7,7 @@
       <p>Receba novidades</p>
     </div>
     <div>
-      <a href="telecom.html">
+      <a class="navbar__item" href="#telecom">
         <p>Marketing para Telecom</p>
       </a>
     </div>
@@ -74,10 +74,13 @@
     <div class="row">
       <div class="col text-center">
         <img class="img-fluid" src="assets/images/7680_1200_TEMOS_UM_PLANO.png" />
-        <form action="contato.html">
-          <button class="btn-lg btn-planos">Converse com um especialista</button
-          ><img src="assets/images/click_icon.svg" class="icon-sorriso-click" />
-        </form>
+
+        <button
+          onclick="globalThis.loadContent('pages/contato.html', document.getElementById('content'))"
+          class="btn-lg btn-planos"
+        >
+          Converse com um especialista</button
+        ><img src="assets/images/click_icon.svg" class="icon-sorriso-click" />
       </div>
     </div>
   </div>
