@@ -5,8 +5,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
     <!--styles -->
-    <link rel="preload" as="style" href="assets/css/main.css" onload="this.rel='stylesheet'" />
     <link rel="preload" as="style" href="assets/css/style.css" onload="this.rel='stylesheet'" />
+    <link rel="preload" as="style" href="assets/css/main.css" onload="this.rel='stylesheet'" />
     <link rel="preload" as="style" href="assets/css/jquery.fancybox.css" onload="this.rel='stylesheet'" />
     <link rel="preload" as="style" href="assets/css/font-awesome.css" onload="this.rel='stylesheet'" />
     <link rel="preload" as="style" href="assets/css/jquery.owl.carousel.css" onload="this.rel='stylesheet'" />
@@ -17,6 +17,7 @@
     <link rel="preload" as="style" href="assets/css/cookiealert.css" onload="this.rel='stylesheet'" />
     <link rel="preload" as="style" href="assets/js/libs/slick/slick.css" onload="this.rel='stylesheet'" />
     <link rel="preload" as="style" href="assets/js/libs/slick/slick-theme.css" onload="this.rel='stylesheet'" />
+    <link rel="preload" as="style" href="assets/js/libs/rs-plugin/css/settings.css" onload="this.rel='stylesheet'" />
 
     <link rel="shortcut icon" href="assets/images/favicon-32x32.png" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
@@ -104,6 +105,7 @@
             break;
 
           case 'espaco':
+            document.getElementsByTagName('html')[0].className += 'js';
             setTimeout(() => {
               $('.fotos-eventos-parceiros').slick({
                 slidesToShow: 5,
