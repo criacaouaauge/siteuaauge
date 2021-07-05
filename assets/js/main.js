@@ -12,7 +12,13 @@ globalThis.loadContent('components/footer.html', footer);
 
 setTimeout(() => {
   const anchors = document.getElementsByClassName('navbar__item');
-  [...anchors].forEach((anchor) => (anchor.onclick = () => globalThis.routeChange(anchor)));
+  [...anchors].forEach((anchor) => {
+    anchor.onclick = () => globalThis.routeChange(anchor);
+
+    if (anchor.hash === `#${route}`) {
+      anchor.classList.add('active');
+    }
+  });
 }, 50);
 
 globalThis.loadHome = () => {
@@ -29,3 +35,8 @@ globalThis.loadHome = () => {
 if (route === 'home') {
   globalThis.loadHome();
 }
+
+window.addEventListener('popstate', function () {
+  const route = location.hash.replace('#', '');
+  globalThis.loadContent(`pages/${route}.html`, content);
+});
