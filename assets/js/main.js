@@ -12,59 +12,17 @@ globalThis.loadContent('components/footer.html', footer);
 
 setTimeout(() => {
   const anchors = document.getElementsByClassName('navbar__item');
-  [...anchors].forEach(
-    (anchor) =>
-      (anchor.onclick = () =>
-        globalThis.routeChange(anchor.hash.replace('#', '')))
-  );
+  [...anchors].forEach((anchor) => (anchor.onclick = () => globalThis.routeChange(anchor)));
 }, 50);
 
 globalThis.loadHome = () => {
   setTimeout(() => {
-    const bannerFrases = document.getElementById('banner-frases');
-    const carrousel = document.getElementById('carrousel');
-    const bannerInferior = document.getElementById('banner-inferior');
-    const solucoes = document.getElementById('solucoes');
-    const plano = document.getElementById('plano');
-    const portfolio = document.getElementById('portfolio');
-
-    const elements = [
-      {
-        path: 'components/banner_frases.html',
-        el: bannerFrases,
-      },
-      {
-        path: 'components/banner_inferior.html',
-        el: bannerInferior,
-      },
-      {
-        path: 'components/carrousel.html',
-        el: carrousel,
-      },
-      {
-        path: 'components/solucoes.html',
-        el: solucoes,
-      },
-      {
-        path: 'components/plano.html',
-        el: plano,
-      },
-      {
-        path: 'components/portfolio.html',
-        el: portfolio,
-      },
-    ];
-
-    elements.forEach((e) => globalThis.loadContent(e.path, e.el));
-
-    setTimeout(() => {
-      $(document).ready(function () {
-        $('.banner-frases').slick({
-          autoplay: true,
-          autoplaySpeed: 5000,
-        });
+    jQuery(function () {
+      $('.banner-frases').slick({
+        autoplay: true,
+        autoplaySpeed: 5000,
       });
-    }, 50);
+    });
   }, 50);
 };
 

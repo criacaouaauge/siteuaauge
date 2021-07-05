@@ -4038,8 +4038,11 @@ fieldset:disabled .btn {
   background-color: transparent;
   border: 0;
   padding: 10px;
-  border-radius: 15px;
-  transition: ease 0.5s;
+  transition: ease 0.2s;
+}
+
+.dropdown-menu li:last-child a {
+  border-radius: 0 0 15px 15px;
 }
 
 .dropdown-item.active,
@@ -4830,7 +4833,7 @@ fieldset:disabled .btn {
   box-shadow: -1px -1px 35px 2px rgba(0, 0, 0, 0.38);
 }
 .accordion-button:not(.collapsed)::after {
-  background-image: url('/images/dropdown-down.svg');
+  background-image: url('../images/dropdown-down.svg');
   transform: rotate(-180deg);
 }
 .accordion-button::after {
@@ -4839,7 +4842,7 @@ fieldset:disabled .btn {
   height: 1.25rem;
   margin-left: auto;
   content: '';
-  background-image: url('/images/dropdown.svg');
+  background-image: url('../images/dropdown.svg');
   background-repeat: no-repeat;
   background-size: 1.25rem;
   transition: transform 0.2s ease-in-out;
