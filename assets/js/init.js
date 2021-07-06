@@ -94,8 +94,12 @@ globalThis.pageSwitch = (path) => {
         slidesToScroll: 5,
         autoplay: true,
       };
-      globalThis.initSlick('.parceiros-slide', slickOptions);
-      globalThis.initSlick('.fotos-eventos-parceiros', slickOptions);
+
+      setTimeout(() => {
+        globalThis.initSlick('.parceiros-slide', slickOptions);
+        globalThis.initSlick('.fotos-eventos-parceiros', slickOptions);
+      }, 100);
+
       break;
   }
 };
