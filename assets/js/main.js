@@ -10,16 +10,16 @@ globalThis.loadContent(route === 'artigo' ? `pages/blog/${route}.html` : `pages/
 globalThis.loadContent('components/cookie.html', cookie);
 globalThis.loadContent('components/footer.html', footer);
 
-setTimeout(() => {
-  const anchors = document.getElementsByClassName('navbar__item');
-  [...anchors].forEach((anchor) => {
-    anchor.onclick = () => globalThis.routeChange(anchor);
+// setTimeout(() => {
+//   const anchors = document.getElementsByClassName('navbar__item');
+//   [...anchors].forEach((anchor) => {
+//     anchor.onclick = () => globalThis.routeChange(anchor);
 
-    if (anchor.hash === `#${route}`) {
-      anchor.classList.add('active');
-    }
-  });
-}, 50);
+//     if (anchor.hash === `#${route}`) {
+//       anchor.classList.add('active');
+//     }
+//   });
+// }, 50);
 
 globalThis.loadHome = () => {
   setTimeout(() => {
@@ -33,13 +33,17 @@ globalThis.loadHome = () => {
 globalThis.initSlick = (element, options) => {
   setTimeout(() => {
     $(element).slick(options);
-  }, 200);
+  }, 300);
 };
 
 globalThis.pageSwitch(route);
 
-window.addEventListener('popstate', function () {
-  const route = location.hash.replace('#', '');
-  globalThis.loadContent(route === 'artigo' ? `pages/blog/${route}.html` : `pages/${route}.html`, content);
-  globalThis.pageSwitch(route);
-});
+window.addEventListener(
+  'popstate',
+  function () {
+    const route = location.hash.replace('#', '');
+    globalThis.loadContent(route === 'artigo' ? `pages/blog/${route}.html` : `pages/${route}.html`, content);
+    globalThis.pageSwitch(route);
+  },
+  false
+);
