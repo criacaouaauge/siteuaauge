@@ -30,6 +30,12 @@ globalThis.loadHome = () => {
   }, 200);
 };
 
+globalThis.initSlick = (element, options) => {
+  setTimeout(() => {
+    $(element).slick(options);
+  }, 200);
+};
+
 globalThis.pageSwitch(route);
 
 window.addEventListener('popstate', function () {

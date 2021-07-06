@@ -86,6 +86,17 @@ globalThis.pageSwitch = (path) => {
         addScript(scripts.timeline);
       }, 100);
       break;
+
+    case 'uau':
+      const slickOptions = {
+        infinite: true,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        autoplay: true,
+      };
+      globalThis.initSlick('.parceiros-slide', slickOptions);
+      globalThis.initSlick('.fotos-eventos-parceiros', slickOptions);
+      break;
   }
 };
 
