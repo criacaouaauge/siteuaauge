@@ -20,15 +20,15 @@ const scripts = {
   },
 };
 
-function addScript(script) {
+const addScript = (script) => {
   const s = document.createElement('script');
   s.setAttribute('src', script.src);
   s.setAttribute('defer', true);
   document.body.appendChild(s);
   script.loaded = true;
-}
+};
 
-globalThis.loadContent = async function loadContent(page, element) {
+globalThis.loadContent = async (page, element) => {
   const response = await fetch(page);
   const content = await response.text();
 
