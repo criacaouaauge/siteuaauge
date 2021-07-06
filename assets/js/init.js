@@ -1,7 +1,7 @@
 const html = document.getElementsByTagName('html')[0];
 html.classList.add('js');
 
-scripts = {
+const scripts = {
   timeline: {
     src: '/assets/js/libs/timeline.js',
     loaded: false,
