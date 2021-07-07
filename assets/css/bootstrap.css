@@ -4027,6 +4027,7 @@ fieldset:disabled .btn {
 }
 
 .dropdown-item {
+  font-size: 15px !important;
   display: block;
   width: 100%;
   clear: both;
