@@ -10,17 +10,6 @@ globalThis.loadContent(route === 'artigo' ? `pages/blog/${route}.html` : `pages/
 globalThis.loadContent('components/cookie.html', cookie);
 globalThis.loadContent('components/footer.html', footer);
 
-// setTimeout(() => {
-//   const anchors = document.getElementsByClassName('navbar__item');
-//   [...anchors].forEach((anchor) => {
-//     anchor.onclick = () => globalThis.routeChange(anchor);
-
-//     if (anchor.hash === `#${route}`) {
-//       anchor.classList.add('active');
-//     }
-//   });
-// }, 50);
-
 globalThis.loadHome = () => {
   setTimeout(() => {
     $('.banner-frases').slick({

@@ -18,6 +18,10 @@ const scripts = {
     src: 'https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js',
     loaded: false,
   },
+  cookies: {
+    src: 'https://cdn.jsdelivr.net/gh/Wruczek/Bootstrap-Cookie-Alert@gh-pages/cookiealert.js',
+    loaded: false,
+  },
 };
 
 const addScript = (script) => {
@@ -39,6 +43,9 @@ globalThis.pageSwitch = (path) => {
   switch (path) {
     case 'home':
       globalThis.loadHome();
+      setTimeout(() => {
+        addScript(scripts.cookies);
+      }, 500);
       break;
 
     case 'contato':
@@ -69,7 +76,7 @@ globalThis.pageSwitch = (path) => {
             }
           );
         });
-      }, 50);
+      }, 200);
       break;
 
     case 'espaco':
