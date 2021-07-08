@@ -4617,6 +4617,7 @@ footer .social {
   text-align: right;
 }
 
+
 .footer #copyright {
   display: table-cell;
   font-size: 14px;
@@ -4628,10 +4629,13 @@ footer .social {
 .footer #copyright span {
   font-weight: 800;
   color: #56167f;
+  .banner-links{
+
+  }
 }
 
 .footer #copyright span:before {
-  content: ' \00a9 ';
+
 }
 
 @media screen and (max-width: 980px) {
@@ -7763,6 +7767,7 @@ td.ui-datepicker-current-day {
   margin-top: 16px;
   margin-bottom: 16px;
   color: black;
+  max-height: 26px;
 }
 
 .timelinein {
@@ -8057,6 +8062,7 @@ td.ui-datepicker-current-day {
   color: #a71989;
   line-height: 30px;
   font-family: 'quosmbold';
+  text-transform: uppercase;
 }
 
 .servicos-telecom {
@@ -8936,7 +8942,7 @@ input[data-description='2000']:checked
   width: 50px;
 }
 .img-portfolio {
-  border-radius: 45px !important;
+  border-radius: 25px !important;
   transition: transform 5s;
   -webkit-box-shadow: -1px -1px 31px 11px rgba(0, 0, 0, 0.36);
   box-shadow: -1px -1px 31px 5px rgba(0, 0, 0, 0.36);
@@ -8954,11 +8960,26 @@ input[data-description='2000']:checked
   margin-left: 20px !important;
 }
 
-.icon-tele {
-  width: 100px !important;
+.icon-parceiros {
+  width: 50px !important;
   display: inline-block !important;
   margin-left: 20px !important;
+  content: url(/assets/images/parceiros.svg);
 }
+
+
+.icon-tele {
+  width: 110px !important;
+  display: inline-block !important;
+  content: url(/assets//images/logo-telesintese.svg);
+}
+
+.icon-ponto{
+  width: 110px !important;
+  display: inline-block !important;
+  content: url(/assets//images/logo-ponto.svg);
+}
+
 .icon-hands {
   font-size: 20px;
   display: inline !important;
@@ -8975,19 +8996,42 @@ input[data-description='2000']:checked
 .fa-pencil-alt {
   transition: ease 0.5s;
 }
+
+@media only screen and (max-width: 600px) {
+  .float{
+    display: none;
+    transition: ease 1s;
+  }
+}
+
 .float{
+  transition: ease .4s;
 	position:fixed;
 	width:250px;
 	height:60px;
 	bottom:40px;
 	right:40px;
-	background-color:#25d366;
-	color:#FFF;
+	background-color: #56167f;
+	color: white;
 	border-radius:50px;
 	text-align:center;
   font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+	box-shadow: 1px 2px 15px 5px rgb(0 0 0 / 30%);
+  z-index:1000;
+}
+
+.float:hover{
+  background-color: #ff9700;
+  color: #56167f;
+  transition: ease 0.5s;
+}
+
+.float span{
+  font-family: 'quosmbold'
+}
+
+.float a:hover{
+  color:white !important;
 }
 
 .my-float{
