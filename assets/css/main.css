@@ -8971,13 +8971,13 @@ input[data-description='2000']:checked
 .icon-tele {
   width: 110px !important;
   display: inline-block !important;
-  content: url(/assets//images/logo-telesintese.svg);
+  content: url(/assets/images/logo-telesintese.svg);
 }
 
 .icon-ponto{
   width: 110px !important;
   display: inline-block !important;
-  content: url(/assets//images/logo-ponto.svg);
+  content: url(/assets/images/logo-ponto.svg);
 }
 
 .icon-hands {
