@@ -23,12 +23,32 @@ globalThis.loadContent('components/footer.html', footer);
 
 globalThis.loadHome = () => {
   setTimeout(() => {
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel();
+    });
+  }, 200);
+}
+
+globalThis.loadHome = () => {
+  setTimeout(() => {
     $('.banner-frases').slick({
       autoplay: true,
       autoplaySpeed: 5000,
     });
   }, 200);
 };
+
+globalThis.initSlick = (element, options) => {
+  setTimeout(() => {
+$('.banner-home').slick({
+  dots: true,
+  infinite: true,
+  speed: 300,
+  slidesToShow: 1,
+  adaptiveHeight: true
+});
+  }, 200);
+}
 
 globalThis.initSlick = (element, options) => {
   setTimeout(() => {

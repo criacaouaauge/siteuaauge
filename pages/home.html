@@ -1,9 +1,10 @@
 <div id="banner-frases">
   <div class="banner-frases">
     <div>
-     <a href="https://www.telesintese.com.br">
-      <p> <i class="far fa-handshake"></i> Agência parceira oficial <i class="icon-tele"></i> e <i class="icon-ponto"></i></p>
-     </a>
+      <a href="https://www.telesintese.com.br">
+        <p> <i class="far fa-handshake"></i> Agência parceira oficial <i class="icon-tele"></i> e <i
+            class="icon-ponto"></i></p>
+      </a>
     </div>
     <div>
       <a class="navbar__item" href="#inspire">
@@ -32,37 +33,36 @@
     </div>
     <div>
       <a href="https://www.rdstation.com">
-        <p> <i class="far fa-handshake"></i> Agência especializada em Telecom parceira<img class="icon-rd" src="assets/images/rd-station-cor.svg" /></p>
+        <p> <i class="far fa-handshake"></i> Agência especializada em Telecom parceira<img class="icon-rd"
+            src="assets/images/rd-station-cor.svg" /></p>
       </a>
     </div>
   </div>
 </div>
 
-<div id="carrousel">
-  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <a href="#"><img src="assets/images/slider/7680_01.jpg" class="d-block w-100" alt="..." /></a>
-      </div>
-      <div class="carousel-item">
-        <a href="#"><img src="assets/images/slider/7680_02.jpg" class="d-block w-100" alt="..." /></a>
-      </div>
-      <div class="carousel-item">
-        <a href="#"><img src="assets/images/slider/7680_03.jpeg" class="d-block w-100" alt="..." /></a>
-      </div>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="/assets/images/slider/7680_01.jpg" class="d-block w-100" alt="...">
+     </div>
+    <div class="carousel-item">
+      <img src="/assets/images/slider/7680_02.jpg" class="d-block w-100" alt="...">
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Anterior</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Próximo</span>
-    </button>
+    <div class="carousel-item">
+      <img src="/assets/images/slider/7680_03.jpeg" class="d-block w-100" alt="...">
+    </div>
   </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
-<div id="banner-inferior">
+<div class="mt-5" id="banner-inferior">
   <div class="banner-inferior">
     <div>
       <img class="img-fluid" src="assets/images/capa_servicos.png" />
@@ -70,13 +70,13 @@
   </div>
 </div>
 
-<div id="solucoes">
-  <div class="container">
-    <div class="d-flex justify-content-center top-margin" style="margin-top: 150px; margin-bottom: 150px">
-      <div class="row">
-        <img class="conection1 img-fluid" style="margin-right: 50px" src="assets/images/1732X1820_1.png" />
-        <img class="conection1 img-fluid" src="assets/images/1732X1820_2.png" />
-      </div>
+<div class="container mt-5 mb-5">
+  <div class="row">
+    <div class="float-start col">
+      <a target="_blank" href="#servicos"><img class="connection1 img-fluid" src="/assets/images/1732X1820_1.png"></a>
+    </div>
+    <div class="col float-end">
+      <a target="_blank" href="#telecom"><img class="connection2 img-fluid ms-3 " src="/assets/images/1732X1820_2.png"></a>
     </div>
   </div>
 </div>
@@ -85,14 +85,9 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col text-center">
-        <img class="img-fluid" src="assets/images/7680_1200_TEMOS_UM_PLANO.png" />
-
-        <button
-          onclick="globalThis.loadContent('pages/contato.html', document.getElementById('content'))"
-          class="btn-lg btn-planos"
-        >
-          Converse com um especialista</button
-        ><img src="assets/images/click_icon.svg" class="icon-sorriso-click" />
+        <a onclick="globalThis.loadContent('pages/contato.html', document.getElementById('content'))">
+          <img class="img-fluid" src="/assets/images/7680_1200_TEMOS_UM_PLANO....png">
+        </a>
       </div>
     </div>
   </div>
@@ -102,7 +97,7 @@
   <section class="text-center container">
     <div class="row py-lg-5">
       <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="title">Portifólio <i class="fas fa-pencil-alt"></i></h1>
+        <h1 class="title mt-3">Trabalhos uau!</h1>
       </div>
     </div>
   </section>
@@ -111,65 +106,38 @@
     <div class="container bg-light portifolio-itens">
       <div class="row bg-light">
         <div class="col m-3">
-          <a
-            ><img
-              data-bs-toggle="modal"
-              href="#exampleModalToggle"
-              class="img-portfolio img-thumbnail"
-              src="assets/images/isotop/01.png"
-          /></a>
-          <div
-            class="modal fade"
-            id="exampleModalToggle"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <a><img data-bs-toggle="modal" href="#exampleModalToggle" class="img-portfolio img-thumbnail"
+              src="assets/images/isotop/01.png" /></a>
+          <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
                   <img class="img-fluid" src="assets/images/isotop/Capa_1.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="#exampleModalToggle2"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver mais
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="modal fade"
-            id="exampleModalToggle2"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel2"
-            tabindex="-1"
-          >
+          <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-header">
                   <img class="img-fluid" src="assets/images/isotop/Capa_3.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="#exampleModalToggle"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Voltar
                   </button>
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="close"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Fechar
                   </button>
                 </div>
@@ -179,65 +147,38 @@
         </div>
 
         <div class="col m-3">
-          <a
-            ><img
-              data-bs-toggle="modal"
-              href="#exampleModalToggle3"
-              class="img-portfolio img-thumbnail"
-              src="assets/images/isotop/02.png"
-          /></a>
-          <div
-            class="modal fade"
-            id="exampleModalToggle3"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <a><img data-bs-toggle="modal" href="#exampleModalToggle3" class="img-portfolio img-thumbnail"
+              src="assets/images/isotop/02.png" /></a>
+          <div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_2.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="#exampleModalToggle4"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle4" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver Mais
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="modal fade"
-            id="exampleModalToggle4"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel2"
-            tabindex="-1"
-          >
+          <div class="modal fade" id="exampleModalToggle4" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_4.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="#exampleModalToggle3"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Voltar
                   </button>
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="close"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Fechar
                   </button>
                 </div>
@@ -247,65 +188,38 @@
         </div>
 
         <div class="col m-3">
-          <a
-            ><img
-              data-bs-toggle="modal"
-              href="#exampleModalToggle5"
-              class="img-portfolio img-thumbnail"
-              src="assets/images/isotop/03.png"
-          /></a>
-          <div
-            class="modal fade"
-            id="exampleModalToggle5"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <a><img data-bs-toggle="modal" href="#exampleModalToggle5" class="img-portfolio img-thumbnail"
+              src="assets/images/isotop/03.png" /></a>
+          <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_5.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="#exampleModalToggle6"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver Mais
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="modal fade"
-            id="exampleModalToggle6"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel2"
-            tabindex="-1"
-          >
+          <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_6.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="#exampleModalToggle5"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Voltar
                   </button>
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="close"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Fechar
                   </button>
                 </div>
@@ -314,65 +228,38 @@
           </div>
         </div>
         <div class="col m-3">
-          <a
-            ><img
-              data-bs-toggle="modal"
-              href="#exampleModalToggle5"
-              class="img-portfolio img-thumbnail"
-              src="assets/images/isotop/04.png"
-          /></a>
-          <div
-            class="modal fade"
-            id="exampleModalToggle5"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <a><img data-bs-toggle="modal" href="#exampleModalToggle5" class="img-portfolio img-thumbnail"
+              src="assets/images/isotop/04.png" /></a>
+          <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_5.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="#exampleModalToggle6"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver Mais
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="modal fade"
-            id="exampleModalToggle6"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel2"
-            tabindex="-1"
-          >
+          <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_6.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="#exampleModalToggle5"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Voltar
                   </button>
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="close"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Fechar
                   </button>
                 </div>
@@ -383,65 +270,38 @@
       </div>
       <div class="row bg-light">
         <div class="col m-3">
-          <a
-            ><img
-              data-bs-toggle="modal"
-              href="#exampleModalToggle8"
-              class="img-portfolio img-thumbnail"
-              src="assets/images/isotop/05.png"
-          /></a>
-          <div
-            class="modal fade"
-            id="exampleModalToggle8"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <a><img data-bs-toggle="modal" href="#exampleModalToggle8" class="img-portfolio img-thumbnail"
+              src="assets/images/isotop/05.png" /></a>
+          <div class="modal fade" id="exampleModalToggle8" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_8.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="#exampleModalToggle9"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle9" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver mais
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="modal fade"
-            id="exampleModalToggle9"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <div class="modal fade" id="exampleModalToggle9" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_9.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="#exampleModalToggle8"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle8" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver mais
                   </button>
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="close"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Fechar
                   </button>
                 </div>
@@ -450,65 +310,38 @@
           </div>
         </div>
         <div class="col m-3">
-          <a
-            ><img
-              data-bs-toggle="modal"
-              href="#exampleModalToggle10"
-              class="img-portfolio img-fluid img-thumbnail"
-              src="assets/images/isotop/06.png"
-          /></a>
-          <div
-            class="modal fade"
-            id="exampleModalToggle10"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <a><img data-bs-toggle="modal" href="#exampleModalToggle10" class="img-portfolio img-fluid img-thumbnail"
+              src="assets/images/isotop/06.png" /></a>
+          <div class="modal fade" id="exampleModalToggle10" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_9.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="#exampleModalToggle11"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle11" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver mais
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="modal fade"
-            id="exampleModalToggle11"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <div class="modal fade" id="exampleModalToggle11" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_1.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="#exampleModalToggle10"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle10" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver mais
                   </button>
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="close"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Fechar
                   </button>
                 </div>
@@ -517,65 +350,38 @@
           </div>
         </div>
         <div class="col m-3">
-          <a
-            ><img
-              data-bs-toggle="modal"
-              href="#exampleModalToggle12"
-              class="img-portfolio img-fluid img-thumbnail"
-              src="assets/images/isotop/07.png"
-          /></a>
-          <div
-            class="modal fade"
-            id="exampleModalToggle12"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <a><img data-bs-toggle="modal" href="#exampleModalToggle12" class="img-portfolio img-fluid img-thumbnail"
+              src="assets/images/isotop/07.png" /></a>
+          <div class="modal fade" id="exampleModalToggle12" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_1.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="#exampleModalToggle13"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle13" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver mais
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="modal fade"
-            id="exampleModalToggle13"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <div class="modal fade" id="exampleModalToggle13" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_2.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="#exampleModalToggle12"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle12" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver mais
                   </button>
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="close"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Fechar
                   </button>
                 </div>
@@ -584,65 +390,38 @@
           </div>
         </div>
         <div class="col m-3">
-          <a
-            ><img
-              data-bs-toggle="modal"
-              href="#exampleModalToggle5"
-              class="img-portfolio img-thumbnail"
-              src="assets/images/isotop/08.png"
-          /></a>
-          <div
-            class="modal fade"
-            id="exampleModalToggle5"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <a><img data-bs-toggle="modal" href="#exampleModalToggle5" class="img-portfolio img-thumbnail"
+              src="assets/images/isotop/08.png" /></a>
+          <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_5.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="#exampleModalToggle6"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver Mais
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="modal fade"
-            id="exampleModalToggle6"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel2"
-            tabindex="-1"
-          >
+          <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_6.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="#exampleModalToggle5"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Voltar
                   </button>
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="close"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Fechar
                   </button>
                 </div>
@@ -653,65 +432,38 @@
       </div>
       <div class="row bg-light">
         <div class="col m-3">
-          <a
-            ><img
-              data-bs-toggle="modal"
-              href="#exampleModalToggle5"
-              class="img-portfolio img-thumbnail"
-              src="assets/images/isotop/09.png"
-          /></a>
-          <div
-            class="modal fade"
-            id="exampleModalToggle5"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <a><img data-bs-toggle="modal" href="#exampleModalToggle5" class="img-portfolio img-thumbnail"
+              src="assets/images/isotop/09.png" /></a>
+          <div class="modal fade" id="exampleModalToggle5" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_5.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="#exampleModalToggle6"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle6" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver Mais
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="modal fade"
-            id="exampleModalToggle6"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel2"
-            tabindex="-1"
-          >
+          <div class="modal fade" id="exampleModalToggle6" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_6.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="#exampleModalToggle5"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="#exampleModalToggle5" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Voltar
                   </button>
-                  <button
-                    class="btn btn-outline-success"
-                    data-bs-target="close"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-outline-success" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Fechar
                   </button>
                 </div>
@@ -720,65 +472,38 @@
           </div>
         </div>
         <div class="col m-3">
-          <a
-            ><img
-              data-bs-toggle="modal"
-              href="#exampleModalToggle14"
-              class="img-portfolio img-fluid img-thumbnail"
-              src="assets/images/isotop/10.png"
-          /></a>
-          <div
-            class="modal fade"
-            id="exampleModalToggle14"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <a><img data-bs-toggle="modal" href="#exampleModalToggle14" class="img-portfolio img-fluid img-thumbnail"
+              src="assets/images/isotop/10.png" /></a>
+          <div class="modal fade" id="exampleModalToggle14" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_3.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="#exampleModalToggle15"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle15" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver mais
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="modal fade"
-            id="exampleModalToggle15"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <div class="modal fade" id="exampleModalToggle15" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_4.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="#exampleModalToggle14"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle14" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver mais
                   </button>
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="close"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Fechar
                   </button>
                 </div>
@@ -787,65 +512,38 @@
           </div>
         </div>
         <div class="col m-3">
-          <a
-            ><img
-              data-bs-toggle="modal"
-              href="#exampleModalToggle17"
-              class="img-portfolio img-thumbnail"
-              src="assets/images/isotop/11.png"
-          /></a>
-          <div
-            class="modal fade"
-            id="exampleModalToggle17"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <a><img data-bs-toggle="modal" href="#exampleModalToggle17" class="img-portfolio img-thumbnail"
+              src="assets/images/isotop/11.png" /></a>
+          <div class="modal fade" id="exampleModalToggle17" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_4.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="#exampleModalToggle18"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle18" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver mais
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="modal fade"
-            id="exampleModalToggle18"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <div class="modal fade" id="exampleModalToggle18" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="assets/images/isotop/Capa_5.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="#exampleModalToggle17"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle17" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Ver mais
                   </button>
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="close"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Fechar
                   </button>
                 </div>
@@ -854,65 +552,38 @@
           </div>
         </div>
         <div class="col m-3">
-          <a
-            ><img
-              data-bs-toggle="modal"
-              href="#exampleModalToggle19"
-              class="img-portfolio img-thumbnail"
-              src="assets/images/isotop/12.png"
-          /></a>
-          <div
-            class="modal fade"
-            id="exampleModalToggle19"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel"
-            tabindex="-1"
-          >
+          <a><img data-bs-toggle="modal" href="#exampleModalToggle19" class="img-portfolio img-thumbnail"
+              src="assets/images/isotop/12.png" /></a>
+          <div class="modal fade" id="exampleModalToggle19" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img class="img-fluid" src="/assets/images/isotop/Capa_7.png" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="#exampleModalToggle20"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle20" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Veja mais
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="modal fade"
-            id="exampleModalToggle20"
-            aria-hidden="true"
-            aria-labelledby="exampleModalToggleLabel2"
-            tabindex="-1"
-          >
+          <div class="modal fade" id="exampleModalToggle20" aria-hidden="true"
+            aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
             <div class="modal-dialog modal-dialog-centered">
               <div class="modal-content">
                 <div class="modal-body">
                   <img src="assets/images/isotop/Capa_8.png" class="img-fluid" />
                 </div>
                 <div class="modal-footer">
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="#exampleModalToggle19"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="#exampleModalToggle19" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Voltar
                   </button>
-                  <button
-                    class="btn btn-secondary"
-                    data-bs-target="close"
-                    data-bs-toggle="modal"
-                    data-bs-dismiss="modal"
-                  >
+                  <button class="btn btn-secondary" data-bs-target="close" data-bs-toggle="modal"
+                    data-bs-dismiss="modal">
                     Fechar
                   </button>
                 </div>
