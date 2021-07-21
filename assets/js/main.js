@@ -36,7 +36,6 @@ globalThis.loadHome = () => {
       autoplaySpeed: 5000,
     });
     $('.owl-carousel').owlCarousel({
-      nav: true,
       items:1,
       center:true,
       loop:true,
