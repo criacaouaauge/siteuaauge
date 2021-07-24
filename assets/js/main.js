@@ -70,6 +70,6 @@ globalThis.anchorClick = (event, anchor) => {
   const hash = anchor.href.split('#')[1];
 
   const item = document.getElementById(hash);
-  var rect = item.getBoundingClientRect();
-  window.scrollBy(0, rect.top);
+  const { top } = item.getBoundingClientRect();
+  window.scrollBy(0, top);
 };
