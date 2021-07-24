@@ -12,14 +12,6 @@ globalThis.loadContent('components/footer.html', footer);
 
 globalThis.loadHome = () => {
   setTimeout(() => {
-    $(document).ready(function () {
-      $('.owl-carousel').owlCarousel();
-    });
-  }, 200);
-};
-
-globalThis.loadHome = () => {
-  setTimeout(() => {
     $('.banner-frases').slick({
       autoplay: true,
       autoplaySpeed: 5000,
