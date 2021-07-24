@@ -72,5 +72,4 @@ globalThis.anchorClick = (event, anchor) => {
   const item = document.getElementById(hash);
   var rect = item.getBoundingClientRect();
   window.scrollBy(0, rect.top);
-  console.log(rect.top, rect.right, rect.bottom, rect.left);
 };
