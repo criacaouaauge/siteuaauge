@@ -3309,6 +3309,11 @@
   content: '\f0eb';
 }
 
+.fa-fiber {
+  content: url(/assets/images/fiber_icon.svg);
+}
+
+
 .fa-line:before {
   content: '\f3c0';
 }

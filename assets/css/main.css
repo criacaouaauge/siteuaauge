@@ -4617,6 +4617,7 @@ footer .social {
   text-align: right;
 }
 
+
 .footer #copyright {
   display: table-cell;
   font-size: 14px;
@@ -4628,10 +4629,13 @@ footer .social {
 .footer #copyright span {
   font-weight: 800;
   color: #56167f;
+  .banner-links{
+
+  }
 }
 
 .footer #copyright span:before {
-  content: ' \00a9 ';
+
 }
 
 @media screen and (max-width: 980px) {
@@ -7641,11 +7645,13 @@ td.ui-datepicker-current-day {
 }
 
 .conection1 {
-  box-shadow: 8px 8px 21px 8px rgb(0 79 143 / 35%) !important;
   border-radius: 50px;
-  margin-top: 20px;
-  width: 450px;
-  height: auto;
+  transition: ease .5s;
+}
+
+.conection1:hover{
+  box-shadow: 8px 8px 21px 8px rgb(0 79 143 / 35%) !important;
+  transition: ease .5s;
 }
 
 .planos a {
@@ -7739,6 +7745,11 @@ td.ui-datepicker-current-day {
 .banner-frases {
   margin: 0px 50px;
 }
+@media only screen and (max-width: 600px) {
+  .banner-frases{
+    font-size: 8px;
+  }
+}
 
 .box-parceiros-slide {
   background-color: #404f54;
@@ -7763,6 +7774,7 @@ td.ui-datepicker-current-day {
   margin-top: 16px;
   margin-bottom: 16px;
   color: black;
+  max-height: 26px;
 }
 
 .timelinein {
@@ -7811,6 +7823,15 @@ td.ui-datepicker-current-day {
 }
 
 .intro-text2 {
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 40px;
+  margin-bottom: 16px;
+}
+
+.intro-text3 {
   font-size: 25px;
   font-weight: 500;
   text-align: center;
@@ -7955,7 +7976,7 @@ td.ui-datepicker-current-day {
 }
 
 .titulo-missao {
-  padding-top: 25px;
+  margin-top: 25px;
   font-family: 'notera_2_personal_use_onlyMd';
   font-size: 65px;
   color: #ff9700;
@@ -8016,7 +8037,7 @@ td.ui-datepicker-current-day {
   height: 550px;
   width: auto;
   box-shadow: 8px 8px 21px 8px rgba(0, 0, 0, 0.09);
-  border-bottom: 20px solid #a71989;
+  border-bottom: 20px solid #fa9100;
   border-radius: 25px;
   margin-bottom: 25px;
   margin-right: 30px;
@@ -8028,7 +8049,7 @@ td.ui-datepicker-current-day {
   height: 550px;
   width: auto;
   box-shadow: 8px 8px 21px 8px rgba(0, 0, 0, 0.09);
-  border-bottom: 20px solid #ff9700;
+  border-bottom: 20px solid #8336D6;
   border-radius: 25px;
   margin-right: 30px;
   margin-top: 25px;
@@ -8037,32 +8058,27 @@ td.ui-datepicker-current-day {
 }
 
 .icones-servicos {
-  width: 75px;
+  width: 85px;
   border-radius: 15px;
   margin-left: 25px;
   margin-top: 25px;
 }
 
-.icones-servicos {
-  width: 75px;
-  border-radius: 15px;
-  margin-left: 25px;
-  margin-top: 25px;
-}
 
 .servicos-title {
   font-weight: 900;
   margin-left: 25px;
   margin-top: 15px;
-  color: #a71989;
+  color: #fa9100;
   line-height: 30px;
   font-family: 'quosmbold';
+  text-transform: uppercase;
 }
 
 .servicos-telecom {
   font-weight: 900;
   margin-top: 40px;
-  color: #a71989;
+  color: #8336D6;
   line-height: 45px;
   font-family: 'quosmbold';
   font-size: 45px;
@@ -8071,7 +8087,7 @@ td.ui-datepicker-current-day {
 .servicos-telecom2 {
   font-weight: 900;
   margin-top: 40px;
-  color: #ff9700;
+  color: #fa9100;
   line-height: 45px;
   font-family: 'quosmbold';
   font-size: 45px;
@@ -8082,7 +8098,7 @@ td.ui-datepicker-current-day {
   font-weight: 900;
   margin-left: 25px;
   margin-top: 15px;
-  color: #ff9700;
+  color: #8336D6;
   line-height: 30px;
   font-family: 'quosmbold';
   transition: 0.5s ease;
@@ -8233,7 +8249,7 @@ td.ui-datepicker-current-day {
 
 .fotos-eventos-parceiros img {
   width: auto;
-  height: 250px;
+  height: 150px;
 }
 
 .frase-parceiros-inferior {
@@ -8896,6 +8912,44 @@ input[data-description='2000']:checked
   display: inline;
   margin-left: 15px;
 }
+
+.connection1{
+  box-shadow: 1px 2px 12px 2px rgba(0,0,0,0.47);
+  border-radius: 125px;
+  transition: ease 0.5s;
+}
+
+.connection1:hover{
+  transition: ease 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .connection1{
+    border-radius: 5px !important;
+    width: 180px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .connection2{
+    border-radius: 5px !important;
+    width: 180px;
+  }
+}
+
+
+
+
+.connection2{
+  box-shadow: 1px 2px 12px 2px rgba(0,0,0,0.47);
+  border-radius: 125px;
+  transition: ease 0.5s;
+}
+
+.connection2:hover{
+  transition: ease 0.5s;
+}
+
 .form-cv {
   margin-left: 10px;
 }
@@ -8905,8 +8959,7 @@ input[data-description='2000']:checked
 }
 
 .btn-planos {
-  transform: translate(-1%, -130%);
-  -ms-transform: translate(-1%, -122%);
+
   display: inline-block;
   font-weight: 600;
   line-height: 1.5;
@@ -8936,11 +8989,18 @@ input[data-description='2000']:checked
   width: 50px;
 }
 .img-portfolio {
-  border-radius: 45px !important;
+  border-radius: 25px !important;
   transition: transform 5s;
   -webkit-box-shadow: -1px -1px 31px 11px rgba(0, 0, 0, 0.36);
   box-shadow: -1px -1px 31px 5px rgba(0, 0, 0, 0.36);
   margin-bottom: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  .img-portfolio{
+    border-radius: 5px !important;
+    box-shadow: -1px -1px 31px 5px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .img-portfolio:hover {
@@ -8954,11 +9014,45 @@ input[data-description='2000']:checked
   margin-left: 20px !important;
 }
 
-.icon-tele {
-  width: 100px !important;
+@media only screen and (max-width: 600px) {
+  .icon-rd{
+    width: 70px !important;
+  }
+}
+
+.icon-parceiros {
+  width: 50px !important;
   display: inline-block !important;
   margin-left: 20px !important;
+  content: url(/assets/images/parceiros.svg);
 }
+
+
+.icon-tele {
+  width: 110px !important;
+  display: inline-block !important;
+  content: url(/assets/images/logo-telesintese.svg);
+}
+@media only screen and (max-width: 600px) {
+  .icon-tele{
+    width: 70px !important;
+  }
+}
+
+
+
+.icon-ponto{
+  width: 110px !important;
+  display: inline-block !important;
+  content: url(/assets/images/logo-ponto.svg);
+}
+
+@media only screen and (max-width: 600px) {
+  .icon-ponto{
+    width: 70px !important;
+  }
+}
+
 .icon-hands {
   font-size: 20px;
   display: inline !important;
@@ -8974,4 +9068,45 @@ input[data-description='2000']:checked
 }
 .fa-pencil-alt {
   transition: ease 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .float{
+    display: none;
+    transition: ease 1s;
+  }
+}
+
+.float{
+  transition: ease .4s;
+	position:fixed;
+	width:250px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color: #56167f;
+	color: white;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 1px 2px 15px 5px rgb(0 0 0 / 30%);
+  z-index:1000;
+}
+
+.float:hover{
+  background-color: #ff9700;
+  color: #56167f;
+  transition: ease 0.5s;
+}
+
+.float span{
+  font-family: 'quosmbold'
+}
+
+.float a:hover{
+  color:white !important;
+}
+
+.my-float{
+	margin-top:16px;
 }

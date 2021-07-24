@@ -16,6 +16,25 @@ globalThis.loadHome = () => {
       autoplay: true,
       autoplaySpeed: 5000,
     });
+    $('.owl-carousel').owlCarousel({
+      items: 1,
+      center: true,
+      loop: true,
+      autoplay: true,
+      autoplayTimeout: 7000,
+    });
+  }, 200);
+};
+
+globalThis.initSlick = (element, options) => {
+  setTimeout(() => {
+    $('.banner-home').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+    });
   }, 200);
 };
 
@@ -36,3 +55,13 @@ window.addEventListener(
   },
   false
 );
+
+globalThis.anchorClick = (event, anchor) => {
+  event.preventDefault();
+
+  const hash = anchor.href.split('#')[1];
+
+  const item = document.getElementById(hash);
+  const { top } = item.getBoundingClientRect();
+  window.scrollBy(0, top);
+};
