@@ -16,7 +16,7 @@
   transform: translateY(100%);
   transition: all 500ms ease-out;
   color: white;
-  background-image: url(../images/cookies.jpg);
+  background-image: url(../images/cookies.png);
 }
 
 .cookiealert.show {
