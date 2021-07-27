@@ -4815,12 +4815,13 @@ fieldset:disabled .btn {
   font-size: 25px;
   color: #ff9700;
   text-align: left;
-  background-color: #ff;
+  background-color: #f1f1f1;
   overflow-anchor: none;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     border-radius 0.15s ease;
   transition: 0.5s ease;
+  border-radius: 25px;
 }
 
 .accordion-button:hover {

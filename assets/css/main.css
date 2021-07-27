@@ -7326,6 +7326,10 @@ td.ui-datepicker-current-day {
   margin-bottom: 30px;
 }
 
+#content{
+  padding-bottom: 90px;
+}
+
 .message-form {
   margin-left: -30px;
 }
