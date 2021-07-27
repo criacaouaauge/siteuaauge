@@ -10,25 +10,6 @@ globalThis.loadContent(route === 'artigo' ? `pages/blog/${route}.html` : `pages/
 globalThis.loadContent('components/cookie.html', cookie);
 globalThis.loadContent('components/footer.html', footer);
 
-// setTimeout(() => {
-//   const anchors = document.getElementsByClassName('navbar__item');
-//   [...anchors].forEach((anchor) => {
-//     anchor.onclick = () => globalThis.routeChange(anchor);
-
-//     if (anchor.hash === `#${route}`) {
-//       anchor.classList.add('active');
-//     }
-//   });
-// }, 50);
-
-globalThis.loadHome = () => {
-  setTimeout(() => {
-    $(document).ready(function(){
-      $(".owl-carousel").owlCarousel();
-    });
-  }, 200);
-}
-
 globalThis.loadHome = () => {
   setTimeout(() => {
     $('.banner-frases').slick({
@@ -36,26 +17,26 @@ globalThis.loadHome = () => {
       autoplaySpeed: 5000,
     });
     $('.owl-carousel').owlCarousel({
-      items:1,
-      center:true,
-      loop:true,
+      items: 1,
+      center: true,
+      loop: true,
       autoplay: true,
-      autoplayTimeout: 7000
+      autoplayTimeout: 7000,
     });
   }, 200);
 };
 
 globalThis.initSlick = (element, options) => {
   setTimeout(() => {
-$('.banner-home').slick({
-  dots: true,
-  infinite: true,
-  speed: 300,
-  slidesToShow: 1,
-  adaptiveHeight: true
-});
+    $('.banner-home').slick({
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 1,
+      adaptiveHeight: true,
+    });
   }, 200);
-}
+};
 
 globalThis.initSlick = (element, options) => {
   setTimeout(() => {
@@ -74,3 +55,13 @@ window.addEventListener(
   },
   false
 );
+
+globalThis.anchorClick = (event, anchor) => {
+  event.preventDefault();
+
+  const hash = anchor.href.split('#')[1];
+
+  const item = document.getElementById(hash);
+  const { top } = item.getBoundingClientRect();
+  window.scrollBy(0, top);
+};
