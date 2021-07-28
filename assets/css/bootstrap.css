@@ -3070,6 +3070,7 @@ fieldset:disabled .btn {
 
 .btn-primary {
   color: #fff;
+  background-color: #e3e3e3e3;
 }
 .btn-primary:hover {
   color: #fff;

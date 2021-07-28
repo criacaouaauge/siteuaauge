@@ -102,6 +102,8 @@ globalThis.pageSwitch = (path) => {
         autoplay: true,
       };
 
+
+
       setTimeout(() => {
         globalThis.initSlick('.parceiros-slide', slickOptions);
         globalThis.initSlick('.fotos-eventos-parceiros', slickOptions);
