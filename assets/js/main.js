@@ -23,6 +23,9 @@ globalThis.loadHome = () => {
       autoplay: true,
       autoplayTimeout: 7000,
     });
+    AOS.init({
+      duration: 1200,
+    })
   }, 200);
 };
 
