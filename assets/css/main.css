@@ -9087,8 +9087,8 @@ input[data-description='2000']:checked
 	height:60px;
 	bottom:40px;
 	right:40px;
-	background-color: #56167f;
-	color: white;
+	background-color: #ff9700;
+	color: #6c4100;
 	border-radius:50px;
 	text-align:center;
   font-size:30px;
@@ -9097,8 +9097,8 @@ input[data-description='2000']:checked
 }
 
 .float:hover{
-  background-color: #ff9700;
-  color: #56167f;
+  background-color: #56167f;
+  color: #c184ea;
   transition: ease 0.5s;
 }
 
